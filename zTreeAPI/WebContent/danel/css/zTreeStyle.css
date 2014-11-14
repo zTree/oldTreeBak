@@ -1,0 +1,270 @@
+/*-------------------------------------
+zTree Style
+
+version:	3.5
+author:		Hunter.z
+email:		hunter.z@263.net
+website:	http://code.google.com/p/jquerytree/
+
+-------------------------------------*/
+body {
+    background: #E6E6DC;
+}
+div.content_wrap {height:380px;}
+div.content_wrap div.left{float: left;width: 500px;}
+div.content_wrap div.right{float: right;width: 500px;}
+ul.ztree {margin-top: 10px;width:480px;height:360px;overflow-y:scroll;overflow-x:auto;}
+
+ul.ztree::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4em;
+    /*background-color: rgba(0, 0, 0, 0.125);*/
+    filter: alpha(opacity = 50);
+    opacity: 0.5;
+}
+ul.ztree::-webkit-scrollbar-button {
+    display: none;
+}
+ul.ztree::-webkit-scrollbar-thumb {
+    background-color: #808080;
+}
+
+.ztree * {
+    padding:0; margin:0; font-size:12px; font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ztree {margin:0; padding:5px; color:#333}
+.ztree li{padding: 0 0 0 20px; margin:0; list-style:none; line-height:24px;
+    text-align:left; white-space:nowrap; outline:0; overflow: hidden;
+}
+.ztree li ul{ margin:0; padding:0}
+.ztree li ul.line{ background:url(./img/line_conn.gif) 0 0 repeat-y;}
+
+.ztree li a {padding:1px 0 0 0; margin:0 0 4px; cursor:pointer; height:26px;
+    color:#333; background-color: #fff;
+	text-decoration:none; vertical-align:top; display: inline-block;
+    width: 100%;
+    white-space: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;}
+.ztree li a:hover {text-decoration:underline}
+.ztree li a.curSelectedNode {
+    /*padding-top:0px;*/
+    /*background-color:#FFE6B0; */
+    /*color:black;*/
+    /*height:16px; border:1px #FFB951 solid; */
+    /*opacity:0.8; filter:alpha(opacity=80)*/
+}
+.ztree li a.curSelectedNode_Edit {
+    /*padding-top:0px; background-color:#FFE6B0; color:black; height:26px; border:1px #FFB951 solid; */
+    /*opacity:0.8; filter:alpha(opacity=80)*/
+}
+.ztree li a.tmpTargetNode_inner {
+    /*padding-top:0px; background-color:#316AC5; color:white; height:26px; border:1px #316AC5 solid;*/
+	/*opacity:0.8; filter:alpha(opacity=80)*/
+}
+.ztree li a.tmpTargetNode_prev {}
+.ztree li a.tmpTargetNode_next {}
+.ztree li a input.rename {height:22px; width:50%; padding:0; margin:0;
+	font-size:12px; border:1px #7EC4CC solid; *border:0px}
+.ztree li span {line-height:26px; margin-right:2px}
+.ztree li span.button {line-height:0; margin:0; width:16px; height:16px; display: inline-block; vertical-align:middle;
+	border:0 none; cursor: pointer;outline:none;
+	background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+	background-image:url("./img/zTreeStandard.png"); *background-image:url("./img/zTreeStandard.gif")}
+
+
+.ztree li span.button.switch {width:18px; height:18px;margin-left: -22px;}
+.ztree li span.button.root_open{background-position:-92px -54px}
+.ztree li span.button.root_close{background-position:-74px -54px}
+.ztree li span.button.roots_open{background-position:-92px 0}
+.ztree li span.button.roots_close{background-position:-74px 0}
+.ztree li span.button.center_open{background-position:-92px -18px}
+.ztree li span.button.center_close{background-position:-74px -18px}
+.ztree li span.button.bottom_open{background-position:-92px -36px}
+.ztree li span.button.bottom_close{background-position:-74px -36px}
+.ztree li span.button.noline_open{background-position:-92px -72px}
+.ztree li span.button.noline_close{background-position:-74px -72px}
+.ztree li span.button.root_docu{ background:none;}
+.ztree li span.button.roots_docu{background-position:-56px 0}
+.ztree li span.button.center_docu{background-position:-56px -18px}
+.ztree li span.button.bottom_docu{background-position:-56px -36px}
+.ztree li span.button.noline_docu{ background:none;}
+
+.ztree li span.button.add {float:right; margin: 4px 0px 0 4px; background-position:-144px 0; }
+.ztree li span.button.edit {float:right; margin: 4px 0px 0 4px; background-position:-110px -48px; }
+.ztree li span.button.remove {float:right; margin: 4px 6px 0 4px; background-position:-110px -64px; }
+.ztree li span.button.powerOff { border-radius: 10px;
+    width: 10px; height: 10px; border: 1px solid; margin: -3px 10px 0 11px; }
+.ztree li span.button.powerOff.on {
+    background: #6FE811;
+    border-color: green;
+}
+.ztree li span.button.powerOff.off {
+    background: #ff2e2f;
+    border-color: red;
+}
+
+.ztree li span.button.ico_loading{margin-right:2px; background:url(./img/loading.gif) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+
+ul.tmpTargetzTree {background-color:#FFE6B0; opacity:0.8; filter:alpha(opacity=80)}
+
+span.tmpzTreeMove_arrow {width:16px; height:16px; display: inline-block; padding:0; margin:2px 0 0 1px; border:0 none; position:absolute;
+	background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
+	background-position:-110px -80px; background-image:url("./img/zTreeStandard.png"); *background-image:url("./img/zTreeStandard.gif")}
+
+ul.ztree.zTreeDragUL {
+    margin:0; padding:0 0 0 10px; position:absolute; width:auto; height:auto;overflow:hidden;
+    background-color:transparent; border:0px;
+    opacity:0.8; filter:alpha(opacity=80)
+}
+ul.ztree.zTreeDragUL li a{
+    padding: 0 1em;
+}
+.zTreeMask {z-index:10000; background-color:#cfcfcf; opacity:0.0; filter:alpha(opacity=0); position:absolute}
+
+/* level style*/
+.ztree li a.folder.level0 {
+    background-color: #17293F;
+    color: #fff;
+}
+.ztree li a.folder.level1 {
+    background-color: #424E5E;
+    color: #fff;
+}
+.ztree li a.folder.level2 {
+    background-color: #6C7280;
+    color: #fff;
+}
+.ztree li a.folder.level3 {
+    background-color: #8c92a0;
+    color: #fff;
+}
+.ztree li a.folder.level4 {
+    background-color: #87B5B6;
+    color: #fff;
+}
+.ztree li a.folder.level5 {
+    background-color: #87B694;
+    color: #fff;
+}
+.ztree li a.folder.manual {
+	color: orange !important;
+}
+
+.ztree li a.game {
+    background-color: #fff;
+    color: #333;
+}
+.ztree li a.curSelectedNode.game {
+    background-color: #fff;
+    color: #333;
+}
+.ztree li a span.gameInfo {
+	padding-left: 2em;
+}
+.ztree li a.game span.gameInfo {
+    color: #333;
+}
+.ztree li a.game span.gameInfo span {
+    border-left: 1px solid #666;
+    padding:0 2px 0 5px;
+}
+.ztree.hideId li a.game span.gameInfo span {
+    border-left: 0px;
+}
+.ztree li a.game span.gameInfo span:first-child {
+    border-left: 0px;
+}
+.ztree.hideTime li a span.gameInfo span.gameTime {
+    display: none;
+}
+.ztree.hideId li a span.gameInfo span.gameId {
+    display: none;
+}
+
+.ztree li a span.gameStatus {
+    float: right;
+    overflow: hidden;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    -webkit-transition: width 300ms ease;
+    -moz-transition: width 300ms ease;
+    transition: width 300ms ease;
+    -webkit-backface-visibility: hidden;
+}
+.ztree li a span.gameStatus span.btn{
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: left 300ms ease, opacity 300ms ease;
+    -moz-transition: left 300ms ease, opacity 300ms ease;
+    transition: left 300ms ease, opacity 300ms ease;
+    -webkit-backface-visibility: hidden;
+}
+#leftTree.ztree li a.curSelectedNode.game {
+    background-color: #029FEC;
+    color: #BB560D;
+}
+#rightTree.ztree li a {
+    padding-left: 12px;
+}
+#rightTree.ztree li a span.gameStatus span.btn:hover{
+    background: #04A3E4;
+}
+#rightTree.ztree li a span.gameStatus.all{
+    width: 104px;
+}
+#rightTree.ztree li a span.gameStatus.all span.btn{
+    opacity: 1;
+}
+#rightTree.ztree li a span.gameStatus.all span.btn.green{
+    left: 0;
+}
+#rightTree.ztree li a span.gameStatus.all span.btn.silver{
+    left: 26px;
+}
+#rightTree.ztree li a span.gameStatus.all span.btn.orange{
+    left: 52px;
+}
+#rightTree.ztree li a span.gameStatus.all span.btn.red{
+    left: 78px;
+}
+#rightTree.ztree li a span.gameStatus.green span.btn.green,
+#rightTree.ztree li a span.gameStatus.silver span.btn.silver,
+#rightTree.ztree li a span.gameStatus.orange span.btn.orange,
+#rightTree.ztree li a span.gameStatus.red span.btn.red {
+    z-index: 2;
+    opacity: 1;
+}
+#rightTree.ztree li a span.gameStatus span.btn span.button {
+    border-radius: 10px;
+    width: 10px; height: 10px;
+    border: 1px solid;
+    margin: -3px 8px 0 7px;
+}
+#rightTree.ztree li a span.gameStatus span.btn.green span.button{
+    background: #6FE811;
+    border-color: green;
+}
+#rightTree.ztree li a span.gameStatus span.btn.silver span.button{
+    background: #d5d5d5;
+    border-color: silver;
+}
+#rightTree.ztree li a span.gameStatus span.btn.orange span.button{
+    background: #ffb22a;
+    border-color: orange;
+}
+#rightTree.ztree li a span.gameStatus span.btn.red span.button{
+    background: #ff2e2f;
+    border-color: red;
+}

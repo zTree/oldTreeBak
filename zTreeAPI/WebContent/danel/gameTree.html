@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>DEMO</TITLE>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./css/demo.css" type="text/css">
+<link rel="stylesheet" href="./css/zTreeStyle.css" type="text/css">
+</HEAD>
+
+<BODY>
+<div class="tools">
+    <div class="tool">
+        <ul>
+            <li>
+                <button type="button" id="amendStart" onclick="refreshLeftTree()">refresh Left Tree</button>
+            </li>
+            <li>
+                <button type="button" id="amendConfirm" onclick="refreshRightTree()">refresh Right Tree</button>
+            </li>
+            <li>
+                <button type="button" id="amendCancel" onclick="expandLeftTree()">expand / collapse Left Tree</button>
+            </li>
+            <li>
+                <button type="button" id="amendClear" onclick="expandRightTree()">expand / collapse Right Tree</button>
+            </li>
+        </ul>
+    </div>
+    <div class="tool">
+        <ul>
+            <li>
+                <input type="checkbox" id="isShowID" checked onclick="ShowID(this.checked)"><label for="isShowID">Show ID</label>
+            </li>
+            <li>
+                <input type="checkbox" id="isShowTime" checked onclick="ShowTime(this.checked)"><label for="isShowTime">Show TIME</label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content_wrap">
+    <div class="zTreeDemoBackground left">
+        <ul id="leftTree" class="ztree"></ul>
+    </div>
+    <div class="right">
+        <ul id="rightTree" class="ztree"></ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.ztree.core-3.5.min.js"></script>
+<script type="text/javascript" src="./js/jquery.ztree.exedit-3.5.min.js"></script>
+<script type="text/javascript" src="./js/gameTree.js"></script>
+<SCRIPT type="text/javascript">
+    <!--
+
+    $(document).ready(function () {
+        refreshLeftTree();
+        refreshRightTree();
+    });
+
+    function refreshLeftTree() {
+        var leftNodes = [
+            { id: 1, pId: 0, name: "Folder 001", externalID: 123, isParent: true, open: true, power: true},
+            { id: 11, pId: 1, name: "Folder 011", externalID: 123, isParent: true, power: true},
+            { id: 111, pId: 11, name: "Folder 111", externalID: 123, isParent: true, power: true},
+            { id: 1111, pId: 111, name: "Game 011", externalID: 95501, externalTime: 'yesterday', power: true},
+            { id: 1112, pId: 111, name: "Game 012", externalID: 95502, externalTime: 'today 19:00', power: true},
+            { id: 112, pId: 11, name: "Folder 112", externalID: 123, isParent: true, power: true},
+            { id: 1121, pId: 112, name: "Game 021", externalID: 95503, externalTime: 'tomorrow', power: true},
+            { id: 1122, pId: 112, name: "Game 022", externalID: 95504, externalTime: '2014-04-10 10:30', power: true},
+            { id: 1123, pId: 112, name: "Game 023", externalID: 95505, externalTime: 'today 08:00', power: true},
+            { id: 1124, pId: 112, name: "Game 024", externalID: 95506, externalTime: 'yesterday 15:38', power: true},
+            { id: 2, pId: 0, name: "Folder 002", externalID: 0, isParent: true, open: true, power: true},
+            { id: 21, pId: 2, name: "Folder 021", externalID: 0, isParent: true, power: true},
+            { id: 211, pId: 21, name: "Folder 211", externalID: 0, isParent: true, power: true},
+            { id: 2111, pId: 211, name: "Game 031", externalID: 95507, externalTime: '2014-04-10 10:30', power: true}
+        ];
+        var options = {
+			treeId: 'leftTree',
+            callback: {
+                changeStatus: function(nodes, status) {
+                    var i, j, n, s, nameList = [];
+                    s = 'left tree changeStatus to ' + (status ? 'on':'off' ) + ', node id: ';
+                    for (i=0, j=nodes.length; i<j; i++) {
+                        n = nodes[i];
+                        nameList.push(n.id);
+                    }
+                    console.log(s);
+                    console.log(nameList.join(', '));
+                },
+                add: function(nodes, callback) {
+                    console.log('add nodes:');
+                    console.log(nodes);
+					fakeAjax(nodes, callback);
+                },
+                remove: function(nodeId) {
+                    console.log('remove id:'+ nodeId);
+                },
+                rename: function(node) {
+                    console.log('rename node:');
+                    console.log(node);
+                },
+                sorted: function(nodes) {
+                    console.log('sorted nodes:');
+                    console.log(nodes);
+                }
+            }
+        };
+        GameTree.initLeft(leftNodes, options);
+    }
+    function refreshRightTree() {
+        var rightNodes = [
+            { id: 1, pId: 0, name: "Folder 001", externalID: 123, isParent: true, open: true, status: 1},
+            { id: 1111, pId: 1, name: "Game 011", status: 2, externalID: 96501, externalTime: 'yesterday 12:13'},
+            { id: 1112, pId: 1, name: "Game 012", status: 3, externalID: 96502, externalTime: '2014-11-11 11:11'},
+            { id: 1121, pId: 1, name: "Game 021", status: 4, externalID: 96503, externalTime: '2014-11-12 15:38'},
+            { id: 1122, pId: 1, name: "Game 022", status: 1, externalID: 96504, externalTime: 'yesterday 15:38'},
+            { id: 1123, pId: 1, name: "Game 023", status: 2, externalID: 96505, externalTime: 'yesterday 15:38'},
+            { id: 1124, pId: 1, name: "Game 024", status: 3, externalID: 96506, externalTime: 'yesterday 15:38'},
+            { id: 2, pId: 0, name: "Folder 002", externalID: 123, isParent: true, open: true, status: 4},
+            { id: 2111, pId: 2, name: "Game 031", status: 1, externalID: 96507, externalTime: 'tomorrow 15:38'}
+        ];
+        var options = {
+			treeId: 'rightTree',
+            callback: {
+                changeStatus: function(node) {
+                    console.log('right tree changeStatus to ' + (node.status) + ', node id: ' + node.id);
+                }
+            }
+        };
+        GameTree.initRight(rightNodes, options);
+    }
+
+
+    var leftTreeExpand = true;
+    function expandLeftTree() {
+        leftTreeExpand = !leftTreeExpand;
+        GameTree.expandLeft(leftTreeExpand);
+    }
+    var rightTreeExpand = true;
+    function expandRightTree() {
+        rightTreeExpand = !rightTreeExpand;
+        GameTree.expandRight(rightTreeExpand);
+    }
+
+    function ShowID(flag) {
+        GameTree.showLeftID(!!flag);
+        GameTree.showRightID(!!flag);
+    }
+    function ShowTime(flag) {
+        GameTree.showLeftTime(!!flag);
+        GameTree.showRightTime(!!flag);
+    }
+
+	var testCount = 0;
+	function fakeAjax(nodes, callback) {
+		//fake ajax....save nodes....
+		var i, j, n, newData = [];
+		for (i=0, j=nodes.length; i<j; i++) {
+			n = nodes[i];
+			newData.push({
+				id: 'new_' + testCount++,
+				tId: n.tId
+			});
+		}
+		//ajax success return
+		callback(newData);
+	}
+    //-->
+</SCRIPT>
+</BODY>
+</HTML>

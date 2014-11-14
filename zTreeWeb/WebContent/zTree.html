@@ -1,0 +1,576 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="all">
+<title>(JQuery Tree 插件)我们的 zTree</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/ztree.css">
+<link rel="stylesheet" href="ztree/zTreeStyle/zTreeStyle.css" type="text/css">
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="ztree/jquery.ztree-2.6.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/googleCount.js"></script>
+<script type="text/javascript" >
+var demoIframe, demoIframeDiv, subMenuContent, wikicontent, questionAndDemo, questionContent, qLoading;
+var zTreeObj;
+$(document).ready(function(){
+	demoIframeDiv = $("#content");
+	demoIframe = $("#demoIframe");
+	subMenuContent = $("#subMenuContent");
+	wikicontent = $("#wikicontent");
+	questionContent = $("#questionContent");
+	questionAndDemo = $("#questionAndDemo");
+	qLoading = $("#qLoading");
+	zTreeObj = $("#qTree").zTree(setting, qNodes);
+	questionAndDemo.bind("click", goHelp);
+
+	var pageDiv = $("#page");
+	var pageDivOffset = pageDiv.offset();
+	$("#ad_120_600").css({left: (pageDiv.width() + 10) + "px", top: (pageDivOffset.top + 50) + "px"}).show();
+});
+
+var curDemoName = "info";
+var curLi;
+function show(demoName) {
+	if (curDemoName == demoName) return;
+
+	$("#" + curDemoName + "_li").removeClass("focus");
+	curDemoName = demoName;
+	$("#" + curDemoName + "_li").addClass("focus");
+	demoIframe.hide();
+	subMenuHide();
+
+	if (demoName == 'info') {
+		wikicontent.fadeIn("fast");
+		demoIframeDiv.height(500);
+	} else if (demoName == 'standardDemo') {
+		$("#standardMenuDiv").show();
+		if ($.browser.msie && parseInt($.browser.version)<=6) {
+			setStandard('2');
+			demoIframe.attr("src", "ztree/standardDemoForIe6.html");
+		} else {
+			demoIframe.attr("src", "ztree/standardDemo.html");
+		}
+	} else if (demoName == 'checkboxDemo') {
+		$("#checkMenuDiv").show();
+		setCheck("1");
+		demoIframe.attr("src", "ztree/checkboxDemo.html");
+	} else if (demoName == 'eventDemo') {
+		demoIframe.attr("src", "ztree/eventDemo.html");
+	} else if (demoName == 'editDemo') {
+		$("#editMenuDiv").show();
+		setEdit("1");
+		demoIframe.attr("src", "ztree/editDemo.html");
+	} else if (demoName == 'asyncDemo') {
+		demoIframe.attr("src", "ztree/asyncDemo.html");
+	} else if (demoName == 'jscontrolDemo') {
+		demoIframe.attr("src", "ztree/jscontrolDemo.html");
+	} else if (demoName == 'superDemo') {
+		$("#superAppMenuDiv").show();
+		setSuperApp("1");
+		demoIframe.attr("src", "ztree/superDemo_mutilTree.html");
+	} else if (demoName == 'bigDataDemo') {
+		$("#bigDataMenuDiv").show();
+		setBigData("1");
+		demoIframe.attr("src", "ztree/bigDataDemo_normal.html");
+	} else if (demoName == 'skinDemo') {
+		demoIframe.attr("src", "ztree/skinDemo.html");
+	}
+}
+
+function subMenuHide() {
+	$("#standardMenuDiv").hide();
+	$("#superAppMenuDiv").hide();
+	$("#checkMenuDiv").hide();
+	$("#bigDataMenuDiv").hide();
+	$("#editMenuDiv").hide();
+}
+
+var curStandardName = "1";
+function setStandard(appName) {
+	if (curStandardName == appName) {
+		return false;
+	}
+	$("#standard_" + curStandardName).removeClass("current");
+	$("#standard_" + appName).addClass("current");
+	curStandardName = appName;
+	return true;
+}
+
+var curEditName = "1";
+function setEdit(editName) {
+	if (curEditName == editName) {
+		return false;
+	}
+	$("#edit_" + curEditName).removeClass("current");
+	$("#edit_" + editName).addClass("current");
+	curEditName = editName;
+	return true;
+}
+
+var curSuperAppName = "1";
+function setSuperApp(appName) {
+	if (curSuperAppName == appName) {
+		return false;
+	}
+	$("#app_" + curSuperAppName).removeClass("current");
+	$("#app_" + appName).addClass("current");
+	curSuperAppName = appName;
+	return true;
+}
+
+var curCheckName = "1";
+function setCheck(checkName) {
+	if (curCheckName == checkName) {
+		return false;
+	}
+
+	$("#check_" + curCheckName).removeClass("current");
+	$("#check_" + checkName).addClass("current");
+	curCheckName = checkName;
+	return true;
+}
+
+var curBigDataName = "1";
+function setBigData(bigDataName) {
+	if (curBigDataName == bigDataName) {
+		return false;
+	}
+
+	$("#bigData_" + curBigDataName).removeClass("current");
+	$("#bigData_" + bigDataName).addClass("current");
+	curBigDataName = bigDataName;
+	return true;
+}
+
+function showDemoContent() {
+	if (!zTreeObj) return;
+	if (curDemoName != "info") {
+		wikicontent.hide();
+		demoIframe.fadeIn("fast");
+		var h = demoIframe.contents().find("body").height();
+		if (h < 561) h = 561;
+		demoIframeDiv.height(h);
+		demoIframe.height(h);
+	} else {
+		wikicontent.show();
+	}
+	subMenuContent.show();
+	questionContent.hide();
+}
+function showQContent() {
+	subMenuContent.hide();
+	wikicontent.hide();
+	demoIframe.hide();
+	questionContent.show();
+	demoIframeDiv.height(500);
+	setDefaultNode();
+}
+function setDefaultNode(parentNode) {
+	var treeNode = zTreeObj.getSelectedNode();
+	if (!treeNode || (parentNode && treeNode.parentNode !== parentNode)) {
+		treeNode = parentNode ? parentNode.nodes[0] : zTreeObj.getNodes()[0].nodes[0];
+		singlePath(treeNode.parentNode);
+		zTreeObj.expandNode(treeNode.parentNode, true);
+		selectFirstNode(treeNode.parentNode);
+	} else {
+		singlePath(treeNode.parentNode);
+		zTreeObj.expandNode(treeNode.parentNode, true);
+		showQuestion(treeNode);
+	}
+}
+
+function goDownloadzTree(url) {
+	document.downloadForm.action = url;
+	document.downloadForm.submit();
+}
+var a = 0, moveFlag = 15;
+var demoBtn,questionBtn,demoDiv,questionDiv, navBtn;
+function goHelp() {
+	if (!demoBtn) {
+		demoBtn = $("#toDemo");
+		questionBtn = $("#toQuestion");
+		demoDiv = $("#demoNav");
+		questionDiv = $("#questionNav");
+		navBtn = $("#navBtn");
+	}
+	window.getSelection ? window.getSelection().removeAllRanges() : setTimeout(function(){document.selection.empty();}, 10);
+	if (moveFlag !== 15) return;
+	moveFlag = 0;
+	if (a=(1-a)) {
+		questionBtn.animate({width:0, height:0}, { duration: "normal", easing: "swing", complete:function(){moveFlag = moveFlag | 1;} });
+		demoBtn.animate({width:175, height:175}, { duration: "normal", easing: "swing", complete:function(){moveFlag = moveFlag | 2;} });
+		demoDiv.animate({left:-540}, { duration: "normal", easing: "swing", complete:function(){moveFlag = moveFlag | 4; demoDiv.css({left:"540px"});} });
+		questionDiv.animate({left:0}, { duration: "normal", easing: "swing", complete:function(){moveFlag = moveFlag | 8;} });
+		navBtn.text("Demo 演 示");
+		showQContent();
+
+	} else {
+		demoBtn.animate({width:0, height:0}, { duration: "normal", easing: "swing", complete:function(){moveFlag = moveFlag | 1;} });
+		questionBtn.animate({width:175, height:175}, { duration: "normal", easing: "swing", complete:function(){moveFlag = moveFlag | 2;} });
+		demoDiv.animate({left:0}, { duration: "normal", easing: "swing", complete:function(){moveFlag = moveFlag | 4;} });
+		questionDiv.animate({left:-540}, { duration: "normal", easing: "swing", complete:function(){moveFlag = moveFlag | 8; questionDiv.css({left:"540px"});}  });
+		navBtn.text("常 见 问 题");
+		showDemoContent();
+	}
+	return false;
+}
+
+var setting = {
+	isSimpleData: true,
+	treeNodeKey: "id",
+	treeNodeParentKey: "pId",
+	showIcon: false,
+	fontCss: setFont,
+	callback: {
+		beforeClick: zTreeOnBeforeClick,
+		beforeExpand: zTreeOnBeforeExpand,
+		expand: zTreeOnExpand,
+		click: zTreeOnClick
+	}
+};
+var qNodes =[
+ 	{ id:1, pId:0, name:"一、基础问题"},
+ 	{ id:11, pId:1, name:"1、怎么生成一棵自己的 zTree？（最简入门）"},
+ 	{ id:12, pId:1, name:"2、zTree 对 jQuery 的版本有要求吗？"},
+ 	{ id:13, pId:1, name:"3、节点选中状态 和 勾选状态 有什么区别？"},
+ 	{ id:14, pId:1, name:"4、如何设置节点个性化样式？"},
+ 	{ id:15, pId:1, name:"5、zTree 的 css 冲突了怎么办？"},
+ 	{ id:2, pId:0, name:"二、数据对象说明"},
+ 	{ id:21, pId:2, name:"1、JSON 对象 和 JSON 格式字符串的区别是什么？"},
+ 	{ id:22, pId:2, name:"2、在 Server 端从数据库读出的数据如何生成 JSON 数据？"},
+ 	{ id:23, pId:2, name:"3、zTree 的节点数据说明"},
+ 	{ id:24, pId:2, name:"4、如何将 zTree 的数据提交给 Server 端？"},
+ 	{ id:25, pId:2, name:"5、如何获取当前 zTree 内的总结点数？"},
+ 	{ id:3, pId:0, name:"三、节点展开/折叠"},
+ 	{ id:31, pId:3, name:"1、怎么初始化父节点展开/折叠状态？"},
+ 	{ id:32, pId:3, name:"2、怎么用 js 控制节点展开、折叠？"},
+ 	{ id:33, pId:3, name:"3、如何实现展开一个节点时关闭其他节点？"},
+ 	{ id:34, pId:3, name:"4、如何异步展开全部节点？"},
+	{ id:4, pId:0, name:"四、checkbox/radio"},
+	{ id:41, pId:4, name:"1、如何初始化节点时就设置其勾选状态？"},
+	{ id:42, pId:4, name:"2、如何让异步加载的子节点直接继承父节点的勾选状态？"},
+	{ id:43, pId:4, name:"3、如何让部分节点不显示 checkbox/radio ？"},
+	{ id:44, pId:4, name:"4、如何在一棵树上同时显示 checkbox/radio ？"},
+	{ id:45, pId:4, name:"5、如何获取被勾选的节点数据？"},
+	{ id:5, pId:0, name:"五、异步加载"},
+	{ id:51, pId:5, name:"1、asyncParam 和 asyncParamOther 的区别？"},
+	{ id:52, pId:5, name:"2、如何动态改变异步加载的地址？"},
+	{ id:53, pId:5, name:"3、如何在异步加载取得数据后进行预处理？"},
+	{ id:54, pId:5, name:"4、如何让节点重新进行异步加载？"},
+	{ id:55, pId:5, name:"5、为什么异步加载初始化后无法得到节点数据？"},
+	{ id:56, pId:5, name:"6、如何异步加载全部节点？"},
+	{ id:6, pId:0, name:"六、事件相关"},
+	{ id:61, pId:6, name:"1、事件回调函数的关系"},
+	{ id:7, pId:0, name:"七、高级应用"},
+	{ id:71, pId:7, name:"1、如何自动选中节点？"},
+	{ id:72, pId:7, name:"2、如何让一套数据同时使用到两棵树上？"}
+ ];
+
+function setFont(treeId, treeNode) {
+	var css = {color: "#4D6399"};
+	if (treeNode.level === 0) {
+		css["font-weight"] = "bold";
+	}
+	return css;
+}
+var curExpandNode = null;
+function zTreeOnBeforeClick(treeId, treeNode) {
+	if (treeNode.level === 0 && !treeNode.open) {
+		singlePath(treeNode);
+		zTreeObj.expandNode(treeNode, true);
+		selectFirstNode(treeNode);
+	} else if (treeNode.level === 0) {
+		zTreeObj.expandNode(treeNode, false);
+	}
+	return (treeNode.level !== 0);
+}
+function zTreeOnBeforeExpand(treeId, treeNode) {
+	singlePath(treeNode);
+}
+function singlePath(newNode) {
+	if (newNode === curExpandNode) return;
+	if (curExpandNode && curExpandNode.open==true) {
+		if (newNode.parentNode === curExpandNode.parentNode) {
+			zTreeObj.expandNode(curExpandNode, false, true);
+		} else {
+			var newParents = [];
+			while (newNode) {
+				newNode = newNode.parentNode;
+				if (newNode === curExpandNode) {
+					newParents = null;
+					break;
+				} else if (newNode) {
+					newParents.push(newNode);
+				}
+			}
+			if (newParents!=null) {
+				var oldNode = curExpandNode;
+				var oldParents = [];
+				while (oldNode) {
+					oldNode = oldNode.parentNode;
+					if (oldNode) {
+						oldParents.push(oldNode);
+					}
+				}
+				for (var i = (newParents.length<oldParents.length ? newParents.length : oldParents.length); i>=0; i--) {
+					if (newParents[i] !== oldParents[i]) {
+						zTree1.expandNode(oldParents[i], false, true);
+						break;
+					}
+				}
+			}
+		}
+	}
+	curExpandNode = newNode;
+}
+
+function zTreeOnExpand(event, treeId, treeNode) {
+	curExpandNode = treeNode;
+	setDefaultNode(treeNode);
+}
+
+function zTreeOnClick(event, treeId, treeNode) {
+	showQuestion(treeNode);
+}
+function selectFirstNode(treeNode) {
+	zTreeObj.selectNode(treeNode.nodes[0]);
+	showQuestion(treeNode.nodes[0]);
+}
+var curQ, curQId;
+function showQuestion(treeNode, times) {
+	if (!times) times = 0;
+	if (curQ && curQ.length>0) {curQ.hide();}
+	curQ = $("#q_" + treeNode.id);
+	qLoading.show();
+	if (curQ.length == 0 && times<5) {
+		curQId = treeNode.id;
+		$.ajax({
+			type: "GET",
+			url: "question/q_"+treeNode.id+".php",
+			dataType: "text",
+			success: function(msg) {
+				if (curQId == treeNode.id) {
+					questionContent.append(msg);
+					showQuestion(treeNode);
+				}
+			},
+			error: function(XMLHttpRequest, textStatus, errorThrown) {
+				showQuestion(treeNode, times+1);
+			}
+		});
+	} else {
+		qLoading.hide();
+		curQ.show();
+	}
+}
+</script>
+</head>
+<body id="welcome">
+<div id="wrapper">
+	<ul id="navi">
+		<li id="home_link" title="首页"><a href="index.html">首页</a></li>
+		<li id="zTree_link" title="JQuery Tree 插件 zTree"><a class="current">zTree</a></li>
+		<li id="support_link" title="技术支持"><a href="support.html">技术支持</a></li>
+		<li id="download_link" title="下载"><a href="download.html">下载</a></li>
+		<li id="donate_link" title="许可 & 捐赠"><a href="donate.html">许可&amp; 捐赠</a></li>
+		<li id="connact_link" title="联系方式"><a href="connact.html">联系方式</a></li>
+	</ul>
+
+	<div id="page">
+		<div id="header">
+			<div id="navContent" >
+				<div id="demoNav">
+					<table>
+						<tr>
+							<td>
+						<li id="info_li" class="focus">
+							<a onclick="show('info');" title="zTree 简介">
+								<button class="ico info" onfocus="this.blur();"></button>
+								<ul>zTree 简介</ul>
+							</a>
+						</li>
+						</td>
+						<td>
+						<li id="standardDemo_li">
+							<a onclick="show('standardDemo');" title="基本功能演示">
+								<button class="ico standardDemo" onfocus="this.blur();"></button>
+								<ul>基本功能演示</ul>
+							</a>
+						</li>
+						</td>
+						<td>
+						<li id="checkboxDemo_li">
+							<a onclick="show('checkboxDemo');" title="Check 演示">
+								<button class="ico checkboxDemo" onfocus="this.blur();"></button>
+								<ul>Check 演示</ul>
+							</a>
+						</li>
+						</td>
+						<td>
+						<li id="eventDemo_li">
+							<a onclick="show('eventDemo');" title="Event 演示">
+								<button class="ico eventDemo" onfocus="this.blur();"></button>
+								<ul>Event 演示</ul>
+							</a>
+						</li>
+						</td>
+						<td>
+						<li id="editDemo_li">
+							<a onclick="show('editDemo');" title="编辑演示">
+								<button class="ico editDemo" onfocus="this.blur();"></button>
+								<ul>编辑演示</ul>
+							</a>
+						</li>
+						</td>
+						</tr>
+						<tr>
+							<td>
+						<li id="asyncDemo_li">
+							<a onclick="show('asyncDemo');" title="异步加载演示">
+								<button class="ico asyncDemo" onfocus="this.blur();"></button>
+								<ul>异步加载演示</ul>
+							</a>
+						</li>
+						</td>
+						<td>
+						<li id="jscontrolDemo_li">
+							<a onclick="show('jscontrolDemo');" title="JS操作">
+								<button class="ico jscontrolDemo" onfocus="this.blur();"></button>
+								<ul>JS操作</ul>
+							</a>
+						</li>
+						</td>
+						<td>
+						<li id="bigDataDemo_li">
+							<a onclick="show('bigDataDemo');" title="大数据量演示">
+								<button class="ico download" onfocus="this.blur();"></button>
+								<ul>大数据量演示</ul>
+							</a>
+						</li>
+						</td>
+						<td>
+						<li id="superDemo_li">
+							<a onclick="show('superDemo');" title="高级应用演示">
+								<button class="ico superDemo" onfocus="this.blur();"></button>
+								<ul>高级应用演示</ul>
+							</a>
+						</li>
+						</td>
+						<td>
+						<li id="skinDemo_li">
+							<a onclick="show('skinDemo');" title="皮肤演示">
+								<button class="ico skinDemo" onfocus="this.blur();"></button>
+								<ul>皮肤演示</ul>
+							</a>
+						</li>
+						</td>
+						</tr>
+					</table>
+				</div>
+				<div id="questionNav"><ul id="qTree" class="tree"></ul></div>
+			</div>
+
+			<div id="zclock" class="day" style=" text-align: center; position:absolute; top: 30px; left: 600px; width:175px; height:175px">
+				<ul id="questionAndDemo"><li style="height:175px;"><img src="img/question.png" id="toQuestion"/><img src="img/goDemo.png" id="toDemo" style="width:0; height:0;"/></li>
+					<li><span id="navBtn">常 见 问 题</span></li></ul>
+			</div>
+		</div>
+		<div id="content">
+			<div id="subMenuContent">
+				<div id="standardMenuDiv" class="superMenu" style="display:none">
+					<a id="standard_1" href="ztree/standardDemo.html" target="demoIframe" class="current" onclick="return setStandard('1');">不兼容IE6</a>
+					| <a id="standard_2" href="ztree/standardDemoForIe6.html" target="demoIframe" onclick="return setStandard('2');">兼容IE6</a>
+				</div>
+				<div id="editMenuDiv" class="superMenu" style="display:none">
+					<a id="edit_1" href="ztree/editDemo.html" target="demoIframe" class="current" onclick="return setEdit('1');">默认编辑</a>
+					| <a id="edit_2" href="ztree/edit&asyncDemo.html" target="demoIframe" onclick="return setEdit('2');">编辑 & 异步加载 共存</a>
+				</div>
+				<div id="superAppMenuDiv" class="superMenu" style="display:none">
+					<a id="app_1" href="ztree/superDemo_mutilTree.html" target="demoIframe" class="current" onclick="return setSuperApp('1');">两棵树之间数据交互</a>
+					| <a id="app_2" href="ztree/superDemo_diyBtn.html" target="demoIframe" onclick="return setSuperApp('2');">添加自定义控件</a>
+					| <a id="app_3" href="ztree/superDemo_rightMenu.html" target="demoIframe" onclick="return setSuperApp('3');">右键菜单</a>
+					| <a id="app_4" href="ztree/superDemo_dropdownMenu.html" target="demoIframe" onclick="return setSuperApp('4');">下拉菜单</a>
+					| <a id="app_5" href="ztree/superDemo_check&radio.html" target="demoIframe" onclick="return setSuperApp('5');">checkbox & radio 共存</a>
+				</div>
+				<div id="bigDataMenuDiv" class="superMenu" style="display:none">
+					<a id="bigData_1" href="ztree/bigDataDemo_normal.html" target="demoIframe" class="current" onclick="return setBigData('1');">普通加载</a>
+					| <a id="bigData_2" href="ztree/bigDataDemo_super.html" target="demoIframe" onclick="return setBigData('2');">高级异步加载</a>
+				</div>
+				<div id="checkMenuDiv" class="superMenu" style="display:none">
+					<a id="check_1" href="ztree/checkboxDemo.html" target="demoIframe" class="current" onclick="return setCheck('1');">CheckBox 演示</a>
+					| <a id="check_2" href="ztree/radioDemo.html" target="demoIframe" onclick="return setCheck('2');">Radio 演示</a>
+				</div>
+			</div>
+			<div id="wikicontent">
+			<h1><a name="JQuery_zTree_简介">zTree 简介</a><span> (JQuery Tree 插件)</span></h1>
+			<p>zTree 是利用 JQuery 的核心代码，实现一套能完成大部分常用功能的 Tree 插件<br/>
+				zTree v3.0 已经发布了，该升级了！快去看看: <a class="v3" href="http://www.ztree.me/">http://www.ztree.me</a></p>
+				<li><button class="ico browser" onfocus="this.blur();"></button>
+					兼容 IE、FireFox、Chrome 等浏览器</li>
+				<li><button class="ico multi" onfocus="this.blur();"></button>
+					在一个页面内可同时生成多个 Tree 实例</li>
+				<li><button class="ico jsonData" onfocus="this.blur();"></button>
+					支持 JSON 数据</li>
+				<li><button class="ico async" onfocus="this.blur();"></button>
+					支持一次性静态生成 和 Ajax 异步加载 两种方式</li>
+				<li><button class="ico event" onfocus="this.blur();"></button>
+					支持多种事件响应及反馈</li>
+				<li><button class="ico move" onfocus="this.blur();"></button>
+					支持 Tree 的节点移动、编辑、删除</li>
+				<li><button class="ico skin" onfocus="this.blur();"></button>
+					支持任意更换皮肤 / 个性化图标（依靠css）</li>
+				<li><button class="ico check" onfocus="this.blur();"></button>
+					支持极其灵活的 checkbox 或 radio 选择功能</li>
+				<li><button class="ico setting" onfocus="this.blur();"></button>
+					简单的参数配置实现 灵活多变的功能</li>
+
+				<div class="button-download">
+					<form id="downloadForm" name="downloadForm" method="get"
+						action="">
+					<a href="#" onclick="goDownloadzTree('http://jquerytree.googlecode.com/files/JQuery%20zTree%20v2.6.03.zip'); return false;">
+						<strong>下载最新版本</strong>JQuery-zTree v2.6.03.zip<br/>仅含 核心代码 & API 文档
+					</a>
+					<a href="#" onclick="goDownloadzTree('http://jquerytree.googlecode.com/files/JQuery%20zTree%20v2.6.zip'); return false;">
+						<strong>下载</strong>JQuery-zTree v2.6.zip<br/>内含中文 API 文档 & Demo
+					</a>
+					</form>
+				</div>
+			</div>
+			<div id="questionContent">
+				<div id="qLoading"></div>
+			</div>
+
+			<IFRAME ID="demoIframe" Name="demoIframe" FRAMEBORDER=0 SCROLLING=NO width=100% height=100% SRC="" style="display:none;" onload="showDemoContent();"></IFRAME>
+		</div>
+		<div id="footer">
+			<ul id="footer_links">
+				<li>
+				<a href="http://code.google.com/p/jquerytree/" target="_blank">zTree In Google</a> |
+				<a href="http://www.miibeian.gov.cn/">京 ICP 备 09073372 号</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="ad_120_600" class="ad" style="position:absolute; top:0px; display:none;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1768706304303167";
+/* 竖向广告120_600 */
+google_ad_slot = "9209867482";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'zh-CN'}
+</script>
+	</div>
+	<div class="google_plus">
+		<g:plusone></g:plusone>
+	</div>
+</div>
+</body>
+</html>

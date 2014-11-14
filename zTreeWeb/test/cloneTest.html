@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>CLONE TEST</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript">
+		//zTree 原先的 clone 方法
+		function cloneOld (jsonObj) {
+			var buf;
+			if (jsonObj instanceof Array) {
+				buf = [];
+				var i = jsonObj.length;
+				while (i--) {
+					buf[i] = arguments.callee(jsonObj[i]);
+				}
+				return buf;
+			}else if (typeof jsonObj == "function"){
+				return jsonObj;
+			}else if (jsonObj instanceof Object){
+				buf = {};
+				for (var k in jsonObj) {
+					buf[k] = arguments.callee(jsonObj[k]);
+				}
+				return buf;
+			}else{
+				return jsonObj;
+			}
+		}
+		//zTree 使用更简洁的 clone 方法
+		function cloneNew (obj) {
+			if (obj === null) return null;
+			var o = obj.constructor === Array ? [] : {};
+			for(var i in obj){
+				//测试中可以打开 if 语句，看看效率的变化
+//				if(obj.hasOwnProperty(i)){
+					o[i] = (obj[i] instanceof Date) ? new Date(obj[i].getTime()) : (typeof obj[i] === "object" ? arguments.callee(obj[i]) : obj[i]);
+//				}
+			}
+			return o;
+		}
+		//最精简的 clone 方法
+		function cloneSimple (obj) {
+			return JSON.parse(JSON.stringify(obj));
+		}
+		//测试方法
+		function testClone(clone) {
+			var i, times = 20, start = new Date();
+			for (i=0; i<times; i++) {
+				clone(testCase);
+			}
+			var end = new Date();
+			console.log(clone.name + " use " + (end.getTime() - start.getTime()));
+		}
+
+		var testCase = [], curId=1, maxLevel=3, num=100;
+		//初始化测试数据
+		function makeCase (list, level) {
+			var i;
+			for (i=0; i<num; i++) {
+				var obj = {
+					id : curId,
+					level : level,
+					name : "testItem_" + curId,
+					title : "test Title " + curId
+				};
+				curId++;
+				if (level < maxLevel) {
+					obj.children = [];
+					makeCase(obj.children, level+1);
+				}
+				list.push(obj);
+			}
+		}
+		makeCase(testCase, 1);
+	</script>
+  </head>
+  <body>
+	  <button type="button" onclick="testClone(cloneOld)">Test Clone Old</button>
+	  <button type="button" onclick="testClone(cloneNew)">Test Clone New</button>
+	  <button type="button" onclick="testClone(cloneSimple)">Test Clone Simple</button>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+<?php?><div class="qDiv" id ="q_44"><h2>4.4、如何在一棵树上同时显示 checkbox/radio ？</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;对于 v2.6 版本的 zTree 想实现 checkbox 和 radio 共存只能利用 自定义控件 的方式了，在 Demo 中专门有这个例子（高级应用演示 -- checkbox & radio 共存），并且有说明。</p>

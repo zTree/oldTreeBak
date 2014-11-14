@@ -1,0 +1,161 @@
+#GameTree API Document
+
+**source file:** *gameTree.js*
+
+**dependent lib:**  *jQuery v1.4.4+*,  *zTree v3.5*
+
+**demo file:** *gameTree.html*
+
+----
+
+##GameTree.initLeft(nodes, options)
+> init the left tree
+
+### 1) params
+
+> **nodes (Array)**
+> The nodes data of the left tree.
+> *Please set the 'isParent=true' to folder's data.*
+
+```
+example:
+
+[
+{ id: 1, pId: 0, name: "Folder 001", externalID: 123, isParent: true, open: true, power: true},
+{ id: 11, pId: 1, name: "Folder 011", externalID: 123, isParent: true, power: true},
+{ id: 1111, pId: 111, name: "Game 011", externalID: 95501, externalTime: 'yesterday', power: true}
+]
+```
+> **options (JSON)**
+> Setting of the left tree
+> Mainly to set the callback.
+
+```
+example:
+
+{
+    treeId: 'leftTree',  //The left tree's id
+    callback: {
+        //When user change folder or game's status, will trigger it
+        changeStatus: function(nodes, status) {},
+        
+        //When add folder or game, will trigger it
+        //the callback can update nodes's id, please return like:
+        // {tId:xxx, id:yyy}
+        add: function(nodes, callback) {},
+        
+        //When remove a folder or game, will trigger it
+        remove: function(nodeId) {},
+        
+        //When rename a folder or game's name, will trigger it
+        rename: function(node) {},
+        
+        //When drag&drop to change a folder or game's position, will trigger it
+        sorted: function(nodes) {}
+    }
+}
+```
+### 2) return: None
+----
+
+##GameTree.initRight(nodes, options)
+> init the right tree
+
+### 1) params
+
+> **nodes (Array)**
+> The nodes data of the right tree.
+> *Please set the 'isParent=true' to folder's data.*
+
+```
+example:
+
+[
+{ id: 1, pId: 0, name: "Folder 001", externalID: 123, isParent: true, open: true, status: 1},
+{ id: 1111, pId: 1, name: "Game 011", externalID: 96501, externalTime: 'yesterday 12:13', status: 2},
+{ id: 1112, pId: 1, name: "Game 012", externalID: 96502, externalTime: '2014-11-11 11:11', status: 3}
+]
+```
+> **options (JSON)**
+> Setting of the right tree
+> Mainly to set the callback.
+
+```
+example:
+
+{
+    treeId: 'rightTree',  //The right tree's id
+    callback: {
+        //When user change folder or game's status, will trigger it
+        changeStatus: function(nodes, status) {}
+    }
+}
+```
+### 2) return: None
+----
+##GameTree.expandLeft(flag)
+> expand/collapse all folder of the left tree
+
+### 1) params
+
+> **flag (Boolean)**
+> flag = true   will expand all folder.
+> flag = false  will collapse all folder.
+
+### 2) return: None
+----
+##GameTree.expandRight(flag)
+> expand/collapse all folder of the right tree
+
+### 1) params
+
+> **flag (Boolean)**
+> flag = true   will expand all folder.
+> flag = false  will collapse all folder.
+
+### 2) return: None
+----
+##GameTree.showLeftID(flag)
+> show/hide externalID of the left tree
+
+### 1) params
+
+> **flag (Boolean)**
+> flag = true   will show externalID.
+> flag = false  will hide externalID.
+
+### 2) return: None
+----
+##GameTree.showRightID(flag)
+> show/hide externalID of the right tree
+
+### 1) params
+
+> **flag (Boolean)**
+> flag = true   will show externalID.
+> flag = false  will hide externalID.
+
+### 2) return: None
+----
+##GameTree.showLeftTime(flag)
+> show/hide externalTime of the left tree
+
+### 1) params
+
+> **flag (Boolean)**
+> flag = true   will show externalTime.
+> flag = false  will hide externalTime.
+
+### 2) return: None
+----
+##GameTree.showRightTime(flag)
+> show/hide externalTime of the right tree
+
+### 1) params
+
+> **flag (Boolean)**
+> flag = true   will show externalTime.
+> flag = false  will hide externalTime.
+
+### 2) return: None
+

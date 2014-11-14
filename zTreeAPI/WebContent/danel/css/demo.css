@@ -1,0 +1,29 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei","微软雅黑","Helvetica","SimSun","SimHei";
+    font-size: 12px;
+    color: #333;
+}
+.tools {
+    height: 135px;
+    background-image: linear-gradient(to bottom, #99ffff, white);
+    /*-webkit-box-shadow: @val;*/
+    /*-moz-box-shadow: @val;*/
+    box-shadow: 0 2px 5px silver;
+}
+.tool {
+    float: left;
+    border-left: 1px solid silver;
+    padding: 0 1em;
+    height: 100%;
+}
+.tool:first-child {
+    border-left: 0px;
+}
+.tool ul {list-style-type: none; padding-left: 0;}
+.tool ul li{padding-bottom: 2px;}
+.tool ul li input{cursor: pointer;}
+.tool ul li label{cursor: pointer;}
+
+

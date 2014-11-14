@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1a60ec13-4b49-4dda-b458-5de18172a9ee" name="Default" comment="" />
+    <ignored path="zTreeAPI.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/zTreeObj.expandNode.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1379225000443" ignored="false" />
+    <file path="/jquery.ztree.exedit-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1379233171864" ignored="false" />
+    <file path="/jquery.ztree.core.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1398735263892" ignored="false" />
+    <file path="/log v3.x.txt" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521459865" ignored="false" />
+    <file path="/a.dummy" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415434535569" ignored="false" />
+    <file path="/zTreeObj.removeNode.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1381148633449" ignored="false" />
+    <file path="/jquery.ztree.exhide-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521180886" ignored="false" />
+    <file path="/drag_super.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1381155079811" ignored="false" />
+    <file path="/edit.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415954095672" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/common/pageFrame.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382082933023" ignored="false" />
+    <file path="/pageFrame.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382082933023" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/controller/BaseController.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382078635397" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/common/urlOperator.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382082585646" ignored="false" />
+    <file path="/urlOperator.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382082423095" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/database/wizCenter.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382413432291" ignored="false" />
+    <file path="/wizCenter.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382413432291" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/controller/FlatStyleController.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382080547629" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/common/header.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382081516752" ignored="false" />
+    <file path="/header.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382080113045" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/locale/zh-cn/lang.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
+    <file path="/lang.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382081127586" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/locale/zh-tw/lang.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/locale/en/lang.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
+    <file path="/jquery.ztree.core-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1410346460054" ignored="false" />
+    <file path="/simpleData.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1387713484354" ignored="false" />
+    <file path="/getNodes.php" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1410346169163" ignored="false" />
+    <file path="/treeNode.open.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382179712556" ignored="false" />
+    <file path="/setting.view.txtSelectedEnable.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382181411054" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/common/util/GlobalUtil.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382412068918" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/common/util/baseTools.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382412128139" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/tmpl/wiz-flat.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382412343127" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/common/groupList.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382412964057" ignored="false" />
+    <file path="/groupList.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382412661965" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/model/UserInfo.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382412838701" ignored="false" />
+    <file path="/UserInfo.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382412813327" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/common/sidebar.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382413441491" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/common/jquery/jquery.ztree.ex.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1382513245590" ignored="false" />
+    <file path="/edit_super.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1383477125820" ignored="false" />
+    <file path="/version.txt" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1383477815820" ignored="false" />
+    <file path="/jquery.ztree.exedit.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389067641978" ignored="false" />
+    <file path="/dragWithOther.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1385303173476" ignored="false" />
+    <file path="/setting.callback.onDragMove.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1385304232876" ignored="false" />
+    <file path="/setting.callback.onDrag.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1385303736080" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/.idea/workspace.xml" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386930341076" ignored="false" />
+    <file path="/addGroupmember.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386741621137" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manager/libs/biz/viewer/bizGuide/addGroupmember.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386741677049" ignored="false" />
+    <file path="/bizGuide.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386900271915" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manager/pages/bizGuide.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386900359626" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manager/layout/less/5_add-groupmember.less" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386900338926" ignored="false" />
+    <file path="/5_add-groupmember.less" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386900337659" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manager/layout/css/layout.css" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386900342202" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/biz_manager_zh_CN.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386901560967" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/js/common.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386901560967" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/common/docView.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386903754516" ignored="false" />
+    <file path="/docView.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386903754516" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/otherClient/comment.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386903768277" ignored="false" />
+    <file path="/comment.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386903768277" ignored="false" />
+    <file path="/click.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1409883196205" ignored="false" />
+    <file path="/select_menu.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386904610927" ignored="false" />
+    <file path="/setting.callback.beforeClick.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386904366289" ignored="false" />
+    <file path="/setting.callback.onClick.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386904380392" ignored="false" />
+    <file path="/setting.view.autoCancelSelected.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386904498088" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manager/libs/biz/viewer/bizGuide/addBizmember.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386905309010" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/libs/common/jquery/jquery.ztree.all-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389068494069" ignored="false" />
+    <file path="/jquery.ztree.all-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1409883395000" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/entity/bizLogin.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1388645640986" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/entity/bizLogin-debug.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1388645640986" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/biz.common.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386930234614" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/jquery.all.biz.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389073488197" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/common_min/jquery.all.biz.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389073488197" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/bizLogin.common.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1386930234614" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/avalon.all.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389067575009" ignored="false" />
+    <file path="/zTreeObj.moveNode.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1387974702020" ignored="false" />
+    <file path="/jquery.ztree.excheck-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1388314141489" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/entity/bizGuide-debug.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389067713828" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/entity/bizManage-debug.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389073488197" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/entity/bizManage.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389067713828" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/dist/libs/entity/bizGuide.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389067713828" ignored="false" />
+    <file path="$USER_HOME$/Desktop/ztree_radioType_all_issue/js/jquery.ztree.all-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1388930133505" ignored="false" />
+    <file path="/tree-taxonomy.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1388930857725" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/libs/biz/viewer/bizManage/addGroupMember.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389068873013" ignored="false" />
+    <file path="/addGroupMember.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1389068870906" ignored="false" />
+    <file path="/main.php" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1414119024242" ignored="false" />
+    <file path="/comm.php" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1394969439380" ignored="false" />
+    <file path="/foot.php" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1394362507697" ignored="false" />
+    <file path="/head.php" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1394968985200" ignored="false" />
+    <file path="/common.css" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1394969081678" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/weixin/pwd.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1395992725195" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/common/ueditor/wiz_ueditor.all.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1395995008858" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/weixin/docView.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1395994760870" ignored="false" />
+    <file path="/checkbox_halfCheck.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1395995944740" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/viewer/weixin/docList.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1395995008858" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/tmpl/weixin/index.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1395997048027" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/model/Message.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1396577398297" ignored="false" />
+    <file path="/Message.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1396577385315" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/wiz/model/Comment.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1396577536328" ignored="false" />
+    <file path="/Comment.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1396577534609" ignored="false" />
+    <file path="/multiTree.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415438436378" ignored="false" />
+    <file path="/async.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1409880624116" ignored="false" />
+    <file path="/async_fun.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1398676347660" ignored="false" />
+    <file path="/待处理问题.txt" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1398821281170" ignored="false" />
+    <file path="/common.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399520342443" ignored="false" />
+    <file path="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/apiCss/jquery.ztree.core-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521633320" ignored="false" />
+    <file path="$PROJECT_DIR$/zTreeWeb/web3.0_Design/js/jquery.ztree.excheck-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521633320" ignored="false" />
+    <file path="/zTreeObj.cancelSelectedNode.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1400840034570" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/gulpfile.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1400841057489" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/jade/helper/layout.jade" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1402281818125" ignored="false" />
+    <file path="/layout.jade" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1402281809070" ignored="false" />
+    <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/libs/biz/controller-mobile/bizManageController.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1402282576812" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/common/jquery/jquery.ztree.all-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1404179976057" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/jade/page-common/updateYourBrowser.jade" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1404180278251" ignored="false" />
+    <file path="/updateYourBrowser.jade" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1404180192303" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/jade/version/version.jade" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1404180343829" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/pages/noteMain.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1404180343829" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/pages/updateYourBrowser.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1404180343829" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/jade/version/version_dev.jade" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1404180422607" ignored="false" />
+    <file path="/jquery.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1406685675714" ignored="false" />
+    <file path="/checkbox.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1407837889455" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/test/editor.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1411373919002" ignored="false" />
+    <file path="/donate.php" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1411371901062" ignored="false" />
+    <file path="/editor.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1413449255352" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/common/wizEditor/editor.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1413449258745" ignored="false" />
+    <file path="/singlepath.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1414982309942" ignored="false" />
+    <file path="/zTreeStyle.css" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415840726467" ignored="false" />
+    <file path="/gameTree.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415927125600" ignored="false" />
+    <file path="/gameTree.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415868562167" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/mvc/viewer/resetPassword/resetPasswordApply.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/layout/less/partial/login/login-register.less" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/libs/mvc/viewer/account/account-setting.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/jade/page-personalManage/reset_pwd_apply.jade" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
+    <file path="D:/IdeaProject/WizClient/WizWebClient/layout/less/_layout/layout_account.less" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
+    <file path="$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.min.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415868679209" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="zTreeAPI" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/demo/cn/core/url.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/demo/en/core/url.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/donate.php" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/main.php" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/cn/main.php" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/en/main.php" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/super/singlepath.html" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/en/super/singlepath.html" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/doc/log v3.x.txt" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit_super.html" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/multiTree.html" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/demo.css" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/zTreeStyle.css" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.js" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/gameTree.html" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exedit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zTreeAPI/WebContent/js" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig" serverName="zTreeAPI" serverId="d9860b28-a61d-4638-a9ee-a39d7a204d32" autoUpload="true">
+    <servers>
+      <server id="d9860b28-a61d-4638-a9ee-a39d7a204d32">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\zTree\zTreeAPI\zTreeWeb\web3.0_Design\demo\en\super" />
+      <recent name="D:\zTree\zTreeAPI\zTreeWeb\web3.0_Design\demo\cn\super" />
+      <recent name="D:\zTree\zTreeAPI\zTreeWeb\web3.0_Design\img" />
+      <recent name="D:\zTree\zTreeAPI\zTreeWeb\web3.0_Design\api\en" />
+      <recent name="D:\zTree\zTreeAPI\zTreeWeb\web3.0_Design\api\cn" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1358" y="-8" width="1936" height="1176" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22644539" sideWeight="0.65251726" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3474827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45705825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/gameTree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="16" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="35" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit_super.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="26" selection-start="5107" selection-end="5107" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/zTreeStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="44" selection-start="6601" selection-end="6601" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="61" selection-start="1297" selection-end="1450" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/img/zTreeStandard.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/core/custom_font.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/core/searchNodes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="62" selection-start="1918" selection-end="1965" vertical-scroll-proportion="0.34305316" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/zTreeStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="44" selection-start="6601" selection-end="6601" vertical-scroll-proportion="0.025799794" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit_super.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="26" selection-start="5107" selection-end="5107" vertical-scroll-proportion="0.026737968">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="35" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/gameTree.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="16" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="22" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.025458248" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="38" selection-start="823" selection-end="823" vertical-scroll-proportion="0.728988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>zTreeAPI</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
