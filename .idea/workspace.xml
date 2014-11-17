@@ -8,7 +8,7 @@
     <file path="/jquery.ztree.exedit-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1379233171864" ignored="false" />
     <file path="/jquery.ztree.core.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1398735263892" ignored="false" />
     <file path="/log v3.x.txt" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521459865" ignored="false" />
-    <file path="/a.dummy" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415434535569" ignored="false" />
+    <file path="/a.dummy" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1416213433167" ignored="false" />
     <file path="/zTreeObj.removeNode.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1381148633449" ignored="false" />
     <file path="/jquery.ztree.exhide-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521180886" ignored="false" />
     <file path="/drag_super.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1381155079811" ignored="false" />
@@ -106,7 +106,6 @@
     <file path="/async_fun.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1398676347660" ignored="false" />
     <file path="/待处理问题.txt" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1398821281170" ignored="false" />
     <file path="/common.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399520342443" ignored="false" />
-    <file path="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/apiCss/jquery.ztree.core-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521633320" ignored="false" />
     <file path="$PROJECT_DIR$/zTreeWeb/web3.0_Design/js/jquery.ztree.excheck-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521633320" ignored="false" />
     <file path="/zTreeObj.cancelSelectedNode.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1400840034570" ignored="false" />
     <file path="D:/IdeaProject/WizHtmlpages/htmlpages/manage/gulpfile.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1400841057489" ignored="false" />
@@ -136,6 +135,7 @@
     <file path="D:/IdeaProject/WizClient/WizWebClient/jade/page-personalManage/reset_pwd_apply.jade" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
     <file path="D:/IdeaProject/WizClient/WizWebClient/layout/less/_layout/layout_account.less" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415788052645" ignored="false" />
     <file path="$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.min.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1415868679209" ignored="false" />
+    <file path="/left_menu.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1416212869400" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +195,80 @@
     <favorites_list name="zTreeAPI" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="setting.data.simpleData.enable.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.enable.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="22" selection-start="878" selection-end="878" vertical-scroll-proportion="-5.147059">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setting.data.simpleData.idKey.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.idKey.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="22" selection-start="598" selection-end="598" vertical-scroll-proportion="-5.0882354">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setting.data.simpleData.pIdKey.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.pIdKey.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="12" selection-start="594" selection-end="594" vertical-scroll-proportion="-5.0882354">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setting.data.simpleData.rootPId.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.rootPId.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="12" selection-start="611" selection-end="611" vertical-scroll-proportion="-4.7352943">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zTreeObj.transformTozTreeNodes.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/zTreeObj.transformTozTreeNodes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="22" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-4.7058825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setting.data.simpleData.enable.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.enable.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="22" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-4.7058825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setting.data.simpleData.idKey.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.idKey.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="22" selection-start="694" selection-end="694" vertical-scroll-proportion="-4.7058825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zTreeObj.transformTozTreeNodes.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/zTreeObj.transformTozTreeNodes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="119" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.66367716">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -205,13 +278,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/demo/cn/core/url.html" />
-        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/demo/en/core/url.html" />
-        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/donate.php" />
-        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/main.php" />
-        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/cn/main.php" />
-        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/en/main.php" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/super/singlepath.html" />
         <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/en/super/singlepath.html" />
         <option value="$PROJECT_DIR$/zTreeAPI/WebContent/doc/log v3.x.txt" />
         <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit_super.html" />
@@ -221,6 +287,13 @@
         <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.js" />
         <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/gameTree.html" />
         <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit.html" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/super/left_menu.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.enable.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.idKey.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/zTreeObj.transformTozTreeNodes.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.enable.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.idKey.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/zTreeObj.transformTozTreeNodes.html" />
       </list>
     </option>
   </component>
@@ -259,7 +332,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,8 +382,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zTreeAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="super" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,17 +472,17 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/zTreeAPI/WebContent/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="zTreeAPI" serverId="d9860b28-a61d-4638-a9ee-a39d7a204d32" autoUpload="true">
     <servers>
@@ -470,10 +621,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3474827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45705825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -483,12 +636,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22644539" sideWeight="0.65251726" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22644539" sideWeight="0.54294175" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3474827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45705825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -559,50 +710,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/gameTree.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit_super.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="26" selection-start="5107" selection-end="5107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/zTreeStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="44" selection-start="6601" selection-end="6601" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="61" selection-start="1297" selection-end="1450" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/img/zTreeStandard.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/core/custom_font.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/core/searchNodes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="62" selection-start="1918" selection-end="1965" vertical-scroll-proportion="0.34305316" />
@@ -615,9 +722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit_super.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="26" selection-start="5107" selection-end="5107" vertical-scroll-proportion="0.026737968">
-          <folding />
-        </state>
+        <state line="142" column="26" selection-start="5107" selection-end="5107" vertical-scroll-proportion="0.026737968" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/demo.css">
@@ -627,9 +732,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/gameTree.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="40" column="16" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.js">
@@ -639,7 +742,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="823" selection-end="823" vertical-scroll-proportion="0.728988">
+        <state line="23" column="38" selection-start="823" selection-end="823" vertical-scroll-proportion="0.728988" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/super/left_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="14" selection-start="2352" selection-end="2352" vertical-scroll-proportion="0.81475127">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.enable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="22" selection-start="878" selection-end="878" vertical-scroll-proportion="-5.147059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.idKey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="22" selection-start="598" selection-end="598" vertical-scroll-proportion="-5.0882354">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.pIdKey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="594" selection-end="594" vertical-scroll-proportion="-5.0882354">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.rootPId.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="611" selection-end="611" vertical-scroll-proportion="-4.7352943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/zTreeObj.transformTozTreeNodes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="22" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-4.7058825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.enable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="22" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-4.7058825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.idKey.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="22" selection-start="694" selection-end="694" vertical-scroll-proportion="-4.7058825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/zTreeObj.transformTozTreeNodes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="119" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.66367716">
           <folding />
         </state>
       </provider>
