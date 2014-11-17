@@ -7,8 +7,8 @@
     <file path="/zTreeObj.expandNode.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1379225000443" ignored="false" />
     <file path="/jquery.ztree.exedit-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1379233171864" ignored="false" />
     <file path="/jquery.ztree.core.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1398735263892" ignored="false" />
-    <file path="/log v3.x.txt" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521459865" ignored="false" />
-    <file path="/a.dummy" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1416213433167" ignored="false" />
+    <file path="/log v3.x.txt" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1416213942590" ignored="false" />
+    <file path="/a.dummy" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1416213880636" ignored="false" />
     <file path="/zTreeObj.removeNode.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1381148633449" ignored="false" />
     <file path="/jquery.ztree.exhide-3.5.js" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1399521180886" ignored="false" />
     <file path="/drag_super.html" changelist="1a60ec13-4b49-4dda-b458-5de18172a9ee" time="1381155079811" ignored="false" />
@@ -196,73 +196,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="setting.data.simpleData.enable.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.enable.html">
+      <file leaf-file-name="click.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/core/click.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="878" selection-end="878" vertical-scroll-proportion="-5.147059">
+            <state line="48" column="21" selection-start="1925" selection-end="1925" vertical-scroll-proportion="-4.3235292">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setting.data.simpleData.idKey.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.idKey.html">
+      <file leaf-file-name="left_menu.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/super/left_menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="598" selection-end="598" vertical-scroll-proportion="-5.0882354">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setting.data.simpleData.pIdKey.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.pIdKey.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="12" selection-start="594" selection-end="594" vertical-scroll-proportion="-5.0882354">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setting.data.simpleData.rootPId.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.rootPId.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="12" selection-start="611" selection-end="611" vertical-scroll-proportion="-4.7352943">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zTreeObj.transformTozTreeNodes.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/zTreeObj.transformTozTreeNodes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="22" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-4.7058825">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setting.data.simpleData.enable.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.enable.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="22" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-4.7058825">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setting.data.simpleData.idKey.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.idKey.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="694" selection-end="694" vertical-scroll-proportion="-4.7058825">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zTreeObj.transformTozTreeNodes.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/zTreeObj.transformTozTreeNodes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="119" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.66367716">
+            <state line="115" column="27" selection-start="3642" selection-end="3642" vertical-scroll-proportion="0.6359223">
               <folding />
             </state>
           </provider>
@@ -278,15 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/en/super/singlepath.html" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/doc/log v3.x.txt" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit_super.html" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/multiTree.html" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/demo.css" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/zTreeStyle.css" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.js" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/danel/gameTree.html" />
-        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit.html" />
         <option value="$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/super/left_menu.html" />
         <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.enable.html" />
         <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.idKey.html" />
@@ -294,6 +231,15 @@
         <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.enable.html" />
         <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.idKey.html" />
         <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/zTreeObj.transformTozTreeNodes.html" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/css/zTreeStyle/zTreeStyle.css" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/js/version.txt" />
+        <option value="$PROJECT_DIR$/zTreeAPI/WebContent/doc/log v3.x.txt" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/API_cn.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/API_en.html" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/cn/api.php" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/cn/comm.php" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/en/api.php" />
+        <option value="$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/en/comm.php" />
       </list>
     </option>
   </component>
@@ -710,90 +656,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/core/searchNodes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="62" selection-start="1918" selection-end="1965" vertical-scroll-proportion="0.34305316" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/zTreeStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="44" selection-start="6601" selection-end="6601" vertical-scroll-proportion="0.025799794" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit_super.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="26" selection-start="5107" selection-end="5107" vertical-scroll-proportion="0.026737968" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/gameTree.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/danel/js/gameTree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="22" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.025458248" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/exedit/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="823" selection-end="823" vertical-scroll-proportion="0.728988" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/super/left_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="14" selection-start="2352" selection-end="2352" vertical-scroll-proportion="0.81475127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.enable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="878" selection-end="878" vertical-scroll-proportion="-5.147059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.idKey.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="598" selection-end="598" vertical-scroll-proportion="-5.0882354">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.pIdKey.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="594" selection-end="594" vertical-scroll-proportion="-5.0882354">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/setting.data.simpleData.rootPId.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="611" selection-end="611" vertical-scroll-proportion="-4.7352943">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/cn/zTreeObj.transformTozTreeNodes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-4.7058825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.enable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-4.7058825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/setting.data.simpleData.idKey.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="22" selection-start="694" selection-end="694" vertical-scroll-proportion="-4.7058825">
@@ -803,7 +665,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/en/zTreeObj.transformTozTreeNodes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="119" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.66367716">
+        <state line="43" column="51" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.6822034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/js/all.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/js/core.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/js/version.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/css/zTreeStyle/zTreeStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="135" selection-end="135" vertical-scroll-proportion="0.2964427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/doc/log v3.x.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="41" selection-start="489" selection-end="489" vertical-scroll-proportion="0.6916996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/API_cn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="41" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-2.2058823">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/api/API_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="41" selection-start="1444" selection-end="1444" vertical-scroll-proportion="-4.9411764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/demo/cn/super/dragWithOther.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="235" column="68" selection-start="7703" selection-end="7703" vertical-scroll-proportion="-4.9411764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/cn/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/cn/comm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="34" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/en/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeWeb/web3.0_Design/lang/en/comm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="40" selection-start="160" selection-end="160" vertical-scroll-proportion="0.28901735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/core/click.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="21" selection-start="1925" selection-end="1925" vertical-scroll-proportion="-4.3235292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zTreeAPI/WebContent/demo/cn/super/left_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="27" selection-start="3642" selection-end="3642" vertical-scroll-proportion="0.6359223">
           <folding />
         </state>
       </provider>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE> ZTREE FAQ - v3 JSON </TITLE>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../../../css/faq.css" type="text/css">
+</HEAD>
+<BODY>
+<h1>请区分 JSON 字符串 / 对象</h1>
+<div class="content_wrap">
+	<div class="">
+		<ul class="info">
+			<li class="title"><br/>&nbsp;&nbsp;&nbsp;&nbsp;有不少朋友由于没有分清楚这两者的关系，导致使用 zTree 出现了错误，这里专门讲解一下：</li>
+			<li class="title"><br/>（1）JSON 对象是满足 JSON 数据格式的 JS 对象<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;例如： {name:"abc"}<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;最正规的 JSON 数据是连属性名称都要被包括起来的<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;例如： {"name":"abc"}<br/>
+			</li>
+			<li class="title"><br/>（2）JSON 格式的字符串的关键问题-- 它仅仅是一个字符串，只不过满足了 JSON 的数据格式 <br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;例如：'{"name":"abc"}'
+			</li>
+			<li class="title"><br/>&nbsp;&nbsp;&nbsp;&nbsp;看到两个例子的对比了吗？显而易见，关键问题就出在外面这两个单引号上。</li>
+			<li class="title"><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight_red">所以在生成 zTree 的数据时，请不要在数据外面再增加那两个单引号了！</span></li>
+			<li class="title"><br/>参考： <a href="http://www.json.org/json-zh.html" target="_blank">http://www.json.org/json-zh.html</a></li>
+		</ul>
+	</div>
+</div>
+</BODY>
+</HTML>

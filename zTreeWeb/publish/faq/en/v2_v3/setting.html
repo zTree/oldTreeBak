@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE> ZTREE FAQ - v2 PK v3 Setting</TITLE>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../../../css/faq.css" type="text/css">
+ </HEAD>
+
+<BODY>
+<h1>zTree v2.6 Setting VS v3.0 Setting</h1>
+<div class="content_wrap">
+	<div class="">
+		<ul class="info">
+			<li class="title"><h2>1. Overview</h2>
+				<ul class="list">
+				<li><b>zTree v2.6</b>: setting is very messy, mixed with attributes  of various types, is not conducive to search, is not conducive to upgrade.<br/>
+					<b>zTree v3.0</b>: The structure of the setting has been adjusted. <span class="highlight_red">As far as possible to see the property name to know its functionality, added some configuration attributes, and deleted the attributes which can't be set. (treeId / treeObj excluded)</span>
+				</li>				
+				</ul>
+			</li>
+			<li class="title"><h2>2. Detailed</h2>
+				<ul class="list">
+				<li class="highlight_red">It is arranged order by the zTree v3.0 structures. Because of limited space and time, please view the API documentation for specific instructions.</li>
+				<li>The only two non-configuration attributes in setting<br/>
+					<span class="param3_chg">setting.treeId</span> (v3.0) === <span class="param2">setting.treeObjId</span> (v2.6)<br/>
+					<span class="param3">setting.treeObj</span> (v3.0 & v2.6)
+				</li>
+				<li>The attributes about dynamic tree<br/>
+					<span class="param3_chg">setting.async.autoParam</span> (v3.0 increase features) === <span class="param2">setting.asyncParam</span> (v2.6)<br/>
+					<span class="param3_chg">setting.async.dataFilter</span> (v3.0) === <span class="param2">setting.asyncDataFilter</span> (v2.6)<br/>
+					<span class="param3_new">setting.async.dataType</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.async.enable</span> (v3.0) === <span class="param2">setting.async</span> (v2.6)<br/>
+					<span class="param3_chg">setting.async.otherParam</span> (v3.0) === <span class="param2">setting.asyncParamOther</span> (v2.6)<br/>
+					<span class="param3_new">setting.async.type</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.async.url</span> (v3.0 increase param: 'treeId') === <span class="param2">setting.asyncUrl</span> (v2.6)
+				</li>
+				<li>The attributes about callback<br/>
+					<span class="param3">setting.callback.beforeAsync</span> (v3.0 & v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeCheck</span> (v3.0) === <span class="param2">setting.callback.beforeChange</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeClick</span> (v3.0 & v2.6 increase param: 'clickFlag')<br/>
+					<span class="param3">setting.callback.beforeCollapse</span> (v3.0 & v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeDblClick</span> (v3.0) === <span class="param2">setting.callback.beforeDblclick</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeDrag</span> (v3.0 & v2.6 modify param: 'treeNodes' / 'moveType')<br/>
+					<span class="param3_chg">setting.callback.beforeDragOpen</span> (v3.0) === <span class="param2">setting.callback.confirmDragOpen</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeDrop</span> (v3.0 & v2.6 modify param: 'treeNodes' / 'moveType')<br/>
+					<span class="param3_chg">setting.callback.beforeEditName</span> (v3.0) === <span class="param2">setting.callback.beforeRename</span> (v2.6)<br/>
+					<span class="param3">setting.callback.beforeExpand</span> (v3.0 & v2.6)<br/>
+					<span class="param3">setting.callback.beforeMouseDown</span> (v3.0 & v2.6)<br/>
+					<span class="param3">setting.callback.beforeMouseUp</span> (v3.0 & v2.6)<br/>
+					<span class="param3">setting.callback.beforeRemove</span> (v3.0 & v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeRename</span> (v3.0) === <span class="param2">setting.callback.confirmRename</span> (v2.6)<br/>
+					<span class="param3">setting.callback.beforeRightClick</span> (v3.0 & v2.6)<br/>
+					<span class="param3_chg">setting.callback.onAsyncError</span> (v3.0) === <span class="param2">setting.callback.asyncError</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onAsyncSuccess</span> (v3.0) === <span class="param2">setting.callback.asyncSuccess</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onCheck</span> (v3.0) === <span class="param2">setting.callback.change</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onClick</span> (v3.0 increase param: 'clickFlag') === <span class="param2">setting.callback.click</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onCollapse</span> (v3.0) === <span class="param2">setting.callback.collapse</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onDblClick</span> (v3.0) === <span class="param2">setting.callback.dblclick</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onDrag</span> (v3.0 modify param: 'treeNodes' / 'moveType') === <span class="param2">setting.callback.drag</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onDrop</span> (v3.0 modify param: 'treeNodes' / 'moveType') === <span class="param2">setting.callback.drop</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onExpand</span> (v3.0) === <span class="param2">setting.callback.expand</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onMouseDown</span> (v3.0) === <span class="param2">setting.callback.mouseDown</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onMouseUp</span> (v3.0) === <span class="param2">setting.callback.mouseUp</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onNodeCreated</span> (v3.0) === <span class="param2">setting.callback.nodeCreated</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onRemove</span> (v3.0) === <span class="param2">setting.callback.remove</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onRename</span> (v3.0) === <span class="param2">setting.callback.rename</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onRightClick</span> (v3.0) === <span class="param2">setting.callback.rightClick</span> (v2.6)
+				</li>
+				<li>The attributes about checkbox / radio<br/>
+					<span class="param3_new">setting.check.autoCheckTrigger</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.check.chkboxType</span> (v3.0) === <span class="param2">setting.checkType</span> (v2.6)<br/>
+					<span class="param3_chg">setting.check.chkStyle</span> (v3.0) === <span class="param2">setting.checkStyle</span> (v2.6)<br/>
+					<span class="param3_chg">setting.check.enable</span> (v3.0) === <span class="param2">setting.checkable</span> (v2.6)<br/>
+					<span class="param3_new">setting.check.nocheckInherit</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.check.radioType</span> (v3.0) === <span class="param2">setting.checkRadioType</span> (v2.6)
+				</li>
+				<li>The attributes about node data<br/>
+					<span class="param3_chg">setting.data.keep.leaf</span> (v3.0) === <span class="param2">setting.keepLeaf</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.keep.parent</span> (v3.0) === <span class="param2">setting.keepParent</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.key.checked</span> (v3.0) === <span class="param2">setting.checkedCol</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.key.children</span> (v3.0) === <span class="param2">setting.nodesCol</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.key.name</span> (v3.0) === <span class="param2">setting.nameCol</span> (v2.6)<br/>
+					<span class="param3_new">setting.data.key.title</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.data.simpleData.enable</span> (v3.0) === <span class="param2">setting.isSimpleData</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.simpleData.idKey</span> (v3.0) === <span class="param2">setting.treeNodeKey</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.simpleData.pIdKey</span> (v3.0) === <span class="param2">setting.treeNodeParentKey</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.simpleData.rootPId</span> (v3.0) === <span class="param2">setting.rootPID</span> (v2.6)
+				</li>
+				<li>The attributes about editing tree<br/>
+					<span class="param3_new">setting.edit.drag.autoExpandTrigger</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.edit.drag.isCopy</span> (v3.0) === <span class="param2">setting.dragCopy</span> (v2.6)<br/>
+					<span class="param3_chg">setting.edit.drag.isMove</span> (v3.0) === <span class="param2">setting.dragMove</span> (v2.6)<br/>
+					<span class="param3_new">setting.edit.drag.prev</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.next</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.inner</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.borderMax</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.borderMin</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.minMoveSize</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.maxShowNodeNum</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.autoOpenTime</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.removeTitle</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.renameTitle</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.edit.enable</span> (v3.0) === <span class="param2">setting.editable</span> (v2.6)<br/>
+					<span class="param3_chg">setting.edit.showRemoveBtn</span> (v3.0 增加参数 treeId) === <span class="param2">setting.removeBtn</span> (v2.6)<br/>
+					<span class="param3_chg">setting.edit.showRenameBtn</span> (v3.0 增加参数 treeId) === <span class="param2">setting.renameBtn</span> (v2.6)
+				</li>
+				<li>The attributes about DOM display<br/>
+					<span class="param3_chg">setting.view.addDiyDom</span> (v3.0) === <span class="param2">setting.addDiyDom</span> (v2.6)<br/>
+					<span class="param3_chg">setting.view.addHoverDom</span> (v3.0) === <span class="param2">setting.addHoverDom</span> (v2.6)<br/>
+					<span class="param3_new">setting.view.autoCancelSelected</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.view.dblClickExpand</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.view.expandSpeed</span> (v3.0) === <span class="param2">setting.expandSpeed</span> (v2.6)<br/>
+					<span class="param3_chg">setting.view.fontCss</span> (v3.0) === <span class="param2">setting.fontCss</span> (v2.6)<br/>
+					<span class="param3_new">setting.view.nameIsHTML</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.view.removeHoverDom</span> (v3.0) === <span class="param2">setting.removeHoverDom</span> (v2.6)<br/>
+					<span class="param3_new">setting.view.selectedMulti</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.view.showIcon</span> (v3.0) === <span class="param2">setting.showIcon</span> (v2.6)<br/>
+					<span class="param3_chg">setting.view.showLine</span> (v3.0) === <span class="param2">setting.showLine</span> (v2.6)<br/>
+					<span class="param3_new">setting.view.showTitle</span> (v3.0 new)
+				</li>
+				<li>The attributes which have been deleted<br/>
+					<span class="param2 del">setting.root</span> (v2.6)<br/>
+					<span class="param2 del">setting.checkRadioCheckedList</span> (v2.6)<br/>
+					<span class="param2 del">setting.curEditTreeNode</span> (v2.6)<br/>
+					<span class="param2 del">setting.curTreeNode</span> (v2.6)<br/>
+					<span class="param2 del">setting.dragNodeShowBefore</span> (v2.6)<br/>
+					<span class="param2 del">setting.dragStatus</span> (v2.6)<br/>
+					<span class="param2 del">setting.expandTriggerFlag</span> (v2.6)
+				</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</BODY>
+</HTML>

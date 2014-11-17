@@ -1,4 +1,4 @@
- v3.5.17-beta.2
+ v3.5.17
  * http://zTree.me/
  *
  * Copyright (c) 2010 Hunter.z

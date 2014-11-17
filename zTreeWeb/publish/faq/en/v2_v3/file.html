@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE> ZTREE FAQ - v2 PK v3 Files</TITLE>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../../../css/faq.css" type="text/css">
+ </HEAD>
+
+<BODY>
+<h1>zTree v2.6 Files VS v3.0 Files</h1>
+<div class="content_wrap">
+	<div class="">
+		<ul class="info">
+			<li class="title"><h2>1、JS Files</h2>
+				<ul class="list">
+				<li><b>zTree v2.6</b> have only one js file, but with the additional features, the file is also growing.<br/>
+					<b>zTree v3.0</b> was split by function, there are three js files. <span class="highlight_red">One core pack ( jquery.ztree.core-3.0.js ), two expansion packs -- checkbox / radio pack( jquery.ztree.excheck-3.0.js ) & edit pack ( jquery.ztree.exedit-3.0.js )</span><br/>
+				</li>
+				<li>To use zTree v3.0, you must load <span class="highlight_red">core pack</span>, and loaded the expansion pack as needed. This structure is conducive to develop zTree features or tools, without affecting the basic function.</li>
+				<li>In use, recommend to merger 'expansion pack' and 'core package' into a js file, save network resources. <span class="highlight_red">When merge js, please ensure to the core package of code is on the front</span>.</li>
+				</ul>
+			</li>
+			<li class="title"><h2>2、Css Files</h2>
+				<ul class="list">
+				<li><b>zTree v2.6</b> have 2 css files. ( zTreeStyle.css & zTreeIcons.css )<br/>
+					<b>zTree v3.0</b> have only one file. ( zTreeStyle.css ), in order to avoid conflict of css style, <span class="highlight_red">the className of zTree's container have changed  into 'ztree'.</span>
+				</li>
+				<li>In zTree v3.0, the main DOM (e.g. li, ul, + / - icon, a)'s className attribute increase the text about level, so you can set independent style for different levels.</li>
+				<li>In zTree v3.0, modify some rules about className, can better control the css style, especially the custom icon 'iconSkin' can be the perfect support IE6.</li>
+				</ul>
+			</li>
+			<li class="title"><h2>3、Image Files</h2>
+				<ul class="list">
+				<li><b>zTree v2.6</b>: Icon file too, need loaded separately, is not conducive to optimizing<br/>
+					<b>zTree v3.0</b>: The main icons are merged into one file. <span class="highlight_red">Use the 'CSS Sprites' technology to show icon</span>
+				</li>
+				<li>In order to avoid the 'connect line' spacing 1 pixel problem, <span class="highlight_red">in zTree v3.0,  '+/-' icon retained 18 * 18 px, all the other icons change to 16 * 16 px</span>. Please note: To upgrade zTree v3.0, you need to modify the icons size</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</BODY>
+</HTML>

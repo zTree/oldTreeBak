@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE> ZTREE FAQ - v2 PK v3 Setting</TITLE>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="../../../css/faq.css" type="text/css">
+ </HEAD>
+
+<BODY>
+<h1>zTree v2.6 - v3.0 setting 配置对比</h1>
+<div class="content_wrap">
+	<div class="">
+		<ul class="info">
+			<li class="title"><h2>1、概述</h2>
+				<ul class="list">
+				<li><b>zTree v2.6</b> 的 setting 很杂乱，各类属性混在一起不利于查找，也不利于今后的升级<br/>
+					<b>zTree v3.0</b> 将 setting 进行了结构调整，<span class="highlight_red">尽量保证看到属性的定义就知道其功能，同时又扩充了一些配置属性，并且将不属于配置的部分从 setting 中进行了剔除 (treeId / treeObj 除外)</span>
+				</li>
+				
+				</ul>
+			</li>
+			<li class="title"><h2>2、详细对比说明</h2>
+				<ul class="list">
+				<li class="highlight_red">详细对比说明按照 v3.0 的结构顺序进行，由于篇幅和时间有限，还请对照 API 文档查看细节功能差异。</li>
+				<li>setting 仅存的两个非配置属性<br/>
+					<span class="param3_chg">setting.treeId</span> (v3.0) === <span class="param2">setting.treeObjId</span> (v2.6)<br/>
+					<span class="param3">setting.treeObj</span> (v3.0 & v2.6)
+				</li>
+				<li>异步加载系列的属性配置<br/>
+					<span class="param3_chg">setting.async.autoParam</span> (v3.0 增加功能) === <span class="param2">setting.asyncParam</span> (v2.6)<br/>
+					<span class="param3_chg">setting.async.dataFilter</span> (v3.0) === <span class="param2">setting.asyncDataFilter</span> (v2.6)<br/>
+					<span class="param3_new">setting.async.dataType</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.async.enable</span> (v3.0) === <span class="param2">setting.async</span> (v2.6)<br/>
+					<span class="param3_chg">setting.async.otherParam</span> (v3.0) === <span class="param2">setting.asyncParamOther</span> (v2.6)<br/>
+					<span class="param3_new">setting.async.type</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.async.url</span> (v3.0 增加参数 treeId) === <span class="param2">setting.asyncUrl</span> (v2.6)
+				</li>
+				<li>事件回调函数的属性配置<br/>
+					<span class="param3">setting.callback.beforeAsync</span> (v3.0 & v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeCheck</span> (v3.0) === <span class="param2">setting.callback.beforeChange</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeClick</span> (v3.0 & v2.6 增加参数 clickFlag)<br/>
+					<span class="param3">setting.callback.beforeCollapse</span> (v3.0 & v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeDblClick</span> (v3.0) === <span class="param2">setting.callback.beforeDblclick</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeDrag</span> (v3.0 & v2.6 更改参数 treeNodes / moveType)<br/>
+					<span class="param3_chg">setting.callback.beforeDragOpen</span> (v3.0) === <span class="param2">setting.callback.confirmDragOpen</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeDrop</span> (v3.0 & v2.6 更改参数 treeNodes / moveType)<br/>
+					<span class="param3_chg">setting.callback.beforeEditName</span> (v3.0) === <span class="param2">setting.callback.beforeRename</span> (v2.6)<br/>
+					<span class="param3">setting.callback.beforeExpand</span> (v3.0 & v2.6)<br/>
+					<span class="param3">setting.callback.beforeMouseDown</span> (v3.0 & v2.6)<br/>
+					<span class="param3">setting.callback.beforeMouseUp</span> (v3.0 & v2.6)<br/>
+					<span class="param3">setting.callback.beforeRemove</span> (v3.0 & v2.6)<br/>
+					<span class="param3_chg">setting.callback.beforeRename</span> (v3.0) === <span class="param2">setting.callback.confirmRename</span> (v2.6)<br/>
+					<span class="param3">setting.callback.beforeRightClick</span> (v3.0 & v2.6)<br/>
+					<span class="param3_chg">setting.callback.onAsyncError</span> (v3.0) === <span class="param2">setting.callback.asyncError</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onAsyncSuccess</span> (v3.0) === <span class="param2">setting.callback.asyncSuccess</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onCheck</span> (v3.0) === <span class="param2">setting.callback.change</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onClick</span> (v3.0 增加参数 clickFlag) === <span class="param2">setting.callback.click</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onCollapse</span> (v3.0) === <span class="param2">setting.callback.collapse</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onDblClick</span> (v3.0) === <span class="param2">setting.callback.dblclick</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onDrag</span> (v3.0 更改参数 treeNodes / moveType) === <span class="param2">setting.callback.drag</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onDrop</span> (v3.0 更改参数 treeNodes / moveType) === <span class="param2">setting.callback.drop</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onExpand</span> (v3.0) === <span class="param2">setting.callback.expand</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onMouseDown</span> (v3.0) === <span class="param2">setting.callback.mouseDown</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onMouseUp</span> (v3.0) === <span class="param2">setting.callback.mouseUp</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onNodeCreated</span> (v3.0) === <span class="param2">setting.callback.nodeCreated</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onRemove</span> (v3.0) === <span class="param2">setting.callback.remove</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onRename</span> (v3.0) === <span class="param2">setting.callback.rename</span> (v2.6)<br/>
+					<span class="param3_chg">setting.callback.onRightClick</span> (v3.0) === <span class="param2">setting.callback.rightClick</span> (v2.6)
+				</li>
+				<li>checkbox / radio 系列的属性配置<br/>
+					<span class="param3_new">setting.check.autoCheckTrigger</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.check.chkboxType</span> (v3.0) === <span class="param2">setting.checkType</span> (v2.6)<br/>
+					<span class="param3_chg">setting.check.chkStyle</span> (v3.0) === <span class="param2">setting.checkStyle</span> (v2.6)<br/>
+					<span class="param3_chg">setting.check.enable</span> (v3.0) === <span class="param2">setting.checkable</span> (v2.6)<br/>
+					<span class="param3_new">setting.check.nocheckInherit</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.check.radioType</span> (v3.0) === <span class="param2">setting.checkRadioType</span> (v2.6)
+				</li>
+				<li>节点数据系列的属性配置<br/>
+					<span class="param3_chg">setting.data.keep.leaf</span> (v3.0) === <span class="param2">setting.keepLeaf</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.keep.parent</span> (v3.0) === <span class="param2">setting.keepParent</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.key.checked</span> (v3.0) === <span class="param2">setting.checkedCol</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.key.children</span> (v3.0) === <span class="param2">setting.nodesCol</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.key.name</span> (v3.0) === <span class="param2">setting.nameCol</span> (v2.6)<br/>
+					<span class="param3_new">setting.data.key.title</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.data.simpleData.enable</span> (v3.0) === <span class="param2">setting.isSimpleData</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.simpleData.idKey</span> (v3.0) === <span class="param2">setting.treeNodeKey</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.simpleData.pIdKey</span> (v3.0) === <span class="param2">setting.treeNodeParentKey</span> (v2.6)<br/>
+					<span class="param3_chg">setting.data.simpleData.rootPId</span> (v3.0) === <span class="param2">setting.rootPID</span> (v2.6)
+				</li>
+				<li>编辑状态的属性配置<br/>
+					<span class="param3_new">setting.edit.drag.autoExpandTrigger</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.edit.drag.isCopy</span> (v3.0) === <span class="param2">setting.dragCopy</span> (v2.6)<br/>
+					<span class="param3_chg">setting.edit.drag.isMove</span> (v3.0) === <span class="param2">setting.dragMove</span> (v2.6)<br/>
+					<span class="param3_new">setting.edit.drag.prev</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.next</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.inner</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.borderMax</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.borderMin</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.minMoveSize</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.maxShowNodeNum</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.autoOpenTime</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.removeTitle</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.edit.drag.renameTitle</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.edit.enable</span> (v3.0) === <span class="param2">setting.editable</span> (v2.6)<br/>
+					<span class="param3_chg">setting.edit.showRemoveBtn</span> (v3.0 增加参数 treeId) === <span class="param2">setting.removeBtn</span> (v2.6)<br/>
+					<span class="param3_chg">setting.edit.showRenameBtn</span> (v3.0 增加参数 treeId) === <span class="param2">setting.renameBtn</span> (v2.6)
+				</li>
+				<li>显示相关的属性配置<br/>
+					<span class="param3_chg">setting.view.addDiyDom</span> (v3.0) === <span class="param2">setting.addDiyDom</span> (v2.6)<br/>
+					<span class="param3_chg">setting.view.addHoverDom</span> (v3.0) === <span class="param2">setting.addHoverDom</span> (v2.6)<br/>
+					<span class="param3_new">setting.view.autoCancelSelected</span> (v3.0 new)<br/>
+					<span class="param3_new">setting.view.dblClickExpand</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.view.expandSpeed</span> (v3.0) === <span class="param2">setting.expandSpeed</span> (v2.6)<br/>
+					<span class="param3_chg">setting.view.fontCss</span> (v3.0) === <span class="param2">setting.fontCss</span> (v2.6)<br/>
+					<span class="param3_new">setting.view.nameIsHTML</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.view.removeHoverDom</span> (v3.0) === <span class="param2">setting.removeHoverDom</span> (v2.6)<br/>
+					<span class="param3_new">setting.view.selectedMulti</span> (v3.0 new)<br/>
+					<span class="param3_chg">setting.view.showIcon</span> (v3.0) === <span class="param2">setting.showIcon</span> (v2.6)<br/>
+					<span class="param3_chg">setting.view.showLine</span> (v3.0) === <span class="param2">setting.showLine</span> (v2.6)<br/>
+					<span class="param3_new">setting.view.showTitle</span> (v3.0 new)
+				</li>
+				<li>其他被删除的属性配置<br/>
+					v3.0 把以下都属于 zTree 内部使用的属性，从 setting 中完全剥离出来<br/>
+					<span class="param2 del">setting.root</span> (v2.6)<br/>
+					<span class="param2 del">setting.checkRadioCheckedList</span> (v2.6)<br/>
+					<span class="param2 del">setting.curEditTreeNode</span> (v2.6)<br/>
+					<span class="param2 del">setting.curTreeNode</span> (v2.6)<br/>
+					<span class="param2 del">setting.dragNodeShowBefore</span> (v2.6)<br/>
+					<span class="param2 del">setting.dragStatus</span> (v2.6)<br/>
+					<span class="param2 del">setting.expandTriggerFlag</span> (v2.6)
+				</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</BODY>
+</HTML>
