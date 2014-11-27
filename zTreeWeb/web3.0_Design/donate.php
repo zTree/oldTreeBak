@@ -19,7 +19,7 @@ include( "head.php")
 							<td style="width:50%;text-align:center;"><img src="img/alipayLogo.png"></td>
 							<td style="width:50%;text-align:center;"><img src="img/paypalLogo.png"></td>
 						</tr>
-						<tr>
+						<tr style="height:300px">
 							<td style="text-align:center;">
 								<?php echo $donate_alipay_account ?>
 								<br/><br/>
@@ -32,7 +32,7 @@ include( "head.php")
 								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 								<input type="hidden" name="cmd" value="_s-xclick">
 								<input type="hidden" name="encrypted" value="<?php echo $donate_paypal_encrypted ?>">
-								<input type="image" src="/v3/img/paypalPage_<?php echo $lang ?>.png" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
+								<input type="image" src="img/paypalPage_<?php echo $lang ?>.png" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
 								<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
 								</form>
 							</td>
