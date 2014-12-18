@@ -35,6 +35,13 @@
             </li>
         </ul>
     </div>
+    <div class="tool">
+        <ul>
+            <li>
+                <button type="button" id="addLeftRoot" onclick="addLeftRoot()">add Root Left Tree</button>
+            </li>
+        </ul>
+    </div>
 </div>
 <div class="content_wrap">
     <div class="zTreeDemoBackground left">
@@ -165,6 +172,19 @@
 		//ajax success return
 		callback(newData);
 	}
+
+    newRootCount = 1;
+    function addLeftRoot() {
+        GameTree.addLeftRoot({
+                id: '######',
+                pId: 0,
+                name: "New Root " + (newRootCount++),
+                externalID: 123,
+                isParent: true,
+                isNew: true,
+                isManual: true
+            });
+    }
     //-->
 </SCRIPT>
 </BODY>

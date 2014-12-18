@@ -147,14 +147,20 @@ var GameTree = (function () {
 				$add = $("#addBtn_" + treeNode.tId);
 				if ($add) $add.bind("click", function () {
 					var newFolder = {id: NewId, pId: treeNode.id, name: '', isParent: true, isNew: true, isManual: true};
-					newFolder[ATTR.POWER] = true;
-					newFolder[ATTR.ExternalID] = 0;
-					var nodes = leftTree.treeObj.addNodes(treeNode, newFolder);
-					leftTree.treeObj.editName(nodes[0]);
+                    leftTree.addFolder(treeNode, newFolder);
 					return false;
 				});
 			}
 		},
+        addFolder: function(parentNode, newFolder) {
+            newFolder[ATTR.POWER] = true;
+            newFolder[ATTR.ExternalID] = 0;
+            var nodes = leftTree.treeObj.addNodes(parentNode, newFolder);
+            if (parentNode && nodes[0].getPreNode()) {
+                leftTree.treeObj.moveNode(parentNode.children[0], nodes[0], 'prev');
+            }
+            leftTree.treeObj.editName(nodes[0]);
+        },
 		beforeRemove: function (treeId, treeNode) {
 			return confirm('Do you really want to delete?');
 		},
@@ -543,6 +549,9 @@ var GameTree = (function () {
 
 
     return {
+        addLeftRoot: function(node) {
+            leftTree.addFolder(null, node);
+        },
         initLeft: function (nodes, options) {
             leftTree.init(leftSetting, nodes, options);
         },
