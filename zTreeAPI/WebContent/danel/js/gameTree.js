@@ -146,13 +146,17 @@ var GameTree = (function () {
 				$edit.after(addStr);
 				$add = $("#addBtn_" + treeNode.tId);
 				if ($add) $add.bind("click", function () {
-					var newFolder = {id: NewId, pId: treeNode.id, name: '', isParent: true, isNew: true, isManual: true};
-                    leftTree.addFolder(treeNode, newFolder);
+                    leftTree.addFolder(treeNode);
 					return false;
 				});
 			}
 		},
-        addFolder: function(parentNode, newFolder) {
+        addFolder: function(parentNode) {
+            var newFolder = {id: NewId, name: ''};
+            newFolder.pId = parentNode ? parentNode.id : 0;
+            newFolder.isParent = true;
+            newFolder.isNew = true;
+            newFolder.isManual = true;
             newFolder[ATTR.POWER] = true;
             newFolder[ATTR.ExternalID] = 0;
             var nodes = leftTree.treeObj.addNodes(parentNode, newFolder);

@@ -173,17 +173,8 @@
 		callback(newData);
 	}
 
-    newRootCount = 1;
     function addLeftRoot() {
-        GameTree.addLeftRoot({
-                id: '######',
-                pId: 0,
-                name: "New Root " + (newRootCount++),
-                externalID: 123,
-                isParent: true,
-                isNew: true,
-                isManual: true
-            });
+        GameTree.addLeftRoot();
     }
     //-->
 </SCRIPT>

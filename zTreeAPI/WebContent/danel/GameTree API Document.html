@@ -9,29 +9,51 @@
 
 <div class="md-section-divider"></div>
 
-<h1 id="gametree-api-document" data-anchor-id="igvf">GameTree API Document</h1>
+<h1 id="gametree-api-document" data-anchor-id="9x3i">GameTree API Document</h1>
 
-<p data-anchor-id="3ez7"><strong>source file:</strong> <em>gameTree.js</em></p>
+<p data-anchor-id="9sa1"><strong>source file:</strong> <em>gameTree.js</em></p>
 
-<p data-anchor-id="65of"><strong>dependent lib:</strong>  <em>jQuery v1.4.4+</em>,  <em>zTree v3.5</em></p>
+<p data-anchor-id="xaju"><strong>dependent lib:</strong>  <em>jQuery v1.4.4+</em>,  <em>zTree v3.5</em></p>
 
-<p data-anchor-id="lo24"><strong>demo file:</strong> <em>gameTree.html</em></p>
+<p data-anchor-id="4e7j"><strong>demo file:</strong> <em>gameTree.html</em></p>
 
 <hr>
 
 <div class="md-section-divider"></div>
 
-<h2 id="gametreeinitleftnodes-options" data-anchor-id="x5k6">GameTree.initLeft(nodes, options)</h2>
+<h2 id="gametreeaddleftroot" data-anchor-id="z462">GameTree.addLeftRoot()</h2>
 
-<blockquote data-anchor-id="qgq3" class="white-blockquote">
+<blockquote data-anchor-id="fowa" class="white-blockquote">
+  <p>add root in the left tree</p>
+</blockquote>
+
+<div class="md-section-divider"></div>
+
+<h3 id="1-params" data-anchor-id="ovui">1) params</h3>
+
+<blockquote data-anchor-id="lycr" class="white-blockquote">
+  <p>none</p>
+</blockquote>
+
+<div class="md-section-divider"></div>
+
+<h3 id="2-return-none" data-anchor-id="l65n">2) return: None</h3>
+
+<hr>
+
+<div class="md-section-divider"></div>
+
+<h2 id="gametreeinitleftnodes-options" data-anchor-id="jbqv">GameTree.initLeft(nodes, options)</h2>
+
+<blockquote data-anchor-id="1h9n" class="white-blockquote">
   <p>init the left tree</p>
 </blockquote>
 
 <div class="md-section-divider"></div>
 
-<h3 id="1-params" data-anchor-id="1nzx">1) params</h3>
+<h3 id="1-params-1" data-anchor-id="cdmf">1) params</h3>
 
-<blockquote data-anchor-id="x912" class="white-blockquote">
+<blockquote data-anchor-id="rezh" class="white-blockquote">
   <p><strong>nodes (Array)</strong> <br>
   The nodes data of the left tree. <br>
   <em>Please set the 'isParent=true' to folder's data.</em></p>
@@ -39,9 +61,9 @@
 
 <div class="md-section-divider"></div>
 
-<pre class="prettyprint linenums prettyprinted" data-anchor-id="p6qe"><ol class="linenums"><li class="L0"><code><span class="pln">example</span><span class="pun">:</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="pun">[</span></code></li><li class="L3"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Folder 001"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">123</span><span class="pun">,</span><span class="pln"> isParent</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> open</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> power</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">},</span></code></li><li class="L4"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">11</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Folder 011"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">123</span><span class="pun">,</span><span class="pln"> isParent</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> power</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">},</span></code></li><li class="L5"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1111</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">111</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Game 011"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">95501</span><span class="pun">,</span><span class="pln"> externalTime</span><span class="pun">:</span><span class="pln"> </span><span class="str">'yesterday'</span><span class="pun">,</span><span class="pln"> power</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">}</span></code></li><li class="L6"><code><span class="pun">]</span></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted" data-anchor-id="rckp"><ol class="linenums"><li class="L0"><code><span class="pln">example</span><span class="pun">:</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="pun">[</span></code></li><li class="L3"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Folder 001"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">123</span><span class="pun">,</span><span class="pln"> isParent</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> open</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> power</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">},</span></code></li><li class="L4"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">11</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Folder 011"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">123</span><span class="pun">,</span><span class="pln"> isParent</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> power</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">},</span></code></li><li class="L5"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1111</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">111</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Game 011"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">95501</span><span class="pun">,</span><span class="pln"> externalTime</span><span class="pun">:</span><span class="pln"> </span><span class="str">'yesterday'</span><span class="pun">,</span><span class="pln"> power</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">}</span></code></li><li class="L6"><code><span class="pun">]</span></code></li></ol></pre>
 
-<blockquote data-anchor-id="xh2t" class="white-blockquote">
+<blockquote data-anchor-id="ee1y" class="white-blockquote">
   <p><strong>options (JSON)</strong> <br>
   Setting of the left tree <br>
   Mainly to set the callback.</p>
@@ -49,27 +71,27 @@
 
 <div class="md-section-divider"></div>
 
-<pre class="prettyprint linenums prettyprinted" data-anchor-id="pbds"><ol class="linenums"><li class="L0"><code><span class="pln">example</span><span class="pun">:</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="pun">{</span></code></li><li class="L3"><code><span class="pln">    treeId</span><span class="pun">:</span><span class="pln"> </span><span class="str">'leftTree'</span><span class="pun">,</span><span class="pln">  </span><span class="com">//The left tree's id</span></code></li><li class="L4"><code><span class="pln">    callback</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">        </span><span class="com">//When user change folder or game's status, will trigger it</span></code></li><li class="L6"><code><span class="pln">        changeStatus</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodes</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{},</span></code></li><li class="L7"><code></code></li><li class="L8"><code><span class="pln">        </span><span class="com">//When add folder or game, will trigger it</span></code></li><li class="L9"><code><span class="pln">        </span><span class="com">//the callback can update nodes's id, please return like:</span></code></li><li class="L0"><code><span class="pln">        </span><span class="com">// {tId:xxx, id:yyy}</span></code></li><li class="L1"><code><span class="pln">        add</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodes</span><span class="pun">,</span><span class="pln"> callback</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{},</span></code></li><li class="L2"><code></code></li><li class="L3"><code><span class="pln">        </span><span class="com">//When remove a folder or game, will trigger it</span></code></li><li class="L4"><code><span class="pln">        remove</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodeId</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{},</span></code></li><li class="L5"><code></code></li><li class="L6"><code><span class="pln">        </span><span class="com">//When rename a folder or game's name, will trigger it</span></code></li><li class="L7"><code><span class="pln">        rename</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">node</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{},</span></code></li><li class="L8"><code></code></li><li class="L9"><code><span class="pln">        </span><span class="com">//When drag&amp;drop to change a folder or game's position, will trigger it</span></code></li><li class="L0"><code><span class="pln">        sorted</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodes</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{}</span></code></li><li class="L1"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L2"><code><span class="pun">}</span></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted" data-anchor-id="703d"><ol class="linenums"><li class="L0"><code><span class="pln">example</span><span class="pun">:</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="pun">{</span></code></li><li class="L3"><code><span class="pln">    treeId</span><span class="pun">:</span><span class="pln"> </span><span class="str">'leftTree'</span><span class="pun">,</span><span class="pln">  </span><span class="com">//The left tree's id</span></code></li><li class="L4"><code><span class="pln">    callback</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">        </span><span class="com">//When user change folder or game's status, will trigger it</span></code></li><li class="L6"><code><span class="pln">        changeStatus</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodes</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{},</span></code></li><li class="L7"><code></code></li><li class="L8"><code><span class="pln">        </span><span class="com">//When add folder or game, will trigger it</span></code></li><li class="L9"><code><span class="pln">        </span><span class="com">//the callback can update nodes's id, please return like:</span></code></li><li class="L0"><code><span class="pln">        </span><span class="com">// {tId:xxx, id:yyy}</span></code></li><li class="L1"><code><span class="pln">        add</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodes</span><span class="pun">,</span><span class="pln"> callback</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{},</span></code></li><li class="L2"><code></code></li><li class="L3"><code><span class="pln">        </span><span class="com">//When remove a folder or game, will trigger it</span></code></li><li class="L4"><code><span class="pln">        remove</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodeId</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{},</span></code></li><li class="L5"><code></code></li><li class="L6"><code><span class="pln">        </span><span class="com">//When rename a folder or game's name, will trigger it</span></code></li><li class="L7"><code><span class="pln">        rename</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">node</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{},</span></code></li><li class="L8"><code></code></li><li class="L9"><code><span class="pln">        </span><span class="com">//When drag&amp;drop to change a folder or game's position, will trigger it</span></code></li><li class="L0"><code><span class="pln">        sorted</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodes</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{}</span></code></li><li class="L1"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L2"><code><span class="pun">}</span></code></li></ol></pre>
 
 <div class="md-section-divider"></div>
 
-<h3 id="2-return-none" data-anchor-id="4o3m">2) return: None</h3>
+<h3 id="2-return-none-1" data-anchor-id="wvrl">2) return: None</h3>
 
 <hr>
 
 <div class="md-section-divider"></div>
 
-<h2 id="gametreeinitrightnodes-options" data-anchor-id="9z96">GameTree.initRight(nodes, options)</h2>
+<h2 id="gametreeinitrightnodes-options" data-anchor-id="zs00">GameTree.initRight(nodes, options)</h2>
 
-<blockquote data-anchor-id="s7v9" class="white-blockquote">
+<blockquote data-anchor-id="2asg" class="white-blockquote">
   <p>init the right tree</p>
 </blockquote>
 
 <div class="md-section-divider"></div>
 
-<h3 id="1-params-1" data-anchor-id="251u">1) params</h3>
+<h3 id="1-params-2" data-anchor-id="p769">1) params</h3>
 
-<blockquote data-anchor-id="jvmd" class="white-blockquote">
+<blockquote data-anchor-id="t1sn" class="white-blockquote">
   <p><strong>nodes (Array)</strong> <br>
   The nodes data of the right tree. <br>
   <em>Please set the 'isParent=true' to folder's data.</em></p>
@@ -77,9 +99,9 @@
 
 <div class="md-section-divider"></div>
 
-<pre class="prettyprint linenums prettyprinted" data-anchor-id="dyns"><ol class="linenums"><li class="L0"><code><span class="pln">example</span><span class="pun">:</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="pun">[</span></code></li><li class="L3"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Folder 001"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">123</span><span class="pun">,</span><span class="pln"> isParent</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> open</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">},</span></code></li><li class="L4"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1111</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Game 011"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">96501</span><span class="pun">,</span><span class="pln"> externalTime</span><span class="pun">:</span><span class="pln"> </span><span class="str">'yesterday 12:13'</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">},</span></code></li><li class="L5"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1112</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Game 012"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">96502</span><span class="pun">,</span><span class="pln"> externalTime</span><span class="pun">:</span><span class="pln"> </span><span class="str">'2014-11-11 11:11'</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">}</span></code></li><li class="L6"><code><span class="pun">]</span></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted" data-anchor-id="wrn1"><ol class="linenums"><li class="L0"><code><span class="pln">example</span><span class="pun">:</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="pun">[</span></code></li><li class="L3"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Folder 001"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">123</span><span class="pun">,</span><span class="pln"> isParent</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> open</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">},</span></code></li><li class="L4"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1111</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Game 011"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">96501</span><span class="pun">,</span><span class="pln"> externalTime</span><span class="pun">:</span><span class="pln"> </span><span class="str">'yesterday 12:13'</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">},</span></code></li><li class="L5"><code><span class="pun">{</span><span class="pln"> id</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1112</span><span class="pun">,</span><span class="pln"> pId</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Game 012"</span><span class="pun">,</span><span class="pln"> externalID</span><span class="pun">:</span><span class="pln"> </span><span class="lit">96502</span><span class="pun">,</span><span class="pln"> externalTime</span><span class="pun">:</span><span class="pln"> </span><span class="str">'2014-11-11 11:11'</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">}</span></code></li><li class="L6"><code><span class="pun">]</span></code></li></ol></pre>
 
-<blockquote data-anchor-id="jwel" class="white-blockquote">
+<blockquote data-anchor-id="qbu9" class="white-blockquote">
   <p><strong>options (JSON)</strong> <br>
   Setting of the right tree <br>
   Mainly to set the callback.</p>
@@ -87,27 +109,27 @@
 
 <div class="md-section-divider"></div>
 
-<pre class="prettyprint linenums prettyprinted" data-anchor-id="rtup"><ol class="linenums"><li class="L0"><code><span class="pln">example</span><span class="pun">:</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="pun">{</span></code></li><li class="L3"><code><span class="pln">    treeId</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rightTree'</span><span class="pun">,</span><span class="pln">  </span><span class="com">//The right tree's id</span></code></li><li class="L4"><code><span class="pln">    callback</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">        </span><span class="com">//When user change folder or game's status, will trigger it</span></code></li><li class="L6"><code><span class="pln">        changeStatus</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodes</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{}</span></code></li><li class="L7"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L8"><code><span class="pun">}</span></code></li></ol></pre>
+<pre class="prettyprint linenums prettyprinted" data-anchor-id="tgun"><ol class="linenums"><li class="L0"><code><span class="pln">example</span><span class="pun">:</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="pun">{</span></code></li><li class="L3"><code><span class="pln">    treeId</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rightTree'</span><span class="pun">,</span><span class="pln">  </span><span class="com">//The right tree's id</span></code></li><li class="L4"><code><span class="pln">    callback</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">        </span><span class="com">//When user change folder or game's status, will trigger it</span></code></li><li class="L6"><code><span class="pln">        changeStatus</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">nodes</span><span class="pun">,</span><span class="pln"> status</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{}</span></code></li><li class="L7"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L8"><code><span class="pun">}</span></code></li></ol></pre>
 
 <div class="md-section-divider"></div>
 
-<h3 id="2-return-none-1" data-anchor-id="gj4h">2) return: None</h3>
+<h3 id="2-return-none-2" data-anchor-id="sylv">2) return: None</h3>
 
 <hr>
 
 <div class="md-section-divider"></div>
 
-<h2 id="gametreeexpandleftflag" data-anchor-id="5ei4">GameTree.expandLeft(flag)</h2>
+<h2 id="gametreeexpandleftflag" data-anchor-id="sbv8">GameTree.expandLeft(flag)</h2>
 
-<blockquote data-anchor-id="8pwa" class="white-blockquote">
+<blockquote data-anchor-id="xu5r" class="white-blockquote">
   <p>expand/collapse all folder of the left tree</p>
 </blockquote>
 
 <div class="md-section-divider"></div>
 
-<h3 id="1-params-2" data-anchor-id="a5iq">1) params</h3>
+<h3 id="1-params-3" data-anchor-id="z8n0">1) params</h3>
 
-<blockquote data-anchor-id="ptvd" class="white-blockquote">
+<blockquote data-anchor-id="dtij" class="white-blockquote">
   <p><strong>flag (Boolean)</strong> <br>
   flag = true   will expand all folder. <br>
   flag = false  will collapse all folder.</p>
@@ -115,23 +137,23 @@
 
 <div class="md-section-divider"></div>
 
-<h3 id="2-return-none-2" data-anchor-id="5jof">2) return: None</h3>
+<h3 id="2-return-none-3" data-anchor-id="gh7m">2) return: None</h3>
 
 <hr>
 
 <div class="md-section-divider"></div>
 
-<h2 id="gametreeexpandrightflag" data-anchor-id="ri10">GameTree.expandRight(flag)</h2>
+<h2 id="gametreeexpandrightflag" data-anchor-id="1gdu">GameTree.expandRight(flag)</h2>
 
-<blockquote data-anchor-id="997x" class="white-blockquote">
+<blockquote data-anchor-id="tuo2" class="white-blockquote">
   <p>expand/collapse all folder of the right tree</p>
 </blockquote>
 
 <div class="md-section-divider"></div>
 
-<h3 id="1-params-3" data-anchor-id="4jow">1) params</h3>
+<h3 id="1-params-4" data-anchor-id="5n4c">1) params</h3>
 
-<blockquote data-anchor-id="xns7" class="white-blockquote">
+<blockquote data-anchor-id="rdhl" class="white-blockquote">
   <p><strong>flag (Boolean)</strong> <br>
   flag = true   will expand all folder. <br>
   flag = false  will collapse all folder.</p>
@@ -139,23 +161,23 @@
 
 <div class="md-section-divider"></div>
 
-<h3 id="2-return-none-3" data-anchor-id="143z">2) return: None</h3>
+<h3 id="2-return-none-4" data-anchor-id="7icn">2) return: None</h3>
 
 <hr>
 
 <div class="md-section-divider"></div>
 
-<h2 id="gametreeshowleftidflag" data-anchor-id="5ttg">GameTree.showLeftID(flag)</h2>
+<h2 id="gametreeshowleftidflag" data-anchor-id="ivn5">GameTree.showLeftID(flag)</h2>
 
-<blockquote data-anchor-id="h88v" class="white-blockquote">
+<blockquote data-anchor-id="18h4" class="white-blockquote">
   <p>show/hide externalID of the left tree</p>
 </blockquote>
 
 <div class="md-section-divider"></div>
 
-<h3 id="1-params-4" data-anchor-id="ufv4">1) params</h3>
+<h3 id="1-params-5" data-anchor-id="ggv3">1) params</h3>
 
-<blockquote data-anchor-id="jlte" class="white-blockquote">
+<blockquote data-anchor-id="c19h" class="white-blockquote">
   <p><strong>flag (Boolean)</strong> <br>
   flag = true   will show externalID. <br>
   flag = false  will hide externalID.</p>
@@ -163,23 +185,23 @@
 
 <div class="md-section-divider"></div>
 
-<h3 id="2-return-none-4" data-anchor-id="d7i0">2) return: None</h3>
+<h3 id="2-return-none-5" data-anchor-id="4o8p">2) return: None</h3>
 
 <hr>
 
 <div class="md-section-divider"></div>
 
-<h2 id="gametreeshowrightidflag" data-anchor-id="xbky">GameTree.showRightID(flag)</h2>
+<h2 id="gametreeshowrightidflag" data-anchor-id="6oik">GameTree.showRightID(flag)</h2>
 
-<blockquote data-anchor-id="aetm" class="white-blockquote">
+<blockquote data-anchor-id="170c" class="white-blockquote">
   <p>show/hide externalID of the right tree</p>
 </blockquote>
 
 <div class="md-section-divider"></div>
 
-<h3 id="1-params-5" data-anchor-id="dz8o">1) params</h3>
+<h3 id="1-params-6" data-anchor-id="1nwe">1) params</h3>
 
-<blockquote data-anchor-id="sgcq" class="white-blockquote">
+<blockquote data-anchor-id="jxbz" class="white-blockquote">
   <p><strong>flag (Boolean)</strong> <br>
   flag = true   will show externalID. <br>
   flag = false  will hide externalID.</p>
@@ -187,23 +209,23 @@
 
 <div class="md-section-divider"></div>
 
-<h3 id="2-return-none-5" data-anchor-id="wydi">2) return: None</h3>
+<h3 id="2-return-none-6" data-anchor-id="ucvs">2) return: None</h3>
 
 <hr>
 
 <div class="md-section-divider"></div>
 
-<h2 id="gametreeshowlefttimeflag" data-anchor-id="bha9">GameTree.showLeftTime(flag)</h2>
+<h2 id="gametreeshowlefttimeflag" data-anchor-id="z4qu">GameTree.showLeftTime(flag)</h2>
 
-<blockquote data-anchor-id="2s4g" class="white-blockquote">
+<blockquote data-anchor-id="fraj" class="white-blockquote">
   <p>show/hide externalTime of the left tree</p>
 </blockquote>
 
 <div class="md-section-divider"></div>
 
-<h3 id="1-params-6" data-anchor-id="ulmn">1) params</h3>
+<h3 id="1-params-7" data-anchor-id="7btp">1) params</h3>
 
-<blockquote data-anchor-id="0vap" class="white-blockquote">
+<blockquote data-anchor-id="0o27" class="white-blockquote">
   <p><strong>flag (Boolean)</strong> <br>
   flag = true   will show externalTime. <br>
   flag = false  will hide externalTime.</p>
@@ -211,23 +233,23 @@
 
 <div class="md-section-divider"></div>
 
-<h3 id="2-return-none-6" data-anchor-id="xgwh">2) return: None</h3>
+<h3 id="2-return-none-7" data-anchor-id="3omj">2) return: None</h3>
 
 <hr>
 
 <div class="md-section-divider"></div>
 
-<h2 id="gametreeshowrighttimeflag" data-anchor-id="76sl">GameTree.showRightTime(flag)</h2>
+<h2 id="gametreeshowrighttimeflag" data-anchor-id="t8ua">GameTree.showRightTime(flag)</h2>
 
-<blockquote data-anchor-id="cy1u" class="white-blockquote">
+<blockquote data-anchor-id="5jfc" class="white-blockquote">
   <p>show/hide externalTime of the right tree</p>
 </blockquote>
 
 <div class="md-section-divider"></div>
 
-<h3 id="1-params-7" data-anchor-id="7ck5">1) params</h3>
+<h3 id="1-params-8" data-anchor-id="55fn">1) params</h3>
 
-<blockquote data-anchor-id="jwj9" class="white-blockquote">
+<blockquote data-anchor-id="tvbd" class="white-blockquote">
   <p><strong>flag (Boolean)</strong> <br>
   flag = true   will show externalTime. <br>
   flag = false  will hide externalTime.</p>
@@ -235,6 +257,6 @@
 
 <div class="md-section-divider"></div>
 
-<h3 id="2-return-none-7" data-anchor-id="ko8q">2) return: None</h3>
+<h3 id="2-return-none-8" data-anchor-id="jny9">2) return: None</h3>
 </body>
 </html>

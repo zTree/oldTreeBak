@@ -8,6 +8,16 @@
 
 ----
 
+##GameTree.addLeftRoot()
+> add root in the left tree
+
+### 1) params
+
+> none
+
+### 2) return: None
+----
+
 ##GameTree.initLeft(nodes, options)
 > init the left tree
 
