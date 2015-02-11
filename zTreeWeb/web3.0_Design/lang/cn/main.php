@@ -38,6 +38,7 @@ $link_fineui = "<a href='http://fineui.com/' target='_blank' title='基于 ExtJS
 $link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C#源码'>C#源码</a>";
 $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net源码'>Asp.net源码</a>";
 $link_zuicode = "<a href='http://www.zuidaima.com/' target='_blank' title='最代码'>最代码</a>";
+$link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables中国'>Datatables中国</a>";
 
 $contact_title = "联系我们";
 $contact_option1 = "喜欢 Google 的朋友可以去 Google Code：";

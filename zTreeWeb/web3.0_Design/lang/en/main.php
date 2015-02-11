@@ -38,6 +38,7 @@ $link_fineui = "<a href='http://fineui.com/demo_en/' target='_blank' title='Fine
 $link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C# SourceCode'>C# SourceCode</a>";
 $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net SourceCode'>Asp.net SourceCode</a>";
 $link_zuicode = "<a href='http://www.zuidaima.com/' target='_blank' title='Perfect Code'>Perfect Code</a>";
+$link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables China'>Datatables China</a>";
 
 $contact_title = "Contact Us";
 $contact_option1 = "If you like Google, you can go to Google Code: ";
