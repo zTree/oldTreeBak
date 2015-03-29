@@ -62,7 +62,8 @@ $demo_menu_509 = "Drop-down Menu with checkbox";
 $demo_menu_510 = "Drop-down Menu with radio";
 $demo_menu_511 = "Drag With Other DOMs";
 $demo_menu_512 = "Expand All Nodes with Async";
-$demo_menu_513 = "Left Menu Like OutLook Style";
+$demo_menu_513 = "OutLook Style";
+$demo_menu_514 = "Metro Style";
 
 $demo_menu_6 = "Other Extension Package";
 $demo_menu_601 = "hide ordinary node";
