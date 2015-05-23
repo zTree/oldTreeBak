@@ -1,16 +1,12 @@
 /*-------------------------------------
 zTree Style
 
-version:    1.0
+version:    3.4
 author:     Mike King
 email:      mikkelking @ hotmail . com
-website:    http://code.google.com/p/jquerytree/
+website:    thtp://code.google.com/p/jquerytree/
 
 -------------------------------------*/
-/* Definitions ----------------------*/
-/* End of Definitions ---------------*/
-/* Imports  -------------------------*/
-/* End of Imports  ------------------*/
 .ztree * {
   padding: 0;
   margin: 0;
@@ -34,7 +30,7 @@ website:    http://code.google.com/p/jquerytree/
   outline: 0;
 }
 .ztree li ul {
-  margin: 0px;
+  margin: 0;
   padding: 0 0 0 18px;
 }
 .ztree li ul.line {
@@ -111,22 +107,18 @@ website:    http://code.google.com/p/jquerytree/
   width: 13px;
   height: 13px;
   margin: 0 2px;
-  cursor: auto;
+  cursor: auto;  
+  padding-top: 7px;
+  padding-left: 1px;
+  display: inline-block;
+  font-family: FontAwesome;
+  color: white;
 }
 .ztree li span.button.chk.checkbox_false_full::before {
   content: "\f096";
-  font-family: FontAwesome;
-  padding-top: 7px;
-  padding-left: 1px;
-  display: inline-block;
-  color: white;
 }
 .ztree li span.button.chk.checkbox_false_full_focus::before {
   content: "\f096";
-  font-family: FontAwesome;
-  padding-top: 7px;
-  padding-left: 1px;
-  display: inline-block;
   color: yellow;
 }
 .ztree li span.button.chk.checkbox_false_part {

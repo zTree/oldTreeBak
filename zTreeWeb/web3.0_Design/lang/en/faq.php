@@ -2,7 +2,7 @@
 $web_title = "FAQ [zTree -- jQuery tree plug-ins.]";
 
 $title = "zTree v3.x FAQ";
-$title_info = "Want to quick start? You have to look at the FAQ which is the stuff I worked on for a long time.";
+$title_info = "No time to read the documentaation? Work it out quickly by looking at the FAQ.";
 
 $faq_menu_1 = "v2.6 Details VS v3.0 Details";
 $faq_menu_101 = "v2.6 Files VS v3.0 Files";
@@ -15,7 +15,7 @@ $faq_menu_201 = "Note";
 $faq_menu_202 = "jQuery Version Requirement?";
 $faq_menu_203 = "How to Solve Css Style Error?";
 $faq_menu_204 = "JSON String / Object";
-$faq_menu_205 = "How to submit the node data?";
+$faq_menu_205 = "How to submit node data?";
 $faq_menu_206 = "Getting Started Guide";
-$faq_menu_207 = "About the Asynchronous Load";
+$faq_menu_207 = "Lazy Loading";
 ?>
