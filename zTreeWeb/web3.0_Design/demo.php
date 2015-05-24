@@ -102,6 +102,7 @@ var menu_nodes =[
 	{id:513, pId:5, name:"<?php echo $demo_menu_513?>", iconSkin:"menu", file:"super/left_menuForOutLook"},
 	{id:514, pId:5, name:"<?php echo $demo_menu_514?>", iconSkin:"menu", file:"super/metro"},
         {id:515, pId:5, name:"<?php echo $demo_menu_515?>", iconSkin:"menu", file:"super/awesome"},
+        {id:516, pId:5, name:"<?php echo $demo_menu_516?>", iconSkin:"menu", file:"super/ztree"},
         {id:507, pId:5, name:"<?php echo $demo_menu_507?>", iconSkin:"menu", file:"super/select_menu"},
 	{id:509, pId:5, name:"<?php echo $demo_menu_509?>", iconSkin:"menu", file:"super/select_menu_checkbox"},
 	{id:510, pId:5, name:"<?php echo $demo_menu_510?>", iconSkin:"menu", file:"super/select_menu_radio"},
