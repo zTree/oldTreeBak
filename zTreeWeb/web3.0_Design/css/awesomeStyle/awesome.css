@@ -450,7 +450,7 @@ website:    http://code.google.com/p/jquerytree/
   margin-right: -1px;
   vertical-align: top;
   *vertical-align: middle;
-  padding-top: 0px;
+  padding-top: 10px;
 }
 /* line 123, /home/vhosts/devel/oldTreeBak/zTreeWeb/web3.0_Design/css/awesomeStyle/awesome.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/vhosts\/devel\/oldTreeBak\/zTreeWeb\/web3\.0_Design\/css\/awesomeStyle\/awesome\.less}line{font-family:\00003123}}

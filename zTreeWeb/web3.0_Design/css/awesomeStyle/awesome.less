@@ -61,7 +61,7 @@ website:    http://code.google.com/p/jquerytree/
           border:0px solid; cursor: pointer;outline:none;
           background-color:transparent; background-repeat:no-repeat; background-attachment: scroll;
  
-            &::before{color: @color-normal; font-family: FontAwesome; padding-top:10px;}
+            &::before{color: @color-normal; font-family: FontAwesome; padding-top:@pad-top;}
             &.chk { margin:0px; cursor: auto; width: 12px;
                 display: inline-block;padding-top:@pad-top;padding-left:@pad-left;
                 
@@ -112,14 +112,14 @@ website:    http://code.google.com/p/jquerytree/
             &.ico_close::before {content: @fa-folder-o;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-normal;}
             &.ico_docu::before{content: @fa-list-alt;font-family: FontAwesome;padding-top:@pad-top;padding-left:@pad-left;display: inline-block;color:@color-normal;}
             
-            &.edit {margin-left:4px; margin-right: -1px;  vertical-align:top; *vertical-align:middle;padding-top:10px;}
+            &.edit {margin-left:4px; margin-right: -1px;  vertical-align:top; *vertical-align:middle;padding-top:@pad-top;}
             &.edit::before{content: @fa-pencil-square-o;font-family: FontAwesome;}
     
-            &.remove {margin-left:4px; margin-right: -1px;  vertical-align:top; *vertical-align:middle;padding-top:10px;}
+            &.remove {margin-left:4px; margin-right: -1px;  vertical-align:top; *vertical-align:middle;padding-top:@pad-top;}
             &.remove::before{content: @fa-trash;font-family: FontAwesome;}
 
     
-            &.add {margin-left:4px; margin-right: -1px; vertical-align:top; *vertical-align:middle;padding-top:0px;}
+            &.add {margin-left:4px; margin-right: -1px; vertical-align:top; *vertical-align:middle;padding-top:@pad-top;}
             &.add::before{content: @fa-plus;font-family: FontAwesome;}
 
             &.ico_loading{margin-right:2px; background:url(./img/loading.gif) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
