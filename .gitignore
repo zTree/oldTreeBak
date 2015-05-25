@@ -2,3 +2,5 @@
 
 zTreeAPI/publish
 zTreeWeb/publish
+/nbproject/private/
+/zTreeWeb/nbproject/private/
