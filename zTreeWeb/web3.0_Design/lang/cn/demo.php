@@ -64,6 +64,7 @@ $demo_menu_511 = "与其他 DOM 拖拽互动";
 $demo_menu_512 = "异步加载模式下全部展开";
 $demo_menu_513 = "OutLook 风格";
 $demo_menu_514 = "Metro 风格";
+$demo_menu_515 = "Awesome 风格";
 
 $demo_menu_6 = "其他扩展功能 演示";
 $demo_menu_601 = "隐藏普通节点";
