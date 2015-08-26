@@ -171,11 +171,11 @@
 			tools.apply(setting.callback.onRemove, [event, treeId, treeNode]);
 		});
 
-		o.bind(c.SELECTED, function (event, srcEvent, treeId, node) {
-			tools.apply(setting.callback.onSelected, [srcEvent, treeId, node]);
+		o.bind(c.SELECTED, function (event, treeId, node) {
+			tools.apply(setting.callback.onSelected, [treeId, node]);
 		});
-		o.bind(c.UNSELECTED, function (event, srcEvent, treeId, node) {
-			tools.apply(setting.callback.onUnSelected, [srcEvent, treeId, node]);
+		o.bind(c.UNSELECTED, function (event, treeId, node) {
+			tools.apply(setting.callback.onUnSelected, [treeId, node]);
 		});
 	},
 	_unbindEvent = function(setting) {
@@ -551,6 +551,7 @@
 			for (var i=0, j=root.curSelectedList.length; i<j; i++) {
 				if(node === root.curSelectedList[i] || !data.getNodeCache(setting, root.curSelectedList[i].tId)) {
 					root.curSelectedList.splice(i, 1);
+					setting.treeObj.trigger(consts.event.UNSELECTED, [setting.treeId, node]);
 					i--;j--;
 				}
 			}
@@ -988,11 +989,10 @@
 					$$(n, consts.id.A, setting).removeClass(consts.node.CURSELECTED);
 					if (node) {
 						data.removeSelectedNode(setting, node);
-						setting.treeObj.trigger(consts.event.UNSELECTED, [event, setting.treeId, n]);
 						break;
 					} else {
 						list.splice(i, 1);
-						setting.treeObj.trigger(consts.event.UNSELECTED, [event, setting.treeId, n]);
+						setting.treeObj.trigger(consts.event.UNSELECTED, [setting.treeId, n]);
 					}
 				}
 			}
@@ -1386,7 +1386,7 @@
 			}
 			$$(node, consts.id.A, setting).addClass(consts.node.CURSELECTED);
 			data.addSelectedNode(setting, node);
-			setting.treeObj.trigger(consts.event.SELECTED, [event, setting.treeId, node]);
+			setting.treeObj.trigger(consts.event.SELECTED, [setting.treeId, node]);
 		},
 		setNodeFontCss: function(setting, treeNode) {
 			var aObj = $$(treeNode, consts.id.A, setting),
