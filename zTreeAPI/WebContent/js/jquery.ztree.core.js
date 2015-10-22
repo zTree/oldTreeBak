@@ -631,11 +631,7 @@
 			o = setting.treeObj;
 			if (!setting.view.txtSelectedEnable) {
 				// for can't select text
-				o.bind('selectstart', function(e){
-					var node
-					var n = e.originalEvent.srcElement.nodeName.toLowerCase();
-					return (n === "input" || n === "textarea" );
-				}).css({
+				o.bind('selectstart', handler.onSelectStart).css({
 					"-moz-user-select":"-moz-none"
 				});
 			}
@@ -649,13 +645,14 @@
 		},
 		unbindTree: function(setting) {
 			var o = setting.treeObj;
-			o.unbind('click', event.proxy)
-			.unbind('dblclick', event.proxy)
-			.unbind('mouseover', event.proxy)
-			.unbind('mouseout', event.proxy)
-			.unbind('mousedown', event.proxy)
-			.unbind('mouseup', event.proxy)
-			.unbind('contextmenu', event.proxy);
+			o.unbind('selectstart', handler.onSelectStart)
+				.unbind('click', event.proxy)
+				.unbind('dblclick', event.proxy)
+				.unbind('mouseover', event.proxy)
+				.unbind('mouseout', event.proxy)
+				.unbind('mousedown', event.proxy)
+				.unbind('mouseup', event.proxy)
+				.unbind('contextmenu', event.proxy);
 		},
 		doProxy: function(e) {
 			var results = [];
@@ -741,6 +738,10 @@
 				tools.apply(setting.callback.onRightClick, [event, setting.treeId, node]);
 			}
 			return (typeof setting.callback.onRightClick) != "function";
+		},
+		onSelectStart: function(e){
+			var n = e.originalEvent.srcElement.nodeName.toLowerCase();
+			return (n === "input" || n === "textarea" );
 		}
 	},
 	//method of tools for zTree
