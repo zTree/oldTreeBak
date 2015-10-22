@@ -934,7 +934,7 @@
 			}
 			var nodeDom = $$(node, setting);
 			if (!nodeDom.get(0)) {
-				nodeDom = view.appendNodes(setting, node.level, [node], null, false, true).join('');
+				nodeDom = view.appendNodes(setting, node.level, [node], null, -1, false, true).join('');
 			} else if (!targetObj.get(0)) {
 				nodeDom.remove();
 			}
@@ -1128,7 +1128,7 @@
 	}
 
 	var _createNodes = view.createNodes;
-	view.createNodes = function(setting, level, nodes, parentNode) {
+	view.createNodes = function(setting, level, nodes, parentNode, index) {
 		if (_createNodes) {
 			_createNodes.apply(view, arguments);
 		}

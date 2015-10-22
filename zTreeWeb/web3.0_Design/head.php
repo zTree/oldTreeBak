@@ -136,13 +136,4 @@ if ($page == "main") {
 	<div id="ad_120_600_wiz" class="adLeft ad" style="top:0px; left:120px;">
 		<a href="http://www.wiz.cn/i/ef16c35f" target="_blank"><div class="ad_wiz" ></div></a>
 	</div>
-<?php
-if ($userIp != "125.35.86.74") {
-?>
-	<div id="ad_120_600_qui" class="adLeft ad" style="top:0px; left:120px;">
-		<a href="http://www.quickui.net/" target="_blank"><div class="ad_qui" ></div></a>
-	</div>
-<?php
-}
-?>
 </div>
