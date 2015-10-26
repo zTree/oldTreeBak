@@ -295,6 +295,8 @@
 		n.getParentNode = function() {return data.getNodeCache(setting, n.parentTId);};
 		n.getPreNode = function() {return data.getPreNode(setting, n);};
 		n.getNextNode = function() {return data.getNextNode(setting, n);};
+		n.getIndex = function() {return data.getNodeIndex(setting, n);};
+		n.getPath = function() {return data.getNodePath(setting, n);};
 		n.isAjaxing = false;
 		data.fixPIdKeyValue(setting, n);
 	},
@@ -424,6 +426,17 @@
 		getCache: function(setting) {
 			return caches[setting.treeId];
 		},
+		getNodeIndex: function(setting, node) {
+			if (!node) return null;
+			var childKey = setting.data.key.children,
+			p = node.parentTId ? node.getParentNode() : data.getRoot(setting);
+			for (var i=0, l=p[childKey].length-1; i<=l; i++) {
+				if (p[childKey][i] === node) {
+					return i;
+				}
+			}
+			return -1;
+		},
 		getNextNode: function(setting, node) {
 			if (!node) return null;
 			var childKey = setting.data.key.children,
@@ -455,6 +468,22 @@
 		getNodeName: function(setting, node) {
 			var nameKey = setting.data.key.name;
 			return "" + node[nameKey];
+		},
+		getNodePath: function(setting, node) {
+			if (!node) return null;
+
+			var path;
+			if(node.parentTId) {
+				path = node.getParentNode().getPath();
+			} else {
+				path = [];
+			}
+
+			if (path) {
+				path.push(node);
+			}
+
+			return path;
 		},
 		getNodeTitle: function(setting, node) {
 			var t = setting.data.key.title === "" ? setting.data.key.name : setting.data.key.title;
