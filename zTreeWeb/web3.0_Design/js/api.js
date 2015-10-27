@@ -185,7 +185,7 @@ var apiContent = {
 			{id:7011, pId:70, t:"showTitle", name:"showTitle : true,", iconSkin:"core", showAPI:true},
 			{id:7012, pId:70, t:"txtSelectedEnable", name:"txtSelectedEnable : false", iconSkin:"core", showAPI:true},
 			{id:71, pId:1, name:"}"},
-			
+
 			{id:2, pId:0, name:"}"}
 		];
 
@@ -196,8 +196,10 @@ var apiContent = {
 			{id:128, pId:1, t:"chkDisabled", name:"chkDisabled", iconSkin:"check", showAPI:true},
 			{id:127, pId:1, t:"click", name:"click", iconSkin:"core", showAPI:true},
 			{id:103, pId:1, t:"getCheckStatus", name:"getCheckStatus ()", iconSkin:"check", showAPI:true},
+			{id:135, pId:1, t:"getIndex", name:"getIndex ()", iconSkin:"core", showAPI:true},
 			{id:104, pId:1, t:"getNextNode", name:"getNextNode ()", iconSkin:"core", showAPI:true},
 			{id:105, pId:1, t:"getParentNode", name:"getParentNode ()", iconSkin:"core", showAPI:true},
+			{id:136, pId:1, t:"getPath", name:"getPath ()", iconSkin:"core", showAPI:true},
 			{id:106, pId:1, t:"getPreNode", name:"getPreNode ()", iconSkin:"core", showAPI:true},
 			{id:129, pId:1, t:"halfCheck", name:"halfCheck", iconSkin:"check", showAPI:true},
 			{id:107, pId:1, t:"icon", name:"icon", iconSkin:"core", showAPI:true},
@@ -330,7 +332,7 @@ var apiContent = {
 				apiContent.searchNodesCur = 0;
 			}
 			var node = apiContent.searchNodes[apiContent.searchNodesCur];
-			
+
 			if (node.tId.indexOf("setting") > -1) {
 				setting_zTree.selectNode(node);
 			} else if (node.tId.indexOf("treenode") > -1) {
