@@ -6,7 +6,8 @@
 			BUTTON: "button",
 			LEVEL: "level",
 			ICO_LOADING: "ico_loading",
-			SWITCH: "switch"
+			SWITCH: "switch",
+			NAME: 'node_name'
 		},
 		event: {
 			NODECREATED: "ztree_nodeCreated",
@@ -1145,6 +1146,7 @@
 			html.push("<span id='", node.tId, consts.id.ICON,
 				"' title='' treeNode", consts.id.ICON," class='", view.makeNodeIcoClass(setting, node),
 				"' style='", view.makeNodeIcoStyle(setting, node), "'></span><span id='", node.tId, consts.id.SPAN,
+				"' class='", consts.className.NAME,
 				"'>",name,"</span>");
 		},
 		makeDOMNodeLine: function(html, setting, node) {
