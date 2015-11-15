@@ -588,7 +588,7 @@
 	data.addZTreeTools(_zTreeTools);
 
 	var _createNodes = view.createNodes;
-	view.createNodes = function(setting, level, nodes, parentNode) {
+	view.createNodes = function(setting, level, nodes, parentNode, index) {
 		if (_createNodes) _createNodes.apply(view, arguments);
 		if (!nodes) return;
 		view.repairParentChkClassWithSelf(setting, parentNode);
@@ -603,7 +603,7 @@
 	}
 
 	var _appendNodes = view.appendNodes;
-	view.appendNodes = function(setting, level, nodes, parentNode, initFlag, openFlag) {
+	view.appendNodes = function(setting, level, nodes, parentNode, index, initFlag, openFlag) {
 		var html = "";
 		if (_appendNodes) {
 			html = _appendNodes.apply(view, arguments);

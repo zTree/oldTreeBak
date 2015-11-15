@@ -13,6 +13,22 @@
 
 </font>
 
+*2015.10.26* v3.5.19.1
+   * 【修改】addNodes 新方法 导致 拖拽节点时报错
+   * 【增加】treeNode.getIndex 方法，可以快速获取 节点在 子节点中的位置
+   * 【增加】treeNode.getPath 方法，可以快速获取 节点的所有父节点
+
+*2015.10.22* v3.5.19
+   * 【修改】addNodes 方法支持直接添加新节点到任意位置 addNodes(parentNode, index, newNodes, isSilent)
+   * 【修改】selectstart 事件未解绑导致的内存泄漏
+
+*2015.08.26* v3.5.18
+   * 【修改】onSelected/onUnSelected 回调参数，由 (event, treeId, node) 修改为 （treeId, node）；另外 删除 已选择的节点时，也会触发 onUnSelected 回调
+   * 【增加】Allow nodes to specify their own icon using an 'icon' property of the 'setting.data.key'
+   * 【增加】metro 风格 demo
+   * 【增加】awesome 风格 demo
+   * 【增加】回调 onSelected / onUnSelected
+
 *2015.02.15* v3.5.17
    * 【修改】excheck 扩展中 removeClass 与 jQueryUI 1.9 冲突的问题，目前放弃 removeClass 方法
    * 【修改】优化 exhide 扩展包初始化效率，避免数据多时 ie8 假死的 bug（感谢：https://github.com/sarxos）

@@ -10,7 +10,7 @@ include( "head.php");
 
 		<div id="contentBox" class="contentBox round clearfix">
 			<div id="demoContent" class="demoContent">
-				<div id="demo_menu" class="demo_menu left">
+				<div id="demo_menu" class="demo_menu left ">
 					<ul id="menuTree" class="ztree"></ul>
 				</div>
 				<div id="demo_viewer" class="demo_viewer right">
@@ -101,13 +101,14 @@ var menu_nodes =[
 	{id:506, pId:5, name:"<?php echo $demo_menu_506?>", iconSkin:"menu", file:"super/left_menu"},
 	{id:513, pId:5, name:"<?php echo $demo_menu_513?>", iconSkin:"menu", file:"super/left_menuForOutLook"},
 	{id:514, pId:5, name:"<?php echo $demo_menu_514?>", iconSkin:"menu", file:"super/metro"},
-    {id:507, pId:5, name:"<?php echo $demo_menu_507?>", iconSkin:"menu", file:"super/select_menu"},
+	{id:515, pId:5, name:"<?php echo $demo_menu_515?>", iconSkin:"menu", file:"super/awesome"},
+	{id:507, pId:5, name:"<?php echo $demo_menu_507?>", iconSkin:"menu", file:"super/select_menu"},
 	{id:509, pId:5, name:"<?php echo $demo_menu_509?>", iconSkin:"menu", file:"super/select_menu_checkbox"},
 	{id:510, pId:5, name:"<?php echo $demo_menu_510?>", iconSkin:"menu", file:"super/select_menu_radio"},
 	{id:508, pId:5, name:"<?php echo $demo_menu_508?>", iconSkin:"menu", file:"super/rightClickMenu"},
 	{id:511, pId:5, name:"<?php echo $demo_menu_511?>", iconSkin:"menu", file:"super/dragWithOther"},
 	{id:512, pId:5, name:"<?php echo $demo_menu_512?>", iconSkin:"menu", file:"super/asyncForAll"},
-	{id:515, pId:5, name:"", blank:true},
+	{id:516, pId:5, name:"", blank:true},
 
 	{id:6, pId:0, name:"<?php echo $demo_menu_6?>", open:false},
 	{id:601, pId:6, name:"<?php echo $demo_menu_601?>", iconSkin:"menu", file:"exhide/common"},
