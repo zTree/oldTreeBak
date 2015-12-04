@@ -668,7 +668,15 @@
 							}
 						}
 						view.selectNodes(targetSetting, newNodes);
-						$$(newNodes[0], setting).focus().blur();
+
+						var a = $$(newNodes[0], setting).get(0);
+						if (a) {
+							if (a.scrollIntoView) {
+								a.scrollIntoView(false);
+							} else {
+								try{a.focus().blur();}catch(e){}
+							}
+						}
 
 						setting.treeObj.trigger(consts.event.DROP, [event, targetSetting.treeId, newNodes, dragTargetNode, moveType, isCopy]);
 					}

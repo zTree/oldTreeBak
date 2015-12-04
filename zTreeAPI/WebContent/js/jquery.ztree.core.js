@@ -1635,15 +1635,24 @@
 
 					data.getRoot(setting).expandTriggerFlag = callbackFlag;
 					if (!tools.canAsync(setting, node) && sonSign) {
-						view.expandCollapseSonNode(setting, node, expandFlag, true, function() {
-							if (focus !== false) {try{$$(node, setting).focus().blur();}catch(e){}}
-						});
+						view.expandCollapseSonNode(setting, node, expandFlag, true, showNodeFocus);
 					} else {
 						node.open = !expandFlag;
 						view.switchNode(this.setting, node);
-						if (focus !== false) {try{$$(node, setting).focus().blur();}catch(e){}}
+						showNodeFocus();
 					}
 					return expandFlag;
+
+					function showNodeFocus() {
+						var a = $$(node, setting).get(0);
+						if (a && focus !== false) {
+							if (a.scrollIntoView) {
+								a.scrollIntoView(false);
+							} else {
+								try{a.focus().blur();}catch(e){}
+							}
+						}
+					}
 				},
 				getNodes : function() {
 					return data.getNodes(setting);
@@ -1739,13 +1748,22 @@
 					if (tools.uCanDo(setting)) {
 						addFlag = setting.view.selectedMulti && addFlag;
 						if (node.parentTId) {
-							view.expandCollapseParentNode(setting, node.getParentNode(), true, false, function() {
-								try{$$(node, setting).focus().blur();}catch(e){}
-							});
+							view.expandCollapseParentNode(setting, node.getParentNode(), true, false, showNodeFocus);
 						} else {
 							try{$$(node, setting).focus().blur();}catch(e){}
 						}
 						view.selectNode(setting, node, addFlag);
+					}
+
+					function showNodeFocus() {
+						var a = $$(node, setting).get(0);
+						if (a) {
+							if (a.scrollIntoView) {
+								a.scrollIntoView(false);
+							} else {
+								try{a.focus().blur();}catch(e){}
+							}
+						}
 					}
 				},
 				transformTozTreeNodes : function(simpleNodes) {
