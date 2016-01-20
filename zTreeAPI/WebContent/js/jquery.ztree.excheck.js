@@ -534,7 +534,7 @@
 
 			var hasDisable = false;
 			if (node[childKey]) {
-				for (var i = 0, l = node[childKey].length; i < l && node.chkDisabled !== true; i++) {
+				for (var i = 0, l = node[childKey].length; i < l; i++) {
 					var sNode = node[childKey][i];
 					view.setSonNodeCheckBox(setting, sNode, value, srcNode);
 					if (sNode.chkDisabled === true) hasDisable = true;
