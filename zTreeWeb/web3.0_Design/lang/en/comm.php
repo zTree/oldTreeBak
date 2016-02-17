@@ -2,7 +2,7 @@
 $menu_home = "Home";
 $menu_demo = "Demo";
 $menu_api = "API Document";
-$menu_faq = "FAQ";
+$menu_faq = "Guide";
 $menu_donate = "Donate";
 $menu_download = "Download zTree v3.5.19";
 $menu_chinese = "Chinese";

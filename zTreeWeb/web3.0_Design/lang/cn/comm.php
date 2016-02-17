@@ -2,7 +2,7 @@
 $menu_home = "首页";
 $menu_demo = "Demo 演示";
 $menu_api = "API 文档";
-$menu_faq = "常见问题";
+$menu_faq = "入门指南";
 $menu_donate = "捐助";
 $menu_download = "下载 zTree v3.5.19";
 $menu_english = "英文版";
