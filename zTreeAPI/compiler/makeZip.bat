@@ -1,5 +1,4 @@
 @echo off
-set /p ver=Input zTree's version (3.0 or 3.1) :
 
 set p=publish
 
@@ -16,8 +15,7 @@ mkdir js
 cd ../
 
 xcopy WebContent\js\jquery-1.4.4.min.js publish\js\
-xcopy WebContent\js\*%ver%.js publish\js\
-xcopy WebContent\js\*%ver%.min.js publish\js\
+xcopy WebContent\js\jquery.ztree.*.js publish\js\
 xcopy WebContent\doc\*3.x.txt publish\
 xcopy ..\zTreeWeb\web3.0_Design\api publish\api\ /S /E
 

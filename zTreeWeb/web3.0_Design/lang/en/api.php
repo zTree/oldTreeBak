@@ -1,7 +1,7 @@
 <?php
 $web_title = "API Document [zTree -- jQuery tree plug-ins.]";
 
-$title = "zTree v3.5.19 API Document";
+$title = "zTree v3.5.21 API Document";
 $title_info = "all.js = core + excheck + exedit ( without exhide ); if you found some mistakes please contact me.";
 
 $api_subtitle = "Notes: ";

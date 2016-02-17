@@ -1,3 +1,15 @@
+/*
+ * JQuery zTree exedit v3.5.21
+ * http://zTree.me/
+ *
+ * Copyright (c) 2010 Hunter.z
+ *
+ * Licensed same as jquery - MIT License
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * email: hunter.z@263.net
+ * Date: 2016-02-17
+ */
 (function($){
 	//default consts of exedit
 	var _consts = {

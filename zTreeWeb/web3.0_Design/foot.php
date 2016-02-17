@@ -51,13 +51,13 @@
 if ($page == "main") {
 	echo "<script type='text/javascript' src='js/main.js?".$release."'></script>";
 } else if ($page == "demo") {
-	echo "<script type='text/javascript' src='js/jquery.ztree.core-3.5.js?".$release."'></script>";
+	echo "<script type='text/javascript' src='js/jquery.ztree.core.js?".$release."'></script>";
 	echo "<script type='text/javascript' src='js/demo.js?".$release."'></script>";
 } else if ($page == "api") {
-	echo "<script type='text/javascript' src='js/jquery.ztree.core-3.5.js?".$release."'></script>";
+	echo "<script type='text/javascript' src='js/jquery.ztree.core.js?".$release."'></script>";
 	echo "<script type='text/javascript' src='js/api.js?".$release."'></script>";
 } else if ($page == "faq") {
-	echo "<script type='text/javascript' src='js/jquery.ztree.core-3.5.js?".$release."'></script>";
+	echo "<script type='text/javascript' src='js/jquery.ztree.core.js?".$release."'></script>";
 	echo "<script type='text/javascript' src='js/faq.js?".$release."'></script>";
 } else if ($page == "donate") {
 	echo "<script type='text/javascript' src='js/donate.js?".$release."'></script>";

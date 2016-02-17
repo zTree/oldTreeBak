@@ -1,7 +1,7 @@
 <?php
 $web_title = "API 文档 [zTree --  jQuery 树插件]";
 
-$title = "zTree v3.5.19 API 文档";
+$title = "zTree v3.5.21 API 文档";
 $title_info = "all.js = core + excheck + exedit ( 不包括 exhide ); 发现错误请及时通知，谢谢。";
 
 $api_subtitle = "注释：";
