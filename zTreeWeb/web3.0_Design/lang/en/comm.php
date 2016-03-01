@@ -4,7 +4,7 @@ $menu_demo = "Demo";
 $menu_api = "API Document";
 $menu_faq = "Guide";
 $menu_donate = "Donate";
-$menu_download = "Download zTree v3.5.21";
+$menu_download = "Download zTree v3.5.22";
 $menu_chinese = "Chinese";
 $suggestNoIE = "If you use the Chrome / FireFox / Opera / IE9 browser will be even more dazzling effect!";
 
