@@ -680,13 +680,7 @@
 						view.selectNodes(targetSetting, newNodes);
 
 						var a = $$(newNodes[0], setting).get(0);
-						if (a) {
-							if (a.scrollIntoView) {
-								a.scrollIntoView(false);
-							} else {
-								try{a.focus().blur();}catch(e){}
-							}
-						}
+						view.scrollIntoView(a);
 
 						setting.treeObj.trigger(consts.event.DROP, [event, targetSetting.treeId, newNodes, dragTargetNode, moveType, isCopy]);
 					}
