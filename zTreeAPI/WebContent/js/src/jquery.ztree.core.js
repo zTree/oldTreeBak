@@ -1759,7 +1759,7 @@
 						addFlag = setting.view.selectedMulti && addFlag;
 						if (node.parentTId) {
 							view.expandCollapseParentNode(setting, node.getParentNode(), true, false, showNodeFocus);
-						} else {
+						} else if (!isSilent) {
 							try{$$(node, setting).focus().blur();}catch(e){}
 						}
 						view.selectNode(setting, node, addFlag);
