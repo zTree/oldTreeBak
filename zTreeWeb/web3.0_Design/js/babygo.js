@@ -83,7 +83,10 @@ function setAd() {
 	}
 	ad_right.css({top:ad_left.headOffset.top+50, left:ad_left.headOffset.left + head.width()+20}).show();
 	var rightChildren = ad_right.children();
-	rightChildren[Math.round(Math.random()*1000)%rightChildren.length].style.display = "block";
+	var child = rightChildren[Math.round(Math.random()*1000)%rightChildren.length];
+	if (child) {
+		child.style.display = "block";
+	}
 	if (!ad_right.ads) {
 		ad_right.timer = setTimeout(function() {
 			rightAdSwitch();
