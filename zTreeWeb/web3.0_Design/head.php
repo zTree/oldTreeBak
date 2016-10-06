@@ -110,7 +110,7 @@ if ($page == "main") {
 <div id="header_wrap" class="header_wrap">
 	<div id="header" class="header round">
 		<!--<div class="light-bulb" alt=""></div>-->
-		<div class="qq-group" title="<?php echo $qq_group_icon?>"></div>
+		<a href="https://note.wiz.cn/pages/manage/biz/payRead.html?kb=3fe9d146-6498-4882-b75c-f533442aba5b" target="_blank"><div class="qq-group" title="<?php echo $qq_group_icon?>"></div></a>
 		<div class="ieSuggest"><?php echo $suggestNoIE?></div>
 		<div class="google_plus"><g:plusone></g:plusone></div>
 		<div class="header-text">
