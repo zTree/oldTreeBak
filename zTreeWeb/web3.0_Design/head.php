@@ -5,12 +5,13 @@ $url = $_SERVER['PHP_SELF'];
 $querystring = $_SERVER["QUERY_STRING"];
 $userIp = $_SERVER["REMOTE_ADDR"];
 
-if ($host=='www.baby666.cn' || $host=='baby666.cn') {
+if ($host=='www.baby666.cn' || $host=='baby666.cn' ||
+    $host=='www.ztree.me' || $host=='ztree.me') {
 	Header('HTTP/1.1 301 Moved Permanently');
 	if ($querystring !== '') {
-	Header('Location:http://www.ztree.me'.$url.'?'.$querystring);
+	Header('Location:http://www.treejs.cn'.$url.'?'.$querystring);
 	} else {
-	Header('Location:http://www.ztree.me'.$url);
+	Header('Location:http://www.treejs.cn'.$url);
 	}
 	exit();
 }
