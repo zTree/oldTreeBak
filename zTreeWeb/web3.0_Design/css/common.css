@@ -54,7 +54,7 @@ h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
 .ieSuggest {display:none;font-size: 12px;color: silver;position: absolute;left: 10px;top: 2px;}
 .google_plus {position: absolute;right: 10px; top:10px;}
 .light-bulb {position: absolute;left: -20px;bottom: -35px;width:116px;height:180px;background-image:url(../img/lightbulb.png);background-repeat: no-repeat;}
-.qq-group {background:url(../img/qqGroup.png);width:130px; height:130px; position:absolute; top: 14px; left: 10px;}
+.qq-group {background:url(../img/payRead.png);width:130px; height:130px; position:absolute; top: 14px; left: 10px;}
 /* Content */
 .content {position: relative;width: 940px;margin: 0 auto;}
 .nav_section {position: relative;height: 20px;font-family: "Myriad Pro", "Trebuchet MS", sans-serif;font-size: 15px;color: #253;padding: 20px 0;}

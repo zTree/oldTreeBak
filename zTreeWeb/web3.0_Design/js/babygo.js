@@ -106,7 +106,7 @@ function rightAdSwitch() {
 			}
 			ad_right.ads[i] = $(ad_right.ads[i]);
 		}
-	} else {
+	} else if (ad_right.ads.length > 0) {
 		ad_right.ads[ad_right.curIndex].hide();
 		ad_right.curIndex ++;
 		if (ad_right.curIndex == ad_right.ads.length) {

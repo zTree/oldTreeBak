@@ -32,5 +32,5 @@ $footer_download_git = "from Github";
 $footer_download_oschina = "from OsChina";
 $footer_download_google = "from Google";
 
-$qq_group_icon = "Join QQ Group";
+$qq_group_icon = "Step by step teach you to learn zTree";
 ?>
