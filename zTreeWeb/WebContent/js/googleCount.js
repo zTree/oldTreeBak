@@ -1,6 +1,6 @@
   var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-7819603-6']);
-_gaq.push(['_setDomainName', 'ztree.me']);
+_gaq.push(['_setDomainName', 'treejs.cn']);
 _gaq.push(['_setAllowLinker', true]);
 _gaq.push(['_setLocalRemoteServerMode']);
 _gaq.push(['_trackPageview']);
