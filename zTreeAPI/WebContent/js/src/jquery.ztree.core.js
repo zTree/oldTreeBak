@@ -893,7 +893,7 @@
 				tmpPChild = tmpPNode[childKey],
 				isFirstNode, isLastNode;
 
-			if (!tmpPChild || index >= tmpPChild.length) {
+            if (!tmpPChild || index >= tmpPChild.length - nodes.length) {
 				index = -1;
 			}
 
