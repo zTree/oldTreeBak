@@ -21,20 +21,15 @@ include( "head.php")
 						</tr>
 						<tr style="height:300px">
 							<td style="text-align:center;">
-								<?php echo $donate_alipay_account ?>
-								<br/><br/>
-								<img src="img/alipayPage_2D.png">
+								<br/>
+								<img src="img/alipayPage_2D.png?001" width="200px" height="200px">
 
 							</td>
 							<td style="text-align:center;">
-								<?php echo $donate_paypal_account ?>
-								<br/><br/>
-								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="encrypted" value="<?php echo $donate_paypal_encrypted ?>">
-								<input type="image" src="img/paypalPage_<?php echo $lang ?>.png" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
-								<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
-								</form>
+								<br/>
+								<a href="https://www.paypal.me/ztree" target="_blank">
+								    <img alt="" border="0" src="img/paypalPage_<?php echo $lang ?>.png" >
+								</a>
 							</td>
 						</tr>
 						<tr>
