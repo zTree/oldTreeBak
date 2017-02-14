@@ -60,20 +60,20 @@ include( "head.php")
 				</div>
 				<div class="content">
 					<ul>
-						<li><?php echo $link_qui ?></li>
 						<li><?php echo $link_fineui ?></li>
+						<li><?php echo $link_datatables ?></li>
 					</ul>
 				</div>
 				<div class="content">
 					<ul>
-						<li><?php echo $link_qingyuan ?></li>
-						<li><?php echo $link_zuicode ?></li>
+						<li><?php echo $link_topitxy ?></li>
+						<li></li>
 					</ul>
 				</div>
 				<div class="content">
 					<ul>
 						<li><?php echo $link_sufeinet ?></li>
-						<li><?php echo $link_datatables ?></li>
+						<li></li>
 					</ul>
 				</div>
 				<div class="content">

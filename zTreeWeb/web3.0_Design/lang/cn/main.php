@@ -30,14 +30,12 @@ $license_title = "授权许可 ( MIT License )";
 $license_content = " copyright (c) <2011> < hunter.z ><br/><br/>使用该许可证的软件被授予以下权限，免费，任何人可以得到这个软件及其相关文档的一个拷贝，并且经营该软件不受任何限制，包括无限制的使用、复制、修改、合并、出版、发行、发放从属证书、或者出售该软件的拷贝的权利。同时允许获得这些软件的用户享受这些权利，使其服从下面的条件：<br/><br/>以上的版权通知和权限通知应该包含在所有该软件的拷贝中或者是其他该软件的真实部分中。<br/><br/>该软件按本来的样子提供，没有任何形式的担保，不管是明确地或者暗含的，包含这些但是不受商业性质的担保的限制。适合一个特定的用途并且不受侵犯。作者和版权持有人在任何场合对使用该软件涉及的任何要求、损害或者其他责任都不应负责。不管它是正在起作用还是只是合同形式、民事侵权或是其他方式，如由它引起，在其作用范围内、与该软件有联系、该软件的使用或者有这个软件引起的其他行为。";
 
 $links_title = "友情链接";
-$link_qui = "<a href='http://www.quickui.net/' target='_blank' title='集成框架 QUI'>集成框架 QUI</a>";
 $link_wiz = "<a href='http://www.wiz.cn/i/ef16c35f' target='_blank' title='为知个人知识管理'>为知个人知识管理</a>";
-$link_qingyuan = "<a href='http://www.tsingyuan.cn/r/mumA7r' target='_blank' title='清源教育——最大最好的在线学习社区'>清源教育</a>";
+$link_topitxy = "<a href='http://www.topitxy.com' target='_blank' title='顶级 IT 学院'>顶级 IT 学院</a>";
 $link_youyax = "<a href='http://www.youyax.com' target='_blank' title='YouYaX 开源社区'>YouYaX 开源社区</a>";
 $link_fineui = "<a href='http://fineui.com/' target='_blank' title='基于 ExtJS 的专业 ASP.NET 控件库'>FineUI</a>";
 $link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C#论坛'>C#论坛</a>";
 $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net源码'>Asp.net源码</a>";
-$link_zuicode = "<a href='http://www.zuidaima.com/' target='_blank' title='最代码'>最代码</a>";
 $link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables中国'>Datatables中国</a>";
 
 $contact_title = "联系我们";

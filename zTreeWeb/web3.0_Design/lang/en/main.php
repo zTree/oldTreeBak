@@ -30,14 +30,12 @@ $license_title = "License ( MIT License )";
 $license_content = " copyright (c) <2011> < hunter.z ><br/><br/>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br/><br/>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br/><br/>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
 
 $links_title = "Links";
-$link_qui = "<a href='http://www.quickui.net/' target='_blank' title='QUI'>QUI</a>";
 $link_wiz = "<a href='http://www.wiz.cn/i/ef16c35f' target='_blank' title='wiz knowledge'>wiz knowledge</a>";
-$link_qingyuan = "<a href='http://www.tsingyuan.cn/r/mumA7r' target='_blank' title='Tsing Yuan Education'>Tsing Yuan Education</a>";
+$link_topitxy = "<a href='http://www.topitxy.com' target='_blank' title='IT School'>IT School</a>";
 $link_youyax = "<a href='http://www.youyax.com' target='_blank' title='YouYaX'>YouYaX</a>";
 $link_fineui = "<a href='http://fineui.com/demo_en/' target='_blank' title='FineUI'>FineUI</a>";
 $link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C# Forum'>C# Forum</a>";
 $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net SourceCode'>Asp.net SourceCode</a>";
-$link_zuicode = "<a href='http://www.zuidaima.com/' target='_blank' title='Perfect Code'>Perfect Code</a>";
 $link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables China'>Datatables China</a>";
 
 $contact_title = "Contact Us";
