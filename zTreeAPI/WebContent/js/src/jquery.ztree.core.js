@@ -1795,7 +1795,19 @@
                 isSelectedNode: function (node) {
                     return data.isSelectedNode(setting, node);
                 },
-                reAsyncChildNodes: function (parentNode, reloadType, isSilent) {
+                reAsyncChildNodesPromise: function (parentNode, reloadType, isSilent) {
+                    var promise = new Promise(function(resolve, reject) {
+                        try {
+                            zTreeTools.reAsyncChildNodes(parentNode, reloadType, isSilent, function() {
+                                resolve(parentNode);
+                            });
+                        } catch(e) {
+                            reject(e);
+                        }
+                    });
+                    return promise;
+                },
+                reAsyncChildNodes: function (parentNode, reloadType, isSilent, callback) {
                     if (!this.setting.async.enable) return;
                     var isRoot = !parentNode;
                     if (isRoot) {
@@ -1815,7 +1827,7 @@
                             ulObj.empty();
                         }
                     }
-                    view.asyncNode(this.setting, isRoot ? null : parentNode, !!isSilent);
+                    view.asyncNode(this.setting, isRoot ? null : parentNode, !!isSilent, callback);
                 },
                 refresh: function () {
                     this.setting.treeObj.empty();
