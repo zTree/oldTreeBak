@@ -37,11 +37,12 @@ $link_fineui = "<a href='http://fineui.com/' target='_blank' title='基于 ExtJS
 $link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C#论坛'>C#论坛</a>";
 $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net源码'>Asp.net源码</a>";
 $link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables中国'>Datatables中国</a>";
+$link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='开源中国'>开源中国</a>";
+$link_gitee = "<a href='https://gitee.com/' target='_blank' title='码云'>码云</a>";
 
 $contact_title = "联系我们";
-$contact_option1 = "喜欢 Google 的朋友可以去 Google Code：";
+$contact_option1 = "喜欢 码云 的朋友可以去 Gitee.com：";
 $contact_option2 = "讨论问题，关注 zTree 动态可以去 开源中国：";
-$contact_option3 = "讨论问题，关注 zTree 动态还可以去 ITEYE：";
 $contact_option4 = "随意提问题，不需要账号的可以去 zTree吧：";
 $contact_option5 = "以上都不愿意的，就 Email：";
 $contact_option6 = "喜欢 Github 的朋友可以去 Github：";

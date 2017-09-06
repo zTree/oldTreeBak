@@ -24,7 +24,7 @@
 		<div id="footer_contact" class="footer_contact open">
 			<div class="footer_contact_header" title="<?php echo $footer_menu_contact?>"><?php echo $footer_menu_contact?></div>
 			<ul id="footer_contact_ul" class="up" style="display: none; ">
-				<li><a href="http://code.google.com/p/jquerytree" target="_blank"><?php echo $footer_contact_google?></a></li>
+				<li><a href="https://gitee.com/zTree/zTree_v3" target="_blank"><?php echo $footer_contact_gitee?></a></li>
 				<li><a href="https://github.com/zTree/zTree_v3" target="_blank"><?php echo $footer_contact_github?></a></li>
 				<li><a href="http://my.oschina.net/dyhunter" target="_blank"><?php echo $footer_contact_blog_oschina?></a></li>
 				<li><a href="http://ztreeapi.iteye.com/" target="_blank"><?php echo $footer_contact_blog_iteye?></a></li>
@@ -37,7 +37,7 @@
 			<div class="footer_download_header" title="<?php echo $footer_menu_download?>"><?php echo $footer_menu_download?></div>
 			<ul id="footer_download_ul" class="up" style="display: none; ">
 				<li><a href="https://github.com/zTree/zTree_v3" target="_blank"><?php echo $footer_download_git?></a></li>
-				<li><a href="https://git.oschina.net/zTree/zTree_v3" target="_blank"><?php echo $footer_download_oschina?></a></li>
+				<li><a href="https://gitee.com/zTree/zTree_v3" target="_blank"><?php echo $footer_download_oschina?></a></li>
 				<li><a href="https://code.google.com/p/jquerytree/" target="_blank"><?php echo $footer_download_google?></a></li>
 			</ul>
 		</div>

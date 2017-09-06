@@ -37,9 +37,11 @@ $link_fineui = "<a href='http://fineui.com/demo_en/' target='_blank' title='Fine
 $link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C# Forum'>C# Forum</a>";
 $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net SourceCode'>Asp.net SourceCode</a>";
 $link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables China'>Datatables China</a>";
+$link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='Open Source China'>Open Source China</a>";
+$link_gitee = "<a href='https://gitee.com/' target='_blank' title='Gitee'>Gitee</a>";
 
 $contact_title = "Contact Us";
-$contact_option1 = "If you like Google, zTree is on Google Code: ";
+$contact_option1 = "If you like Gitee, zTree is on Gitee: ";
 $contact_option2 = "Discuss issues or features of zTree, you can go OSCHINA: <br/>&nbsp;&nbsp;&nbsp;&nbsp;";
 $contact_option3 = "Discuss issues or features of zTree, you can go ITEYE: <br/>&nbsp;&nbsp;&nbsp;&nbsp;";
 $contact_option4 = "Ask questions, (no need for login), go to zTree Hi: ";

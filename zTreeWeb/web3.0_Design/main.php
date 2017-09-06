@@ -54,26 +54,26 @@ include( "head.php")
 				</div>
 				<div class="content first">
 					<ul>
-						<li><?php echo $link_wiz ?></li>
-						<li><?php echo $link_youyax ?></li>
+						<li><?php echo $link_oschina ?></li>
+						<li><?php echo $link_gitee ?></li>
 					</ul>
 				</div>
 				<div class="content">
 					<ul>
-						<li><?php echo $link_fineui ?></li>
+						<li><?php echo $link_wiz ?></li>
 						<li><?php echo $link_datatables ?></li>
 					</ul>
 				</div>
 				<div class="content">
 					<ul>
+						<li><?php echo $link_youyax ?></li>
 						<li><?php echo $link_topitxy ?></li>
-						<li></li>
 					</ul>
 				</div>
 				<div class="content">
 					<ul>
+						<li><?php echo $link_fineui ?></li>
 						<li><?php echo $link_sufeinet ?></li>
-						<li></li>
 					</ul>
 				</div>
 				<div class="content">
@@ -89,10 +89,9 @@ include( "head.php")
 					<h1 ><?php echo $contact_title ?></h1>
 					<br/>
 					<ul class="list">
-						<li><span ><?php echo $contact_option1 ?></span><a href="http://code.google.com/p/jquerytree/" target="_blank">http://code.google.com/p/jquerytree/</a></li>
+						<li><span ><?php echo $contact_option1 ?></span><a href="https://gitee.com/zTree/zTree_v3" target="_blank">https://gitee.com/zTree/zTree_v3</a></li>
 						<li><span ><?php echo $contact_option6 ?></span><a href="https://github.com/zTree/zTree_v3" target="_blank">https://github.com/zTree/zTree_v3</a></li>
 						<li><span ><?php echo $contact_option2 ?></span><a href="http://my.oschina.net/dyhunter" target="_blank">http://my.oschina.net/dyhunter</a></li>
-						<li><span ><?php echo $contact_option3 ?></span><a href="http://ztreeapi.iteye.com/" target="_blank">http://ztreeapi.iteye.com/</a></li>
 						<li><span ><?php echo $contact_option4 ?></span><a href="http://tieba.baidu.com/f?kw=zTree" target="_blank">http://tieba.baidu.com/f?kw=zTree</a></li>
 						<li><span ><?php echo $contact_option5 ?></span><a href="mailto:hunter.z@263.net">hunter.z@263.net</a></li>
 					</ul>

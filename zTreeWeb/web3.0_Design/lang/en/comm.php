@@ -4,7 +4,7 @@ $menu_demo = "Demo";
 $menu_api = "API Document";
 $menu_faq = "Guide";
 $menu_donate = "Donate";
-$menu_download = "Download zTree v3.5.29";
+$menu_download = "v3.5.29";
 $menu_chinese = "Chinese";
 $suggestNoIE = "If you use the Chrome / FireFox / Opera / IE9 browser will be even more dazzling effect!";
 
@@ -20,7 +20,7 @@ $footer_siteMap_v26 = "zTree v2.6";
 $footer_siteMap_links = "Links";
 
 $footer_menu_contact = "Contact Us";
-$footer_contact_google = "zTree @ Google";
+$footer_contact_gitee = "zTree @ Gitee";
 $footer_contact_github = "zTree @ Github";
 $footer_contact_blog_oschina = "zTree @ Oschina ";
 $footer_contact_blog_iteye = "zTree @ ITeye";
@@ -29,7 +29,7 @@ $footer_contact_email = "Email";
 
 $footer_menu_download = "Download";
 $footer_download_git = "from Github";
-$footer_download_oschina = "from OsChina";
+$footer_download_oschina = "from Gitee";
 $footer_download_google = "from Google";
 
 $qq_group_icon = "Step by step teach you to learn zTree";
