@@ -1361,9 +1361,19 @@
                     $$(node, consts.id.UL, setting).empty();
                 }
             },
-            scrollIntoView: function (dom) {
+            scrollIntoView: function (setting, dom) {
                 if (!dom) {
                     return;
+                }
+                // support IE 7
+                if (typeof Element === 'undefined') {
+                  var contRect = setting.treeObj.get(0).getBoundingClientRect(),
+                    findMeRect = dom.getBoundingClientRect();
+                  if (findMeRect.top < contRect.top || findMeRect.bottom > contRect.bottom
+                    || findMeRect.right > contRect.right || findMeRect.left < contRect.left) {
+                    dom.scrollIntoView();
+                  }
+                  return;
                 }
                 // code src: http://jsfiddle.net/08u6cxwj/
                 if (!Element.prototype.scrollIntoViewIfNeeded) {
@@ -1749,7 +1759,7 @@
                     function showNodeFocus() {
                         var a = $$(node, setting).get(0);
                         if (a && focus !== false) {
-                            view.scrollIntoView(a);
+                            view.scrollIntoView(setting, a);
                         }
                     }
                 },
@@ -1874,7 +1884,7 @@
                             return;
                         }
                         var a = $$(node, setting).get(0);
-                        view.scrollIntoView(a);
+                        view.scrollIntoView(setting, a);
                     }
                 },
                 transformTozTreeNodes: function (simpleNodes) {
