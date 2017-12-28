@@ -285,7 +285,9 @@
             n.tId = setting.treeId + "_" + (++r.zId);
             n.parentTId = parentNode ? parentNode.tId : null;
             n.open = (typeof n.open == "string") ? tools.eqs(n.open, "true") : !!n.open;
-            if (n[childKey] && n[childKey].length > 0) {
+            // if (n[childKey] && n[childKey].length > 0) {
+            if (tools.isArray(n[childKey]) &&
+              !(n.isParent === false || (typeof n.isParent == "string" && tools.eqs(n.isParent, "false")))) {
                 n.isParent = true;
                 n.zAsync = true;
             } else {
@@ -1493,6 +1495,7 @@
                     //old parentNode has no child nodes
                     parentNode.isParent = false;
                     parentNode.open = false;
+                    delete parentNode[childKey];
                     tmp_ulObj = $$(parentNode, consts.id.UL, setting);
                     tmp_switchObj = $$(parentNode, consts.id.SWITCH, setting);
                     tmp_icoObj = $$(parentNode, consts.id.ICON, setting);
