@@ -2,7 +2,7 @@
 $web_title = "API Document [zTree -- jQuery tree plug-ins.]";
 
 $title = "zTree v3.5.30 API Document";
-$title_info = "all.js = core + excheck + exedit ( without exhide ); if you found some mistakes please contact me.";
+$title_info = "all.js = core + excheck + exedit ( without exhide )";
 
 $api_subtitle = "Notes: ";
 $api_sub_core = "core package";

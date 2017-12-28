@@ -2,7 +2,7 @@
 $web_title = "Home [zTree -- jQuery tree plug-ins.]";
 
 $title = "zTree -- jQuery tree plug-ins.";
-$title_info = "I hope zTree is iseful for your project, and hope you like it. I am active in supporting it and hope zTree keeps growing rapidly!";
+$title_info = "I hope zTree is useful for your project, and hope you like it.";
 
 $main_subtitle = "Maybe you need to see:";
 $main_sub_info = "Home";
@@ -48,4 +48,6 @@ $contact_option4 = "Ask questions, (no need for login), go to zTree Hi: ";
 $contact_option5 = "If you can't do any of the above, just Email: ";
 $contact_option6 = "If you like Github, zTree is on Github: ";
 $contact_myhome = "I hope you like zTree, and I would like to thank my family, particularly for their support!";
+
+$adAlert = "[AD]";
 ?>

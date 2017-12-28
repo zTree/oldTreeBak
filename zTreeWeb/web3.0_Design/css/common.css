@@ -41,9 +41,14 @@ h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
 .footer_wrap {bottom: 0;height: 47px;width: 100%;background-color: #1b1b1b;border-top: 1px solid #749e58;}
 
 /* Header */
-.header {position: relative;width: 940px;margin: 0 auto;height: 160px;border: 1px solid white;background: transparent url(../img/header-bg.png) repeat-x 0 -50px;}
-.header-text {padding: 40px 25px 15px 150px;font-size: 18px;line-height: 24px;color: #747d67;font-family: Helvetica, sans-serif;}
+.header {position: relative;width: 940px;margin: 0 auto;height: 100px;border: 1px solid white;background: transparent url(../img/header-bg.png) repeat-x 0 -50px;}
+.header-text {padding: 10px 25px 15px 150px;font-size: 18px;line-height: 24px;color: #747d67;font-family: Helvetica, sans-serif;}
+.header-text h1 {margin-bottom: 8px;}
 .header-text img {padding-bottom: 5px;}
+.header-ad-container {position: relative;width: 940px;margin: 5px auto 0;height: 80px;border: 1px solid white;background: transparent url(../img/contact-bg.png) repeat-x 0 -50px;}
+.header-ad {text-align: center;}
+.header-ad-container img {height: 80px;}
+.header-ad-container .ad-alert {position: absolute;bottom: 0px;right: 16px;color: #6d9838;}
 .shortcuts {white-space: nowrap;text-align: right;position: absolute;top: -45px;right: 5px;}
 .shortcuts.language {top: -85px;right:0px;}
 .shortcuts li {display: inline;font-size: 18px;line-height: 28px;font-family: Helvetica, Arial, simsun, sans-serif;padding-bottom: 5px;margin-left: 30px;cursor: pointer;}
@@ -52,9 +57,8 @@ h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
 .shortcuts li span.selected {padding: 2px;background-color: #528036;}
 .shortcuts li span {color: #fff;}
 .ieSuggest {display:none;font-size: 12px;color: silver;position: absolute;left: 10px;top: 2px;}
-.google_plus {position: absolute;right: 10px; top:10px;}
 .light-bulb {position: absolute;left: -20px;bottom: -35px;width:116px;height:180px;background-image:url(../img/lightbulb.png);background-repeat: no-repeat;}
-.qq-group {background:url(../img/payRead.png);width:130px; height:130px; position:absolute; top: 14px; left: 10px;}
+.qq-group {background:url(../img/payRead-min.jpg);width:80px; height:80px; position:absolute; top: 11px; left: 33px;}
 /* Content */
 .content {position: relative;width: 940px;margin: 0 auto;}
 .nav_section {position: relative;height: 20px;font-family: "Myriad Pro", "Trebuchet MS", sans-serif;font-size: 15px;color: #253;padding: 20px 0;}

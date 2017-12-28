@@ -47,4 +47,6 @@ $contact_option4 = "随意提问题，不需要账号的可以去 zTree吧：";
 $contact_option5 = "以上都不愿意的，就 Email：";
 $contact_option6 = "喜欢 Github 的朋友可以去 Github：";
 $contact_myhome = "感谢各位对 zTree 的厚爱，同时我还要感谢我的家人，谢谢她们对我的支持！";
+
+$adAlert = "[广告]";
 ?>

@@ -157,13 +157,6 @@
 	font-weight: bold;
 }
 
-.google_plus {
-	position: absolute;
-	top: 330px;
-	left: 670px;
-	z-index: 9999
-}
-
 .button-download {
 	position: absolute;
 	top: 650px;

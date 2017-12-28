@@ -74,9 +74,13 @@ require("lang/" . $lang . "/" . $page . ".php");
 if ($lang == "cn") {
 	$menu_lang = $menu_english;
 	$chgLang = "en";
+	$headerAdFile = "headerAd.zh.jpg";
+	$headerAdUrl = "https://enhancer.io";
 } else {
 	$menu_lang = $menu_chinese;
 	$chgLang = "cn";
+	$headerAdFile = "headerAd.en.jpg";
+	$headerAdUrl = "https://enhancer.io?lang=en";
 }
 // 过期时间：30天
 setcookie("lang", $lang, time()+2592000);
@@ -112,9 +116,8 @@ if ($page == "main") {
 		<!--<div class="light-bulb" alt=""></div>-->
 		<a href="https://note.wiz.cn/pages/manage/biz/payRead.html?kb=3fe9d146-6498-4882-b75c-f533442aba5b" target="_blank"><div class="qq-group" title="<?php echo $qq_group_icon?>"></div></a>
 		<div class="ieSuggest"><?php echo $suggestNoIE?></div>
-		<div class="google_plus"><g:plusone></g:plusone></div>
 		<div class="header-text">
-			<h1><em><?php echo $title?></em></h1><p></p>
+			<h1><em><?php echo $title?></em></h1>
 			<p><?php echo $title_info?></p>
 		</div>
 		<ul class="shortcuts">
@@ -146,6 +149,10 @@ if ($page == "main") {
 			<li><a href="#" <?php echo $isHome?> onclick="chgLang('<?php echo $chgLang?>'); return false;"><button class="ico <?php echo $chgLang?>" onfocus="this.blur();" title="<?php echo $menu_lang?>"></button><span class=""></span></a></li>
 		</ul>
 	</div>
+	<div class="header-ad-container round">
+        <div class="header-ad"><a href="<?php echo $headerAdUrl?>" target="_blank"><img src="./img/<?php echo $headerAdFile?>" /></a></div>
+        <span class="ad-alert"><?php echo $adAlert?></span>
+    </div>
 </div>
 <?php
 //<div id="ad_120_600_right" class="ad" style="position:absolute; top:0px; display:none;">
