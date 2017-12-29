@@ -74,12 +74,12 @@ require("lang/" . $lang . "/" . $page . ".php");
 if ($lang == "cn") {
 	$menu_lang = $menu_english;
 	$chgLang = "en";
-	$headerAdFile = "headerAd.zh.jpg";
+	$headerAdFile = "enhancer-ads-cn.png";
 	$headerAdUrl = "https://enhancer.io";
 } else {
 	$menu_lang = $menu_chinese;
 	$chgLang = "cn";
-	$headerAdFile = "headerAd.en.jpg";
+	$headerAdFile = "enhancer-ads-en.png";
 	$headerAdUrl = "https://enhancer.io?lang=en";
 }
 // 过期时间：30天
@@ -150,7 +150,7 @@ if ($page == "main") {
 		</ul>
 	</div>
 	<div class="header-ad-container round">
-        <div class="header-ad"><a href="<?php echo $headerAdUrl?>" target="_blank"><img src="./img/<?php echo $headerAdFile?>" /></a></div>
+        <div class="header-ad"><a href="<?php echo $headerAdUrl?>" target="_blank"><img src="./img/ad/<?php echo $headerAdFile?>" /></a></div>
         <span class="ad-alert"><?php echo $adAlert?></span>
     </div>
 </div>
