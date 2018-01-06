@@ -990,21 +990,23 @@
                 }
 
                 var tmpParam = {};
-                for (i = 0, l = setting.async.autoParam.length; node && i < l; i++) {
-                    var pKey = setting.async.autoParam[i].split("="), spKey = pKey;
+                var autoParam = tools.apply(setting.async.autoParam, [setting.treeId, node], setting.async.autoParam);
+                for (i = 0, l = autoParam.length; node && i < l; i++) {
+                    var pKey = autoParam[i].split("="), spKey = pKey;
                     if (pKey.length > 1) {
                         spKey = pKey[1];
                         pKey = pKey[0];
                     }
                     tmpParam[spKey] = node[pKey];
                 }
-                if (tools.isArray(setting.async.otherParam)) {
-                    for (i = 0, l = setting.async.otherParam.length; i < l; i += 2) {
-                        tmpParam[setting.async.otherParam[i]] = setting.async.otherParam[i + 1];
+                var otherParam = tools.apply(setting.async.otherParam, [setting.treeId, node], setting.async.otherParam);
+                if (tools.isArray(otherParam)) {
+                    for (i = 0, l = otherParam.length; i < l; i += 2) {
+                        tmpParam[otherParam[i]] = otherParam[i + 1];
                     }
                 } else {
-                    for (var p in setting.async.otherParam) {
-                        tmpParam[p] = setting.async.otherParam[p];
+                    for (var p in otherParam) {
+                        tmpParam[p] = otherParam[p];
                     }
                 }
 
