@@ -4,7 +4,7 @@ $menu_demo = "Demo";
 $menu_api = "API Document";
 $menu_faq = "Guide";
 $menu_donate = "Donate";
-$menu_download = "v3.5.33";
+$menu_download = "v3.5.34";
 $menu_chinese = "Chinese";
 $suggestNoIE = "If you use the Chrome / FireFox / Opera / IE9 browser will be even more dazzling effect!";
 

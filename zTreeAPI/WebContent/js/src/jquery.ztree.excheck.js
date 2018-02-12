@@ -585,7 +585,7 @@
     var key = setting.data.key.checked;
     if (typeof newChecked !== 'undefined') {
       if (typeof newChecked === "string") {
-        newChecked = tools.eqs(checked, "true");
+        newChecked = tools.eqs(newChecked, "true");
       }
       newChecked = !!newChecked;
       node[key] = newChecked;
