@@ -4,7 +4,7 @@ $menu_demo = "Demo 演示";
 $menu_api = "API 文档";
 $menu_faq = "入门指南";
 $menu_donate = "捐助";
-$menu_download = "下载 v3.5.34";
+$menu_download = "下载";
 $menu_english = "英文版";
 $suggestNoIE = "浏览本网站建议您使用 Chrome、FireFox、Opera、IE9 等浏览器（只要不是 IE6 7 8 就行）, 速度会更快，画面会更炫！";
 

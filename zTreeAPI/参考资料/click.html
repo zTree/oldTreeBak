@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <TITLE></TITLE>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../../../css/demo.css" type="text/css">
+  <link rel="stylesheet" href="../../../css/zTreeStyle/zTreeStyle.css" type="text/css">
+  <script type="text/javascript" src="../../../js/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.ztree.core.js"></script>
+  <SCRIPT type="text/javascript">
+    <!--
+    var setting = {
+      data: {
+        simpleData: {
+          enable: true
+        }
+      },
+      callback: {
+        beforeClick: beforeClick,
+        onClick: onClick
+      }
+    };
+
+    var zNodes = [
+      {id: 1, pId: 0, name: "普通的父节点", open: true},
+      {id: 11, pId: 1, name: "叶子节点 - 1"},
+      {id: 12, pId: 1, name: "叶子节点 - 2"},
+      {id: 13, pId: 12, name: "叶子节点 - 3"},
+      {id: 2, pId: 0, name: "NB的父节点", open: true},
+      {id: 21, pId: 2, name: "叶子节点2 - 1"},
+      {id: 22, pId: 2, name: "叶子节点2 - 2"},
+      {id: 23, pId: 22, name: "叶子节点2 - 3"},
+      {id: 3, pId: 0, name: "郁闷的父节点", open: true},
+      {id: 31, pId: 3, name: "叶子节点3 - 1"},
+      {id: 32, pId: 3, name: "叶子节点3 - 2"},
+      {id: 33, pId: 3, name: "叶子节点3 - 3"}
+    ];
+
+    var startNode;
+
+    function beforeClick(treeId, treeNode, clickFlag) {
+      var treeObj = $.fn.zTree.getZTreeObj('treeDemo');
+      var selectedNodes = treeObj.getSelectedNodes();
+      if (!clickFlag || selectedNodes.length === 0) {
+        startNode = null;
+      } else {
+        startNode = selectedNodes[selectedNodes.length - 1];
+      }
+      return true;
+    }
+
+    function onClick(event, treeId, treeNode, clickFlag) {
+      if (clickFlag && event.shiftKey) {
+        selectNodes(startNode, treeNode);
+      }
+    }
+
+    function selectNodes(startNode, endNode) {
+      if (!startNode || !endNode || endNode === startNode) {
+        return;
+      }
+      var startPath = startNode.getPath();
+      var endPath = endNode.getPath();
+      var i, t, needSwitch = null;
+      for (i = 0; i < startPath.length && i < endPath.length; i++) {
+        if (startPath[i] === endPath[i]) {
+          continue;
+        }
+        needSwitch = startPath[i].getIndex() > endPath[i].getIndex();
+        break;
+      }
+      if (needSwitch === null) {
+        needSwitch = startPath.length > endPath.length;
+      }
+      if (needSwitch) {
+        t = endNode;
+        endNode = startNode;
+        startNode = t;
+      }
+      var treeObj = $.fn.zTree.getZTreeObj('treeDemo');
+      var n = startNode;
+      while (n) {
+        treeObj.selectNode(n, n !== startNode, true);
+        if (n === endNode) {
+          break;
+        }
+        if (n.isParent && n.children.length > 0) {
+          n = n.children[0];
+        } else if (!n.isLastNode) {
+          n = n.getNextNode();
+        } else {
+          while (n) {
+            n = n.getParentNode();
+            if (n && !n.isLastNode) {
+              n = n.getNextNode();
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    $(document).ready(function () {
+      $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+    });
+    //-->
+  </SCRIPT>
+</HEAD>
+
+<BODY>
+<h6>[ core/click.html ]</h6>
+<div class="content_wrap">
+  <div class="zTreeDemoBackground left">
+    <ul id="treeDemo" class="ztree"></ul>
+  </div>
+</div>
+</BODY>
+</HTML>
