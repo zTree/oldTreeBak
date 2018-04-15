@@ -61,7 +61,7 @@ include( "head.php")
 				<div class="content">
 					<ul>
 						<li><?php echo $link_wiz ?></li>
-						<li><?php echo $link_datatables ?></li>
+						<li><?php echo $link_uileader ?></li>
 					</ul>
 				</div>
 				<div class="content">
@@ -79,7 +79,7 @@ include( "head.php")
 				<div class="content">
 					<ul>
 						<li><?php echo $link_16aspx ?></li>
-						<li></li>
+						<li><?php echo $link_datatables ?></li>
 					</ul>
 				</div>
 			</div>

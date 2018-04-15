@@ -159,8 +159,13 @@ if ($page == "main") {
 //	<IFRAME ID="adIframe" Name="adIframe" class="adRight" FRAMEBORDER=0 SCROLLING=NO width=120 height=600 SRC="googleAD.html" style="display:none;"></IFRAME>
 //</div>
 ?>
-<div id="ad_120_600_left" class="ad" style="top:0px; display:none;">
+<div id="ad_120_600_left" class="ad ad_120_600" style="top:0px; display:none;">
 	<div id="ad_120_600_wiz" class="adLeft ad" style="top:0px; left:120px;">
+		<a href="http://www.uileader.com" target="_blank"><div class="ad_uileader" ></div></a>
+	</div>
+</div>
+<div id="ad_120_600_right" class="ad ad_120_600" style="position:absolute; top:0px; display:none;">
+	<div id="ad_120_600_wiz" class="adRight ad" style="top:0px; left:120px;">
 		<a href="http://www.wiz.cn/i/ef16c35f" target="_blank"><div class="ad_wiz" ></div></a>
 	</div>
 </div>
