@@ -37,6 +37,7 @@ $(document).ready(function () {
   for (var i = 0, l = tmpAdList.length; i < l; i++) {
     ad_right.list[i] = $(tmpAdList.get(i));
   }
+  setAd();
   setTimeout(setAd, 1000);
 
   // footer
@@ -108,23 +109,17 @@ function setAd() {
 }
 
 function adSwitch(adObj) {
-  if (adObj === ad_left) {
-    if (adObj.left > 0) {
-      adObj.div.css({top: adObj.headOffset.top + 50, left: adObj.left}).show();
-    } else {
-      adObj.div.hide();
-      return;
-    }
-  } else {
-    var head = $("#header");
-    if (adObj.left > 0) {
-      adObj.div.css({top: adObj.headOffset.top + 50, left: adObj.headOffset.left + head.width() + 20}).show();
-    } else {
-      adObj.div.hide();
-      return;
-    }
+  var head = $("#header");
+  if (document.body.clientWidth - head.width() < 280) {
+    adObj.div.hide();
+    return;
   }
 
+  if (adObj === ad_left) {
+      adObj.div.css({top: adObj.headOffset.top + 50, left: adObj.left}).show();
+  } else {
+      adObj.div.css({top: adObj.headOffset.top + 50, left: adObj.headOffset.left + head.width() + 20}).show();
+  }
 
   var curObj = getCurAd(adObj);
   if (!!curObj.last) curObj.last.css({left: "-120px"});

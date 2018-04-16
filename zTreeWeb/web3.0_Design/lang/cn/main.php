@@ -39,7 +39,7 @@ $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net�
 $link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables中国'>Datatables中国</a>";
 $link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='开源中国'>开源中国</a>";
 $link_gitee = "<a href='https://gitee.com/' target='_blank' title='码云'>码云</a>";
-$link_uileader = "<a href='http://www.uileader.com' target='_blank' title='UILeader'>UILeader</a>";
+$link_uileader = "<a href='http://www.uileader.com' target='_blank' title='QuickUI'>QuickUI 前端框架</a>";
 
 $contact_title = "联系我们";
 $contact_option1 = "喜欢 码云 的朋友可以去 Gitee.com：";

@@ -16,7 +16,7 @@ if ($host=='www.baby666.cn' || $host=='baby666.cn' ||
 	exit();
 }
 
-$release = "2013031101";
+$release = "2018041601";
 
 function startsWith($haystack, $needle) {
     $length = strlen($needle);

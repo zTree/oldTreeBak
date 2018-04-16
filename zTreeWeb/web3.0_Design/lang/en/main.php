@@ -39,7 +39,7 @@ $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net S
 $link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables China'>Datatables China</a>";
 $link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='Open Source China'>Open Source China</a>";
 $link_gitee = "<a href='https://gitee.com/' target='_blank' title='Gitee'>Gitee</a>";
-$link_uileader = "<a href='http://www.uileader.com' target='_blank' title='UILeader'>UILeader</a>";
+$link_uileader = "<a href='http://www.uileader.com' target='_blank' title='QuickUI'>QuickUI</a>";
 
 $contact_title = "Contact Us";
 $contact_option1 = "If you like Gitee, zTree is on Gitee: ";
