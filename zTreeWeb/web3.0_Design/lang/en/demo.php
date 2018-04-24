@@ -65,6 +65,7 @@ $demo_menu_512 = "Expand All Nodes with Async";
 $demo_menu_513 = "OutLook Style";
 $demo_menu_514 = "Metro Style";
 $demo_menu_515 = "Awesome Style";
+$demo_menu_516 = "Fuzzy Search";
 
 $demo_menu_6 = "Other Extension Package";
 $demo_menu_601 = "hide ordinary node";

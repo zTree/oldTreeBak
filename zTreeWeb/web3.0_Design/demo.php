@@ -96,6 +96,7 @@ var menu_nodes =[
 	{id:501, pId:5, name:"<?php echo $demo_menu_501?>", iconSkin:"menu", file:"super/oneroot"},
 	{id:502, pId:5, name:"<?php echo $demo_menu_502?>", iconSkin:"menu", file:"super/oneclick"},
 	{id:503, pId:5, name:"<?php echo $demo_menu_503?>", iconSkin:"menu", file:"super/singlepath"},
+	{id:516, pId:5, name:"<?php echo $demo_menu_516?>", iconSkin:"menu", file:"super/fuzzySearch"},
 	{id:504, pId:5, name:"<?php echo $demo_menu_504?>", iconSkin:"menu", file:"super/diydom"},
 	{id:505, pId:5, name:"<?php echo $demo_menu_505?>", iconSkin:"menu", file:"super/checkbox_radio"},
 	{id:506, pId:5, name:"<?php echo $demo_menu_506?>", iconSkin:"menu", file:"super/left_menu"},
