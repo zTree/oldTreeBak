@@ -169,6 +169,6 @@ if ($page == "main") {
 	<?php
         //<a href="http://www.wiz.cn/i/ef16c35f" target="_blank"><div class="ad_wiz" ></div></a>
     ?>
-		<a href="http://www.jianma123.com/ztreelandpage.aardio" target="_blank"><div class="ad_ztreelandpage" ></div></a>
+		<a href="http://www.jianma123.com/ztreelandpage.aardio?hmsr=ztree&hmpl=1&hmcu=2&hmkw=3&hmci=4" target="_blank"><div class="ad_ztreelandpage" ></div></a>
 	</div>
 </div>
