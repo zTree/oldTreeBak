@@ -161,14 +161,17 @@ if ($page == "main") {
 ?>
 <div id="ad_120_600_left" class="ad ad_120_600" style="top:0px; display:none;">
 	<div id="ad_120_600_wiz" class="adLeft ad" style="top:0px; left:120px;">
-		<a href="http://www.uileader.com" target="_blank"><div class="ad_uileader" ></div></a>
+	    <a href="http://www.wiz.cn/i/ef16c35f" target="_blank"><div class="ad_wiz" ></div></a>
+	    <span class="ad-alert"><?php echo $adAlert?></span>
 	</div>
 </div>
 <div id="ad_120_600_right" class="ad ad_120_600" style="position:absolute; top:0px; display:none;">
-	<div id="ad_120_600_wiz" class="adRight ad" style="top:0px; left:120px;">
+	<div id="ad_120_600_wiz" class="adRight ad adEmpty" style="top:0px; left:120px;">
+	    <span class="ad-alert"><?php echo $adAlertEmpty?></span>
 	<?php
+	    //<a href="http://www.uileader.com" target="_blank"><div class="ad_uileader" ></div></a>
         //<a href="http://www.wiz.cn/i/ef16c35f" target="_blank"><div class="ad_wiz" ></div></a>
+        //<a href="http://www.jianma123.com/ztreelandpage.aardio?hmsr=ztree&hmpl=1&hmcu=2&hmkw=3&hmci=4" target="_blank"><div class="ad_ztreelandpage" ></div></a>
     ?>
-		<a href="http://www.jianma123.com/ztreelandpage.aardio?hmsr=ztree&hmpl=1&hmcu=2&hmkw=3&hmci=4" target="_blank"><div class="ad_ztreelandpage" ></div></a>
 	</div>
 </div>

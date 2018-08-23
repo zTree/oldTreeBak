@@ -51,4 +51,5 @@ $contact_option6 = "If you like Github, zTree is on Github: ";
 $contact_myhome = "I hope you like zTree, and I would like to thank my family, particularly for their support!";
 
 $adAlert = "[AD]";
+$adAlertEmpty = "[Advertising position for rent]";
 ?>
