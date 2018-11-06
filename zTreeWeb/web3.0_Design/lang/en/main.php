@@ -32,7 +32,7 @@ $license_content = " copyright (c) <2011> < hunter.z ><br/><br/>Permission is he
 $links_title = "Links";
 $link_wiz = "<a href='http://www.wiz.cn/i/ef16c35f' target='_blank' title='wiz knowledge'>wiz knowledge</a>";
 $link_topitxy = "<a href='http://www.topitxy.com' target='_blank' title='IT School'>IT School</a>";
-$link_youyax = "<a href='http://www.youyax.com' target='_blank' title='YouYaX'>YouYaX</a>";
+//$link_youyax = "<a href='http://www.youyax.com' target='_blank' title='YouYaX'>YouYaX</a>";
 $link_fineui = "<a href='http://fineui.com/demo_en/' target='_blank' title='FineUI'>FineUI</a>";
 $link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C# Forum'>C# Forum</a>";
 $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net SourceCode'>Asp.net SourceCode</a>";
@@ -40,6 +40,7 @@ $link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Data
 $link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='Open Source China'>Open Source China</a>";
 $link_gitee = "<a href='https://gitee.com/' target='_blank' title='Gitee'>Gitee</a>";
 $link_uileader = "<a href='http://www.uileader.com' target='_blank' title='QuickUI'>QuickUI</a>";
+$link_conyEdit = "<a href='https://www.conyedit.com/' target='_blank' title='ConyEdit'>ConyEdit</a>";
 
 $contact_title = "Contact Us";
 $contact_option1 = "If you like Gitee, zTree is on Gitee: ";

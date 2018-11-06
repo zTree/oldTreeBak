@@ -229,6 +229,7 @@ input.searchResult.noResult {background-color:#ff6666;color:black}
 .ad_120_600 .ad{position:absolute;display:block;width:120px;height:600px;cursor:pointer;}
 .ad_120_600 .ad .ad-alert {position: absolute;bottom: 4px;right: 8px;color: #1A2611;}
 .ad_wiz {width:120px;height:600px;background-image:url("../img/ad/ad_wiz.png");cursor:pointer;}
+.ad_conyEdit {width:120px;height:600px;background-image:url("../img/ad/ad_conyEdit.png");cursor:pointer;}
 /*.ad_ztreelandpage {width:120px;height:600px;background-image:url("../img/ad/ad_ztreelandpage.png");cursor:pointer;}*/
 /*.ad_uileader {width:120px;height:600px;background-image:url("../img/ad/ad_uileader.png");cursor:pointer;}*/
 .ad a{display:block;}

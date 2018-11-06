@@ -161,12 +161,13 @@ if ($page == "main") {
 ?>
 <div id="ad_120_600_left" class="ad ad_120_600" style="top:0px; display:none;">
 	<div id="ad_120_600_wiz" class="adLeft ad" style="top:0px; left:120px;">
-	    <a href="http://www.wiz.cn/i/ef16c35f" target="_blank"><div class="ad_wiz" ></div></a>
+	    <a href="https://www.conyedit.com/?adFrom=ztree" target="_blank"><div class="ad_conyEdit" ></div></a>
 	    <span class="ad-alert"><?php echo $adAlert?></span>
 	</div>
 </div>
 <div id="ad_120_600_right" class="ad ad_120_600" style="position:absolute; top:0px; display:none;">
 	<div id="ad_120_600_wiz" class="adRight ad adEmpty" style="top:0px; left:120px;">
+	    <a href="http://www.wiz.cn/i/ef16c35f" target="_blank"><div class="ad_wiz" ></div></a>
 	    <span class="ad-alert"><?php echo $adAlertEmpty?></span>
 	<?php
 	    //<a href="http://www.uileader.com" target="_blank"><div class="ad_uileader" ></div></a>

@@ -66,7 +66,7 @@ include( "head.php")
 				</div>
 				<div class="content">
 					<ul>
-						<li><?php echo $link_youyax ?></li>
+						<li><?php echo $link_conyEdit ?></li>
 						<li><?php echo $link_topitxy ?></li>
 					</ul>
 				</div>

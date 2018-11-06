@@ -32,7 +32,7 @@ $license_content = " copyright (c) <2011> < hunter.z ><br/><br/>使用该许可�
 $links_title = "友情链接";
 $link_wiz = "<a href='http://www.wiz.cn/i/ef16c35f' target='_blank' title='为知个人知识管理'>为知个人知识管理</a>";
 $link_topitxy = "<a href='http://www.topitxy.com' target='_blank' title='顶级 IT 学院'>顶级 IT 学院</a>";
-$link_youyax = "<a href='http://www.youyax.com' target='_blank' title='YouYaX 开源社区'>YouYaX 开源社区</a>";
+//$link_youyax = "<a href='http://www.youyax.com' target='_blank' title='YouYaX 开源社区'>YouYaX 开源社区</a>";
 $link_fineui = "<a href='http://fineui.com/' target='_blank' title='基于 ExtJS 的专业 ASP.NET 控件库'>FineUI</a>";
 $link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C#论坛'>C#论坛</a>";
 $link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net源码'>Asp.net源码</a>";
@@ -40,6 +40,7 @@ $link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Data
 $link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='开源中国'>开源中国</a>";
 $link_gitee = "<a href='https://gitee.com/' target='_blank' title='码云'>码云</a>";
 $link_uileader = "<a href='http://www.uileader.com' target='_blank' title='QuickUI'>QuickUI 前端框架</a>";
+$link_conyEdit = "<a href='https://www.conyedit.com/' target='_blank' title='ConyEdit'>ConyEdit</a>";
 
 $contact_title = "联系我们";
 $contact_option1 = "喜欢 码云 的朋友可以去 Gitee.com：";
