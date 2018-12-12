@@ -41,6 +41,7 @@ $link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='Open S
 $link_gitee = "<a href='https://gitee.com/' target='_blank' title='Gitee'>Gitee</a>";
 $link_uileader = "<a href='http://www.uileader.com' target='_blank' title='QuickUI'>QuickUI</a>";
 $link_conyEdit = "<a href='https://www.conyedit.com/' target='_blank' title='ConyEdit'>ConyEdit</a>";
+$link_tjpcms = "<a href='http://www.tjpcms.com/' target='_blank' title='Tjpcms'>Tjpcms</a>";
 
 $contact_title = "Contact Us";
 $contact_option1 = "If you like Gitee, zTree is on Gitee: ";

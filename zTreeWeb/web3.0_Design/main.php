@@ -56,6 +56,7 @@ include( "head.php")
 					<ul>
 						<li><?php echo $link_oschina ?></li>
 						<li><?php echo $link_gitee ?></li>
+						<li><?php echo $link_tjpcms ?></li>
 					</ul>
 				</div>
 				<div class="content">

@@ -41,6 +41,7 @@ $link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='开源
 $link_gitee = "<a href='https://gitee.com/' target='_blank' title='码云'>码云</a>";
 $link_uileader = "<a href='http://www.uileader.com' target='_blank' title='QuickUI'>QuickUI 前端框架</a>";
 $link_conyEdit = "<a href='https://www.conyedit.com/' target='_blank' title='ConyEdit'>ConyEdit</a>";
+$link_tjpcms = "<a href='http://www.tjpcms.com/' target='_blank' title='Tjpcms'>Tjpcms</a>";
 
 $contact_title = "联系我们";
 $contact_option1 = "喜欢 码云 的朋友可以去 Gitee.com：";
