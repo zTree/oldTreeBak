@@ -293,7 +293,7 @@
       newIsHidden = !!newIsHidden;
       node[key] = newIsHidden;
     }
-    return node[key];
+    return !!node[key];
   };
 
   data.exSetting(_setting);

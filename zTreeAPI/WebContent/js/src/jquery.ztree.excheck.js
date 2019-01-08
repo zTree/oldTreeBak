@@ -594,7 +594,7 @@
       newChecked = !!newChecked;
       node[key] = newChecked;
     }
-    return node[key];
+    return !!node[key];
   };
 
   data.exSetting(_setting);
