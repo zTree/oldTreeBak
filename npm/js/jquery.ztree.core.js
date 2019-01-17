@@ -637,7 +637,6 @@
         } else {
           node[key] = !!node[key];
         }
-        console.log(node[setting.data.key.name] + '.' + key + ':' + node[key]);
         return node[key];
       },
       nodeName: function (setting, node, newName) {
