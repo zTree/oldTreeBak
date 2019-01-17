@@ -121,7 +121,6 @@
     _initNode = function (setting, level, n, parentNode, isFirstNode, isLastNode, openFlag) {
       if (!n) return;
       var checked = data.nodeChecked(setting, n);
-      checked = data.nodeChecked(setting, n, checked);
       n.checkedOld = checked;
       if (typeof n.nocheck == "string") n.nocheck = tools.eqs(n.nocheck, "true");
       n.nocheck = !!n.nocheck || (setting.check.nocheckInherit && parentNode && !!parentNode.nocheck);
@@ -593,8 +592,12 @@
       }
       newChecked = !!newChecked;
       node[key] = newChecked;
+    } else if (typeof node[key] == "string"){
+      node[key] = tools.eqs(node[key], "true");
+    } else {
+      node[key] = !!node[key];
     }
-    return !!node[key];
+    return node[key];
   };
 
   data.exSetting(_setting);

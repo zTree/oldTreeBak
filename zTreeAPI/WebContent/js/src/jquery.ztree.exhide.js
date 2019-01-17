@@ -288,12 +288,16 @@
     var key = setting.data.key.isHidden;
     if (typeof newIsHidden !== 'undefined') {
       if (typeof newIsHidden === "string") {
-        newIsHidden = tools.eqs(checked, "true");
+        newIsHidden = tools.eqs(newIsHidden, "true");
       }
       newIsHidden = !!newIsHidden;
       node[key] = newIsHidden;
+    } else if (typeof node[key] == "string"){
+      node[key] = tools.eqs(node[key], "true");
+    } else {
+      node[key] = !!node[key];
     }
-    return !!node[key];
+    return node[key];
   };
 
   data.exSetting(_setting);

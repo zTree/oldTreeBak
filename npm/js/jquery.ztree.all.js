@@ -1,6 +1,6 @@
 
 /*
- * JQuery zTree core v3.5.38
+ * JQuery zTree core v3.5.39
  * http://treejs.cn/
  *
  * Copyright (c) 2010 Hunter.z
@@ -9,7 +9,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  * email: hunter.z@263.net
- * Date: 2019-01-08
+ * Date: 2019-01-017
  */
 (function ($) {
   var settings = {}, roots = {}, caches = {},
@@ -303,8 +303,7 @@
       n.parentTId = parentNode ? parentNode.tId : null;
       n.open = (typeof n.open == "string") ? tools.eqs(n.open, "true") : !!n.open;
       var isParent = data.nodeIsParent(setting, n);
-      if (tools.isArray(children) &&
-        !(isParent === false || (typeof isParent == "string" && tools.eqs(isParent, "false")))) {
+      if (tools.isArray(children)) {
         data.nodeIsParent(setting, n, true);
         n.zAsync = true;
       } else {
@@ -634,7 +633,12 @@
           }
           newIsParent = !!newIsParent;
           node[key] = newIsParent;
+        } else if (typeof node[key] == "string"){
+          node[key] = tools.eqs(node[key], "true");
+        } else {
+          node[key] = !!node[key];
         }
+        console.log(node[setting.data.key.name] + '.' + key + ':' + node[key]);
         return node[key];
       },
       nodeName: function (setting, node, newName) {
@@ -1983,7 +1987,7 @@
     consts = zt.consts;
 })(jQuery);
 /*
- * JQuery zTree excheck v3.5.38
+ * JQuery zTree excheck v3.5.39
  * http://treejs.cn/
  *
  * Copyright (c) 2010 Hunter.z
@@ -1992,7 +1996,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  * email: hunter.z@263.net
- * Date: 2019-01-08
+ * Date: 2019-01-017
  */
 (function ($) {
   //default consts of excheck
@@ -2117,7 +2121,6 @@
     _initNode = function (setting, level, n, parentNode, isFirstNode, isLastNode, openFlag) {
       if (!n) return;
       var checked = data.nodeChecked(setting, n);
-      checked = data.nodeChecked(setting, n, checked);
       n.checkedOld = checked;
       if (typeof n.nocheck == "string") n.nocheck = tools.eqs(n.nocheck, "true");
       n.nocheck = !!n.nocheck || (setting.check.nocheckInherit && parentNode && !!parentNode.nocheck);
@@ -2589,8 +2592,12 @@
       }
       newChecked = !!newChecked;
       node[key] = newChecked;
+    } else if (typeof node[key] == "string"){
+      node[key] = tools.eqs(node[key], "true");
+    } else {
+      node[key] = !!node[key];
     }
-    return !!node[key];
+    return node[key];
   };
 
   data.exSetting(_setting);
@@ -2631,7 +2638,7 @@
   }
 })(jQuery);
 /*
- * JQuery zTree exedit v3.5.38
+ * JQuery zTree exedit v3.5.39
  * http://treejs.cn/
  *
  * Copyright (c) 2010 Hunter.z
@@ -2640,7 +2647,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  * email: hunter.z@263.net
- * Date: 2019-01-08
+ * Date: 2019-01-017
  */
 (function ($) {
   //default consts of exedit

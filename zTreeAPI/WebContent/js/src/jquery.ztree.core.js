@@ -290,8 +290,7 @@
       n.parentTId = parentNode ? parentNode.tId : null;
       n.open = (typeof n.open == "string") ? tools.eqs(n.open, "true") : !!n.open;
       var isParent = data.nodeIsParent(setting, n);
-      if (tools.isArray(children) &&
-        !(isParent === false || (typeof isParent == "string" && tools.eqs(isParent, "false")))) {
+      if (tools.isArray(children)) {
         data.nodeIsParent(setting, n, true);
         n.zAsync = true;
       } else {
@@ -621,7 +620,12 @@
           }
           newIsParent = !!newIsParent;
           node[key] = newIsParent;
+        } else if (typeof node[key] == "string"){
+          node[key] = tools.eqs(node[key], "true");
+        } else {
+          node[key] = !!node[key];
         }
+        console.log(node[setting.data.key.name] + '.' + key + ':' + node[key]);
         return node[key];
       },
       nodeName: function (setting, node, newName) {
