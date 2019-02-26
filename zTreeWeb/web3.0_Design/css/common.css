@@ -45,9 +45,9 @@ h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
 .header-text {padding: 10px 25px 15px 150px;font-size: 18px;line-height: 24px;color: #747d67;font-family: Helvetica, sans-serif;}
 .header-text h1 {margin-bottom: 8px;}
 .header-text img {padding-bottom: 5px;}
-.header-ad-container {position: relative;width: 940px;margin: 5px auto 0;height: 80px;border: 1px solid white;background: transparent url(../img/contact-bg.png) repeat-x 0 -50px;}
+.header-ad-container {position: relative;width: 940px;margin: 5px auto 0;height: 68px;border: 1px solid white;background: transparent url(../img/contact-bg.png) repeat-x 0 -50px;padding: 4px;box-sizing: border-box;}
 .header-ad {text-align: center;}
-.header-ad-container img {height: 80px;}
+.header-ad-container img {height: 60px;}
 .header-ad-container .ad-alert {position: absolute;bottom: 0px;right: 16px;color: #6d9838;}
 .shortcuts {white-space: nowrap;text-align: right;position: absolute;top: -45px;right: 5px;}
 .shortcuts.language {top: -85px;right:0px;}
