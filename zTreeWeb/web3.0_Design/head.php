@@ -74,12 +74,12 @@ require("lang/" . $lang . "/" . $page . ".php");
 if ($lang == "cn") {
 	$menu_lang = $menu_english;
 	$chgLang = "en";
-	$headerAdFile = "enhancer-ads-cn.png";
+	$headerAdFile = "enhancer-ads-cn.png?20190326";
 	$headerAdUrl = "https://enhancer.io";
 } else {
 	$menu_lang = $menu_chinese;
 	$chgLang = "cn";
-	$headerAdFile = "enhancer-ads-en.png";
+	$headerAdFile = "enhancer-ads-en.png?20190326";
 	$headerAdUrl = "https://enhancer.io?lang=en";
 }
 // 过期时间：30天
