@@ -1,5 +1,6 @@
 /*
- * JQuery zTree exedit v3.5.41
+ * JQuery zTree exedit
+ * v3.5.42
  * http://treejs.cn/
  *
  * Copyright (c) 2010 Hunter.z
@@ -9,6 +10,7 @@
  *
  * Date: 2020-01-06
  */
+
 (function ($) {
   //default consts of exedit
   var _consts = {

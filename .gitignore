@@ -1,5 +1,8 @@
-.idea
+.idea/
+node_modules/*
+.DS_Store
 
+dist
 zTreeAPI/publish
 zTreeWeb/publish
 /nbproject/private/

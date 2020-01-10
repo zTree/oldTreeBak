@@ -1,5 +1,6 @@
 /*
- * JQuery zTree core v3.5.41
+ * JQuery zTree core
+ * v3.5.42
  * http://treejs.cn/
  *
  * Copyright (c) 2010 Hunter.z
@@ -9,6 +10,7 @@
  *
  * Date: 2020-01-06
  */
+
 (function ($) {
   var settings = {}, roots = {}, caches = {},
     //default consts of core

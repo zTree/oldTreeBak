@@ -1,4 +1,4 @@
- v3.5.41
+ * v3.5.42
  * http://treejs.cn/
  *
  * Copyright (c) 2010 Hunter.z
