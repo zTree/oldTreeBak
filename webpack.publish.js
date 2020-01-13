@@ -38,7 +38,9 @@ module.exports = env => {
         },
         { from: `${targetForWeb}/api`, to: `${jsPublishDist}/api`},
         
-        { from: `${targetForWeb}`, to: `${webPublishDist}`, ignore: ['js/*.js']},
+        { from: `${targetForWeb}`, to: `${webPublishDist}`, 
+          ignore: ['js/*.js', 'api/apiCss/**/*', 'api/*.html']
+        },
         { from: `${targetForWeb}/js`, to: `${webPublishDist}/js/[name].[ext]`, 
           transform(content, path) {
             let code = content.toString();
