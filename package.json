@@ -28,7 +28,7 @@
     "uuid": "*"
   },
   "scripts": {
-    "dev": "webpack --env=development --config webpack.common.js",
-    "build": "webpack --env=production --config webpack.common.js"
+    "dev": "webpack --env=development --config webpack.common.js&&webpack --env=development --config webpack.all.js",
+    "build": "webpack --env=production --config webpack.common.js&&webpack --env=production --config webpack.all.js&&webpack --env=production --config webpack.publish.js"
   }
 }

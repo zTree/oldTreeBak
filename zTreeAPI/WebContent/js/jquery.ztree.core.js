@@ -8,7 +8,7 @@
  * Licensed same as jquery - MIT License
  * http://www.opensource.org/licenses/mit-license.php
  *
- * Date: 2020-01-06
+ * Date: 2020-01-13
  */
 
 (function ($) {
@@ -1431,8 +1431,8 @@
         if (!dom) {
           return;
         }
-        // support IE 7
-        if (typeof Element === 'undefined') {
+        // support IE 7 / 8
+        if (typeof Element === 'undefined' || typeof HTMLElement === 'undefined') {
           var contRect = setting.treeObj.get(0).getBoundingClientRect(),
             findMeRect = dom.getBoundingClientRect();
           if (findMeRect.top < contRect.top || findMeRect.bottom > contRect.bottom

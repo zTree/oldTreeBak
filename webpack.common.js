@@ -1,62 +1,52 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MergeIntoSingleFilePlugin = require('webpack-merge-and-include-globally');
 const UglifyJS = require("uglify-js");
-const webpack = require("webpack");
 
 
 console.log('webpack.common.js');
 
-let jsPublishDist = './zTreeAPI/publish';
 let jsTargetDist = './zTreeAPI/WebContent/js/jquery.ztree.*.js';
+let jsTargetDistForWeb = './zTreeWeb/web3.0_Design/js/jquery.ztree.*.js';
+let jsTargetDistForApi = './zTreeWeb/web3.0_Design/api/apiCss/jquery.ztree.*.js';
 let jsTarget = './zTreeAPI/WebContent/js';
+let jsTargetForWeb = './zTreeWeb/web3.0_Design/js';
+let jsTargetForApi = './zTreeWeb/web3.0_Design/api/apiCss';
+
 let jsSrc = './zTreeAPI/WebContent/js/src';
 
 
-let allFiles = [
-  {name: 'core', isForAll: true}, 
-  {name: 'excheck', isForAll: true}, 
-  {name: 'exedit', isForAll: true}, 
-  {name: 'exhide', isForAll: false}
-];
+let zTreeFiles = ['core', 'excheck', 'exedit', 'exhide'];
 
 module.exports = env => {
 
   const isProduction = env === 'production';
 
   let mergeFiles = [];
-  let allFile = {src: [], dest: `../${jsTarget}/jquery.ztree.all.js`};
-  let allFileMin = {src: [], dest: `../${jsTarget}/jquery.ztree.all.min.js`};
-  for (let item of allFiles) {
-    if (item.isForAll) {
-      allFile.src.push(`../${jsTarget}/jquery.ztree.${item.name}.js`);
-      allFileMin.src.push(`../${jsTarget}/jquery.ztree.${item.name}.min.js`);
-    }    
+  for (let name of zTreeFiles) {
     let file = {
       src: [
-        `${jsTarget}/${item.name}.txt`,
+        `${jsTarget}/${name}.txt`,
         `${jsTarget}/version.txt`,
-        `${jsSrc}/jquery.ztree.${item.name}.js`
+        `${jsSrc}/jquery.ztree.${name}.js`
       ],
       dest: code => {
         let dest = {};
-        let min = UglifyJS.minify(code);
-        dest[`../${jsTarget}/jquery.ztree.${item.name}.js`] = code;
+        dest[`../${jsTarget}/jquery.ztree.${name}.js`] = code;
         if (isProduction) {
-          dest[`../${jsTarget}/jquery.ztree.${item.name}.min.js`] = min.code;
+          let min = UglifyJS.minify(code);
+          dest[`../${jsTarget}/jquery.ztree.${name}.min.js`] = min.code;
+          dest[`../${jsTargetForWeb}/jquery.ztree.${name}.js`] = min.code;
+          if (name === 'core') {
+            dest[`../${jsTargetForApi}/jquery.ztree.${name}.js`] = min.code;
+          }
         }            
         return dest;
       }
     };
     mergeFiles.push(file);
   }
-  // mergeFiles.push(allFile);
-  // if (isProduction) {
-  //   mergeFiles.push(allFileMin);
-  // }  
-  console.log(JSON.stringify(allFile));
-
   return {
     mode: env,
     module: {
@@ -66,40 +56,22 @@ module.exports = env => {
     },
     plugins: [
 
-      new MergeIntoSingleFilePlugin({
-        files: [allFile]
-      }, () => {
-        console.log('merge allFile over ----------------------')
-      }),
-      
-      new MergeIntoSingleFilePlugin({
-        files: mergeFiles
-      }, () => {
-        // var a = new MergeIntoSingleFilePlugin({
-        //   files: [allFile]
-        // }, () => {
-          console.log('merge over ----------------------')
-        // });
-        // console.log(JSON.stringify(a));
-      }),
-
-
-      new CleanWebpackPlugin(['dist', jsPublishDist, jsTargetDist], {
+      new CleanWebpackPlugin(['dist', jsTargetDist, jsTargetDistForWeb, jsTargetDistForApi], {
         root: path.resolve(__dirname, './'),
         verbose: true,
         dry: false
       }),
-      // new CopyWebpackPlugin([
-      //   { from: 'static/**/*'},
-      // ], {
-      //   ignore: [ '' ]
-      // }),
+      new MergeIntoSingleFilePlugin({
+        files: mergeFiles
+      }, () => {
+        console.log('merge single file over ----------------------')
+      }),
     ],
     // resolve: {
     //   extensions: [ '.js' ]
     // },
     entry: {
-      zTree: './zTreeAPI/WebContent/js/src/jquery.ztree.core.js',
+      zTree: './zTreeAPI/WebContent/js/src/blank.js',
     }
   };
 };
