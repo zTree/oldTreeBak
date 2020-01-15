@@ -25,6 +25,7 @@
     "@babel/polyfill": "^7.2.5",
     "seedrandom": "^3.0.1",
     "simplify-js": "*",
+    "uglify-js": "^3.7.5",
     "uuid": "*"
   },
   "scripts": {
