@@ -8,7 +8,7 @@
  * Licensed same as jquery - MIT License
  * http://www.opensource.org/licenses/mit-license.php
  *
- * Date: 2020-01-13
+ * Date: 2020-01-19
  */
 
 (function ($) {
