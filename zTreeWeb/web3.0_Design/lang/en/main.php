@@ -46,12 +46,9 @@ $link_tjpcms = "<a href='http://www.tjpcms.com/' target='_blank' title='Tjpcms'>
 $contact_title = "Contact Us";
 $contact_option1 = "If you like Gitee, zTree is on Gitee: ";
 $contact_option2 = "Discuss issues or features of zTree, you can go OSCHINA: <br/>&nbsp;&nbsp;&nbsp;&nbsp;";
-$contact_option3 = "Discuss issues or features of zTree, you can go ITEYE: <br/>&nbsp;&nbsp;&nbsp;&nbsp;";
 $contact_option4 = "Ask questions, (no need for login), go to zTree Hi: ";
 $contact_option5 = "If you can't do any of the above, just Email: ";
 $contact_option6 = "If you like Github, zTree is on Github: ";
 $contact_myhome = "I hope you like zTree, and I would like to thank my family, particularly for their support!";
 
-$adAlert = "[AD]";
-$adAlertEmpty = "[Advertising position for rent]";
 ?>

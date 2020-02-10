@@ -33,4 +33,7 @@ $footer_download_oschina = "码云 下载";
 $footer_download_google = "Google 下载";
 
 $qq_group_icon = "手把手教你学 zTree —— 快速入门教程";
+
+$adAlert = "[广告]";
+$adAlertEmpty = "[广告位招租]";
 ?>
