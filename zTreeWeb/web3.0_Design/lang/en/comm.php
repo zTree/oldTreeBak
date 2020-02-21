@@ -8,7 +8,7 @@ $menu_download = "Download";
 $menu_chinese = "Chinese";
 $suggestNoIE = "If you use the Chrome / FireFox / Opera / IE9 browser will be even more dazzling effect!";
 
-$footer_miibeian = "Copyright @2010 zTree  All Rights Reserved.";
+$footer_miibeian = "Copyright @2010 zTree  All Rights Reserved.  京ICP备09073372号-2";
 $footer_menu_siteMap = "Site Map";
 $footer_siteMap_zTreeInfo = "Introduction of zTree";
 $footer_siteMap_license = "License of zTree";

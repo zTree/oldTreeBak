@@ -6,7 +6,7 @@
 
 		<!-- Site Switcher -->
 		<div id="footer_mii" class="footer_mii">
-			<a href="javascript:void(0)" target="_blank"><?php echo $footer_miibeian?></a>
+			<a href="http://www.beian.miit.gov.cn/?spm=a2c4g.11186623.2.15.66207dc6fwRr8n" target="_blank"><?php echo $footer_miibeian?></a>
 		</div>
 		<div id="footer_siteMap" class="footer_siteMap open">
 			<div class="footer_siteMap_header" title="<?php echo $footer_menu_siteMap?>"><?php echo $footer_menu_siteMap?></div>

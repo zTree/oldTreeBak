@@ -8,7 +8,7 @@ $menu_download = "下载";
 $menu_english = "英文版";
 $suggestNoIE = "浏览本网站建议您使用 Chrome、FireFox、Opera、IE9 等浏览器（只要不是 IE6 7 8 就行）, 速度会更快，画面会更炫！";
 
-$footer_miibeian = "Copyright @2010 zTree  版权所有.";
+$footer_miibeian = "Copyright @2010 zTree  版权所有.  京ICP备09073372号-2";
 $footer_menu_siteMap = "站内导航";
 $footer_siteMap_zTreeInfo = "zTree 简介";
 $footer_siteMap_license = "zTree 授权协议";
