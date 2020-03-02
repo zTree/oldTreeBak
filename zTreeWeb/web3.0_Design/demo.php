@@ -109,7 +109,7 @@ var menu_nodes =[
 	{id:508, pId:5, name:"<?php echo $demo_menu_508?>", iconSkin:"menu", file:"super/rightClickMenu"},
 	{id:511, pId:5, name:"<?php echo $demo_menu_511?>", iconSkin:"menu", file:"super/dragWithOther"},
 	{id:512, pId:5, name:"<?php echo $demo_menu_512?>", iconSkin:"menu", file:"super/asyncForAll"},
-	{id:516, pId:5, name:"", blank:true},
+	{id:517, pId:5, name:"<?php echo $demo_menu_517?>", iconSkin:"menu", file:"super/keyboard_navigation"},
 
 	{id:6, pId:0, name:"<?php echo $demo_menu_6?>", open:false},
 	{id:601, pId:6, name:"<?php echo $demo_menu_601?>", iconSkin:"menu", file:"exhide/common"},

@@ -66,6 +66,7 @@ $demo_menu_513 = "OutLook 风格";
 $demo_menu_514 = "Metro 风格";
 $demo_menu_515 = "Awesome 风格";
 $demo_menu_516 = "模糊查找节点";
+$demo_menu_517 = "设置快捷键";
 
 $demo_menu_6 = "其他扩展功能 演示";
 $demo_menu_601 = "隐藏普通节点";
