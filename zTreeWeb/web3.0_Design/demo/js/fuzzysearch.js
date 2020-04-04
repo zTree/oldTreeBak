@@ -8,10 +8,10 @@
  * @param searchField selector of your input for fuzzy search
  * @param isHighLight whether highlight the match words, default true
  * @param isExpand whether to expand the node, default false
- *
+ * 
  * @returns
- */
-function fuzzySearch(zTreeId, searchField, isHighLight, isExpand){
+ */	
+ function fuzzySearch(zTreeId, searchField, isHighLight, isExpand){
 	var zTreeObj = $.fn.zTree.getZTreeObj(zTreeId);//get the ztree object by ztree id
 	if(!zTreeObj){
 		alert("fail to get ztree object");
@@ -20,16 +20,16 @@ function fuzzySearch(zTreeId, searchField, isHighLight, isExpand){
 	isHighLight = isHighLight===false?false:true;//default true, only use false to disable highlight
 	isExpand = isExpand?true:false; // not to expand in default
 	zTreeObj.setting.view.nameIsHTML = isHighLight; //allow use html in node name for highlight use
-
+	
 	var metaChar = '[\\[\\]\\\\\^\\$\\.\\|\\?\\*\\+\\(\\)]'; //js meta characters
 	var rexMeta = new RegExp(metaChar, 'gi');//regular expression to match meta characters
-
+	
 	// keywords filter function 
 	function ztreeFilter(zTreeObj,_keywords,callBackFunc) {
 		if(!_keywords){
 			_keywords =''; //default blank for _keywords 
 		}
-
+		
 		// function to find the matching node
 		function filterFunc(node) {
 			if(node && node.oldname && node.oldname.length>0){
@@ -61,39 +61,39 @@ function fuzzySearch(zTreeId, searchField, isHighLight, isExpand){
 							'<span style="color: whitesmoke;background-color: darkred;">'
 							+ originalText
 							+'</span>';
-						return 	highLightText;
+						return 	highLightText;					
 					});
 					zTreeObj.updateNode(node); //update node for modifications take effect
 				}
 				zTreeObj.showNode(node);//show node with matching keywords
 				return true; //return true and show this node
 			}
-
+			
 			zTreeObj.hideNode(node); // hide node that not matched
 			return false; //return false for node not matched
 		}
-
+		
 		var nodesShow = zTreeObj.getNodesByFilter(filterFunc); //get all nodes that would be shown
 		processShowNodes(nodesShow, _keywords);//nodes should be reprocessed to show correctly
 	}
-
+	
 	/**
 	 * reprocess of nodes before showing
 	 */
 	function processShowNodes(nodesShow,_keywords){
 		if(nodesShow && nodesShow.length>0){
 			//process the ancient nodes if _keywords is not blank
-			if(_keywords.length>0){
+			if(_keywords.length>0){ 
 				$.each(nodesShow, function(n,obj){
 					var pathOfOne = obj.getPath();//get all the ancient nodes including current node
-					if(pathOfOne && pathOfOne.length>0){
+					if(pathOfOne && pathOfOne.length>0){ 
 						//i < pathOfOne.length-1 process every node in path except self
 						for(var i=0;i<pathOfOne.length-1;i++){
 							zTreeObj.showNode(pathOfOne[i]); //show node 
 							zTreeObj.expandNode(pathOfOne[i],true); //expand node
 						}
 					}
-				});
+				});	
 			}else{ //show all nodes when _keywords is blank and expand the root nodes
 				var rootNodes = zTreeObj.getNodesByParam('level','0');//get all root nodes
 				$.each(rootNodes,function(n,obj){
@@ -102,7 +102,7 @@ function fuzzySearch(zTreeId, searchField, isHighLight, isExpand){
 			}
 		}
 	}
-
+	
 	//listen to change in input element
 	$(searchField).bind('input propertychange', function() {
 		var _keywords = $(this).val();
@@ -110,20 +110,20 @@ function fuzzySearch(zTreeId, searchField, isHighLight, isExpand){
 	});
 
 	var timeoutId = null;
-	var lastKeyword = '';
-	// excute lazy load once after input change, the last pending task will be cancled
+  var lastKeyword = '';
+	// excute lazy load once after input change, the last pending task will be cancled  
 	function searchNodeLazy(_keywords) {
-		if (timeoutId) {
+		if (timeoutId) { 
 			//clear pending task
 			clearTimeout(timeoutId);
 		}
 		timeoutId = setTimeout(function() {
-			if (lastKeyword === _keywords) {
-				return;
-			}
-			ztreeFilter(zTreeObj,_keywords); //lazy load ztreeFilter function
+      if (lastKeyword === _keywords) {
+        return;
+      }
+			ztreeFilter(zTreeObj,_keywords); //lazy load ztreeFilter function 
 			// $(searchField).focus();//focus input field again after filtering
-			lastKeyword = _keywords;
+      lastKeyword = _keywords;
 		}, 500);
 	}
 }
