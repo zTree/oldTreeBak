@@ -12,6 +12,12 @@ zTree API : http://www.treejs.cn/v3/api.php
 zTree Demo : http://www.treejs.cn/v3/demo.php
 
 
+Install
+============
+```
+npm install @ztree/ztree_v3
+```
+
 Introduction of zTree (简介)
 ============
 * zTree is a multi-functional "tree plug-ins." based on jQuery. The main advantages of zTree includes excellent performance, flexible configuration, and the combination of multiple functions.
