@@ -1,6 +1,6 @@
 {
   "name": "@ztree/ztree_v3",
-  "version": "3.5.45",
+  "version": "3.5.46",
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.3.3",
