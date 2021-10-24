@@ -2,7 +2,7 @@
 $web_title = "常见问题 [zTree --  jQuery 树插件]";
 
 $title = "zTree v3.x 常见问题";
-$title_info = "如果你觉得看 API 文档太难理解，可以去看我总结的 <a href='https://note.wiz.cn/pages/manage/biz/payRead.html?kb=3fe9d146-6498-4882-b75c-f533442aba5b' target='_blank' style='border-bottom: 1px dotted #528036;font-weight: bold;'>《手把手教你学 zTree》</a>";
+$title_info = "如果你觉得看 API 文档太难理解，可以去看我总结的 <a href='https://www.wiz.cn/wapp/pages/wdj/3fe9d146-6498-4882-b75c-f533442aba5b' target='_blank' style='border-bottom: 1px dotted #528036;font-weight: bold;'>《手把手教你学 zTree》</a>";
 
 $faq_menu_1 = "v2.6 升级到 v3.0 必读";
 $faq_menu_101 = "v2.6 - v3.0 文件对比";

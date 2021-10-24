@@ -114,7 +114,7 @@ if ($page == "main") {
 <div id="header_wrap" class="header_wrap">
 	<div id="header" class="header round">
 		<!--<div class="light-bulb" alt=""></div>-->
-		<a href="https://note.wiz.cn/pages/manage/biz/payRead.html?kb=3fe9d146-6498-4882-b75c-f533442aba5b" target="_blank"><div class="qq-group" title="<?php echo $qq_group_icon?>"></div></a>
+		<a href="https://www.wiz.cn/wapp/pages/wdj/3fe9d146-6498-4882-b75c-f533442aba5b" target="_blank"><div class="qq-group" title="<?php echo $qq_group_icon?>"></div></a>
 		<div class="ieSuggest"><?php echo $suggestNoIE?></div>
 		<div class="header-text">
 			<h1><em><?php echo $title?></em></h1>
