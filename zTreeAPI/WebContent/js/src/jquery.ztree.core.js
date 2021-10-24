@@ -1840,7 +1840,7 @@
           return expandFlag;
 
           function showNodeFocus() {
-            var a = $$(node, setting).get(0);
+            var a = $$(node, consts.id.A, setting).get(0);
             if (a && focus !== false) {
               view.scrollIntoView(setting, a);
             }
