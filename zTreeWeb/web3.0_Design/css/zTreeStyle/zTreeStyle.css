@@ -82,7 +82,7 @@ website:	http://code.google.com/p/jquerytree/
 ul.tmpTargetzTree {background-color:#FFE6B0; opacity:0.8; filter:alpha(opacity=80)}
 
 span.tmpzTreeMove_arrow {width:16px; height:16px; display: inline-block; padding:0; margin:2px 0 0 1px; border:0 none; position:absolute;
-	background-color:white; background-repeat:no-repeat; background-attachment: scroll;
+	background-color: transparent; background-repeat:no-repeat; background-attachment: scroll;
 	background-position:-110px -80px; background-image:url("./img/zTreeStandard.png"); *background-image:url("./img/zTreeStandard.gif")}
 
 ul.ztree.zTreeDragUL {margin:0; padding:0; position:absolute; width:auto; height:auto;overflow:hidden; 
