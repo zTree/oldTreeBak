@@ -19,7 +19,6 @@ for /f "delims=" %%i in ('dir /b /a-d "jquery*.js"') do (
 for /f "delims=" %%i in ('dir /b /a-d "*.js" ^|findstr /i /v /c:"jindo*.js"') do (
    java -jar ../../compiler/compiler.jar --js %%i --js_output_file %%i_m
 )
-del *.js
 ren *.js_m *.js
 ren *.js_mm *.js
 
