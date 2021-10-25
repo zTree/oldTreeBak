@@ -1,28 +1,25 @@
 {
   "name": "@ztree/ztree_v3",
+  "description": "zTree is a multi-functional 'tree plug-ins.' based on jQuery. The main advantages of zTree includes excellent performance, flexible configuration, and the combination of multiple functions.",
+  "version": "3.5.48",
+  "homepage": "http://www.treejs.cn/v3/main.php",
+  "author": "zTree (https://github.com/zTree)",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.treejs.cn/v3/main.php#_license"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zTree/zTree_v3.git"
   },
-  "typings": "index.d.ts",
-  "version": "3.5.47",
-  "author": {
-    "name": "zTree",
-    "url": "https://github.com/zTree"
-  },
-  "bugs": {
-    "url": "https://github.com/zTree/zTree_v3/issues"
-  },
-  "bundleDependencies": false,
   "dependencies": {
     "jquery": ">=1.4.4"
   },
-  "deprecated": false,
-  "description": "zTree is a multi-functional 'tree plug-ins.' based on jQuery. The main advantages of zTree includes excellent performance, flexible configuration, and the combination of multiple functions.",
   "engines": {
     "node": ">=0.10.0"
   },
-  "homepage": "http://www.treejs.cn/v3/main.php",
   "keywords": [
     "tree",
     "jquery",
@@ -32,10 +29,5 @@
     "html",
     "node"
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.treejs.cn/v3/main.php#_license"
-    }
-  ]  
+  "typings": "index.d.ts"
 }
