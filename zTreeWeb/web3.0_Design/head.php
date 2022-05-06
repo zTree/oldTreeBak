@@ -2,16 +2,17 @@
 //redirect
 $host=$_SERVER['HTTP_HOST'];
 $url = $_SERVER['PHP_SELF'];
+$https = $_SERVER['HTTPS'];
 $querystring = $_SERVER["QUERY_STRING"];
 $userIp = $_SERVER["REMOTE_ADDR"];
 
 if ($host=='www.baby666.cn' || $host=='baby666.cn' ||
-    $host=='www.ztree.me' || $host=='ztree.me') {
+    $host=='www.ztree.me' || $host=='ztree.me' || $https != 'on') {
 	Header('HTTP/1.1 301 Moved Permanently');
 	if ($querystring !== '') {
-	Header('Location:http://www.treejs.cn'.$url.'?'.$querystring);
+	Header('Location:https://treejs.cn'.$url.'?'.$querystring);
 	} else {
-	Header('Location:http://www.treejs.cn'.$url);
+	Header('Location:https://treejs.cn'.$url);
 	}
 	exit();
 }
