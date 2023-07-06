@@ -63,7 +63,7 @@ if(array_key_exists( 'lang',$_REQUEST)) {
 } else if(array_key_exists( 'lang',$_COOKIE)) {
 	$lang=$_COOKIE['lang'];
 } else {
-	$lang_Browser = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
+	$lang_Browser = isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]) ? $_SERVER["HTTP_ACCEPT_LANGUAGE"] : '';
 	$lang = startsWith(strtolower($lang_Browser), 'zh-cn') ? "cn":"en";
 }
 if ($lang==null || $lang=="" || ($lang!="cn" && $lang!="en")) {
