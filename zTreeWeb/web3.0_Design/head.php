@@ -150,7 +150,7 @@ if ($page == "main") {
 			<li><a href="#" <?php echo $isHome?> onclick="chgLang('<?php echo $chgLang?>'); return false;"><button class="ico <?php echo $chgLang?>" onfocus="this.blur();" title="<?php echo $menu_lang?>"></button><span class=""></span></a></li>
 		</ul>
 	</div>
-	<div class="header-ad-container round">
+	<div class="header-ad-container round" style="display: none">
         <div class="header-ad"><a href="<?php echo $headerAdUrl?>" target="_blank"><img src="./img/ad/<?php echo $headerAdFile?>" /></a></div>
         <span class="ad-alert"><?php echo $adAlert?></span>
     </div>
