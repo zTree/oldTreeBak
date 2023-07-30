@@ -9,7 +9,7 @@ include( "head.php")
 				<li><a href="#" class="zTreeInfoBtn" onclick="return false;"><?php echo $main_sub_info ?></a></li>
 				<li><a href="#" class="licenseBtn" onclick="return false;"><?php echo $main_sub_license ?></a></li>
 				<li><a href="#" class="contactBtn" onclick="return false;"><?php echo $main_sub_contact ?></a></li>
-				<li><a href="#" class="linksBtn" onclick="return false;"><?php echo $main_sub_links ?></a></li>
+				<li><a href="https://my.oschina.net/dyhunter?tab=newest&catalogId=12364096&sortType=time" target="_blank"><?php echo $main_sub_tutorial ?></a></li>
 			</ul>
 		</div>
 
@@ -48,43 +48,6 @@ include( "head.php")
 				</div>
 			</div>
 
-			<div id="links" class="links">
-				<div class="title">
-					<h1 ><?php echo $links_title ?></h1>
-				</div>
-				<div class="content first">
-					<ul>
-						<li><?php echo $link_oschina ?></li>
-						<li><?php echo $link_gitee ?></li>
-						<li><?php echo $link_tjpcms ?></li>
-					</ul>
-				</div>
-				<div class="content">
-					<ul>
-						<li><?php echo $link_wiz ?></li>
-						<li><?php echo $link_uileader ?></li>
-					</ul>
-				</div>
-				<div class="content">
-					<ul>
-						<li><?php echo $link_conyEdit ?></li>
-						<li><?php echo $link_topitxy ?></li>
-					</ul>
-				</div>
-				<div class="content">
-					<ul>
-						<li><?php echo $link_fineui ?></li>
-						<li><?php echo $link_sufeinet ?></li>
-					</ul>
-				</div>
-				<div class="content">
-					<ul>
-						<li><?php echo $link_16aspx ?></li>
-						<li><?php echo $link_datatables ?></li>
-					</ul>
-				</div>
-			</div>
-
 			<div id="contact" class="contact">
 				<div class="title">
 					<h1 ><?php echo $contact_title ?></h1>
@@ -93,8 +56,7 @@ include( "head.php")
 						<li><span ><?php echo $contact_option1 ?></span><a href="https://gitee.com/zTree/zTree_v3" target="_blank">https://gitee.com/zTree/zTree_v3</a></li>
 						<li><span ><?php echo $contact_option6 ?></span><a href="https://github.com/zTree/zTree_v3" target="_blank">https://github.com/zTree/zTree_v3</a></li>
 						<li><span ><?php echo $contact_option2 ?></span><a href="http://my.oschina.net/dyhunter" target="_blank">http://my.oschina.net/dyhunter</a></li>
-						<li><span ><?php echo $contact_option4 ?></span><a href="http://tieba.baidu.com/f?kw=zTree" target="_blank">http://tieba.baidu.com/f?kw=zTree</a></li>
-						<li><span ><?php echo $contact_option5 ?></span><a href="mailto:hunter.z@263.net">hunter.z@263.net</a></li>
+						
 					</ul>
 					<br/>
 				</div>

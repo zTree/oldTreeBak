@@ -33,7 +33,7 @@ $isHome = "";$homejs = "";
 $isDemo = "";$demojs = "";
 $isApi = "";$apijs = "";
 $isFaq = "";$faqjs = "";
-$isDonate = "";$donatejs = "";
+$isBlog = "";$blogjs = "";
 $isDownload = ""; $downloadjs = "";
 $page = strrchr($_SERVER['REQUEST_URI'], "/");
 $page = strtolower(substr($page, 1, strpos($page, '.')-1));
@@ -50,8 +50,8 @@ if ($page == "main") {
 	$isFaq = "selected";
 	$faqjs = "onclick='return false;'";
 } else if ($page == "donate") {
-	$isDonate = "selected";
-	$donatejs = "onclick='return false;'";
+	$isBlog = "";
+	$blogjs = "";
 } else if ($page == "download") {
 	$isDownload = "selected";
 	$downloadjs = "onclick='return false;'";
@@ -126,7 +126,7 @@ if ($page == "main") {
 			<li><a href="demo.php" <?php echo $demojs?> target="_zTreeDemo"><button class="ico demo" onfocus="this.blur();"></button><span class="<?php echo $isDemo?>"><?php echo $menu_demo?></span></a></li>
 			<li><a href="api.php" <?php echo $apijs?> target="_zTreeApi"><button class="ico api" onfocus="this.blur();"></button><span class="<?php echo $isApi?>"><?php echo $menu_api?></span></a></li>
 			<li><a href="faq.php#_206" <?php echo $faqjs?> target="_self"><button class="ico faq" onfocus="this.blur();"></button><span class="<?php echo $isFaq?>"><?php echo $menu_faq?></span></a></li>
-			<li><a href="donate.php" <?php echo $donatejs?> target="_self"><button class="ico donate" onfocus="this.blur();"></button><span class="<?php echo $isDonate?>"><?php echo $menu_donate?></span></a></li>
+			<li><a href="https://treejs.cn" <?php echo $blogjs?> target="_self"><button class="ico donate" onfocus="this.blur();"></button><span class="<?php echo $isBlog?>"><?php echo $menu_blog?></span></a></li>
 			<li><a href="https://gitee.com/zTree/zTree_v3" <?php echo $downloadjs?> target="_blank">
                 <span class="<?php echo $isDownload?>"><?php echo $menu_download?></span>
                 </a>

@@ -8,7 +8,7 @@ $main_subtitle = "Maybe you need to see:";
 $main_sub_info = "Home";
 $main_sub_license = "License";
 $main_sub_contact = "Contact";
-$main_sub_links = "Links";
+$main_sub_tutorial = "Tutorial";
 
 $info_title = "Welcome to the zTree home page";
 $info_title_sub1 = "zTree is an advanced jQuery 'tree plug-in'. The performance is excellent, it is easy to configurw (with a full set of options), and has many advanced features (that usually only come with paid software).";
@@ -29,25 +29,9 @@ $info_feature11 = "Simple configuration parameters. Most functionality is availa
 $license_title = "License ( MIT License )";
 $license_content = " copyright (c) <2011> < hunter.z ><br/><br/>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br/><br/>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br/><br/>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
 
-$links_title = "Links";
-$link_wiz = "<a href='http://www.wiz.cn/i/ef16c35f' target='_blank' title='wiz knowledge'>wiz knowledge</a>";
-$link_topitxy = "<a href='http://www.topitxy.com' target='_blank' title='IT School'>IT School</a>";
-//$link_youyax = "<a href='http://www.youyax.com' target='_blank' title='YouYaX'>YouYaX</a>";
-$link_fineui = "<a href='http://fineui.com/demo_en/' target='_blank' title='FineUI'>FineUI</a>";
-$link_sufeinet = "<a href='http://www.sufeinet.com' target='_blank' title='C# Forum'>C# Forum</a>";
-$link_16aspx = "<a href='http://www.16aspx.com' target='_blank' title='Asp.net SourceCode'>Asp.net SourceCode</a>";
-$link_datatables = "<a href='http://dt.thxopen.com/' target='_blank' title='Datatables China'>Datatables China</a>";
-$link_oschina = "<a href='http://www.oschina.net/' target='_blank' title='Open Source China'>Open Source China</a>";
-$link_gitee = "<a href='https://gitee.com/' target='_blank' title='Gitee'>Gitee</a>";
-$link_uileader = "<a href='http://www.uileader.com' target='_blank' title='QuickUI'>QuickUI</a>";
-$link_conyEdit = "<a href='https://www.conyedit.com/' target='_blank' title='ConyEdit'>ConyEdit</a>";
-$link_tjpcms = "<a href='http://www.tjpcms.com/' target='_blank' title='Tjpcms'>Tjpcms</a>";
-
 $contact_title = "Contact Us";
 $contact_option1 = "If you like Gitee, zTree is on Gitee: ";
 $contact_option2 = "Discuss issues or features of zTree, you can go OSCHINA: <br/>&nbsp;&nbsp;&nbsp;&nbsp;";
-$contact_option4 = "Ask questions, (no need for login), go to zTree Hi: ";
-$contact_option5 = "If you can't do any of the above, just Email: ";
 $contact_option6 = "If you like Github, zTree is on Github: ";
 $contact_myhome = "I hope you like zTree, and I would like to thank my family, particularly for their support!";
 

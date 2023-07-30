@@ -18,7 +18,7 @@
 				<li><a href="api.php"><?php echo $footer_siteMap_api?></a></li>
 				<li><a href="faq.php"><?php echo $footer_siteMap_faq?></a></li>
 				<li><a href="/hunter/index.html" target="_blank"><?php echo $footer_siteMap_v26?></a></li>
-				<li><a href="main.php#_links" class="linksBtn"><?php echo $footer_siteMap_links?></a></li>
+				<li><a href="https://my.oschina.net/dyhunter?tab=newest&catalogId=12364096&sortType=time" target="_blank"><?php echo $footer_siteMap_tutorial?></a></li>
 			</ul>
 		</div>
 		<div id="footer_contact" class="footer_contact open">
@@ -27,9 +27,7 @@
 				<li><a href="https://gitee.com/zTree/zTree_v3" target="_blank"><?php echo $footer_contact_gitee?></a></li>
 				<li><a href="https://github.com/zTree/zTree_v3" target="_blank"><?php echo $footer_contact_github?></a></li>
 				<li><a href="http://my.oschina.net/dyhunter" target="_blank"><?php echo $footer_contact_blog_oschina?></a></li>
-				<li><a href="http://ztreeapi.iteye.com/" target="_blank"><?php echo $footer_contact_blog_iteye?></a></li>
-				<li><a href="http://tieba.baidu.com/f?kw=zTree" target="_blank"><?php echo $footer_contact_zTreeHi?></a></li>
-				<li><a href="mailto:hunter.z@263.net"><?php echo $footer_contact_email?></a></li>
+				<li><a href="https://treejs.cn/" target="_blank"><?php echo $footer_contact_blog?></a></li>
 				
 			</ul>
 		</div>

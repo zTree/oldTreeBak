@@ -7,7 +7,6 @@ var mainContent = {
 	zTreeInfoBtn: null,
 	licenseBtn: null,
 	contactBtn: null,
-	linksBtn: null,
 
 	divList: [],
 	_init: function() {
@@ -16,7 +15,6 @@ var mainContent = {
 		this.zTreeInfoBtn = $(".zTreeInfoBtn");
 		this.licenseBtn = $(".licenseBtn");
 		this.contactBtn = $(".contactBtn");
-		this.linksBtn = $(".linksBtn");
 		this.divList["zTreeInfo"] = $("#zTreeInfo");
 		this.divList["license"] = $("#license");
 		this.divList["contact"] = $("#contact");
@@ -30,7 +28,6 @@ var mainContent = {
 		this.zTreeInfoBtn.bind("click", {id: "zTreeInfo",_this:_this}, _this.showContent);
 		this.licenseBtn.bind("click", {id: "license",_this:_this}, _this.showContent);
 		this.contactBtn.bind("click", {id: "contact",_this:_this}, _this.showContent);
-		this.linksBtn.bind("click", {id: "links",_this:_this}, _this.showContent);
 
 	},
 	showContent: function(e) {
@@ -70,9 +67,6 @@ var mainContent = {
 				break;
 				case "contact":
 				_this.curBtn = _this.contactBtn;
-				break;
-				case "links":
-				_this.curBtn = _this.linksBtn;
 				break;
 			}
 		} else {
