@@ -42,7 +42,7 @@ h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
 
 /* Header */
 .header {position: relative;width: 940px;margin: 0 auto;height: 100px;border: 1px solid white;background: transparent url(../img/header-bg.png) repeat-x 0 -50px;}
-.header-text {padding: 10px 25px 15px 150px;font-size: 18px;line-height: 24px;color: #747d67;font-family: Helvetica, sans-serif;}
+.header-text {padding: 10px 25px 15px 120px;font-size: 18px;line-height: 24px;color: #747d67;font-family: Helvetica, sans-serif;}
 .header-text h1 {margin-bottom: 8px;}
 .header-text img {padding-bottom: 5px;}
 /*.header-ad-container {position: relative;width: 940px;margin: 5px auto 0;height: 68px;border: 1px solid white;background: transparent url(../img/contact-bg.png) repeat-x 0 -50px;padding: 4px;box-sizing: border-box;}*/
@@ -139,7 +139,7 @@ h4 {font-size: 14px;font-weight: normal;line-height: 25px;}
 .footer_siteMap:hover ul {left: 0}
 .footer_contact {position: absolute;right: 193px;top: 8px;width: 155px;z-index: 10;padding: 4px 0;}
 .footer_contact .footer_contact_header {width:155px;text-indent: -9999px;background: transparent url(../img/footer_contact.gif) no-repeat 0px 0px;}
-.footer_contact ul {top: -158px;width:153px;}
+.footer_contact ul {top: -113px;width:153px;}
 .footer_contact:hover ul {left: 0}
 .footer_download {position: absolute;right: 60px;top: 8px;width: 123px;z-index: 10;padding: 4px 0;}
 .footer_download .footer_download_header {width:123px;text-indent: -9999px;background: transparent url(../img/footer_download.png) no-repeat 0px 0px;}
